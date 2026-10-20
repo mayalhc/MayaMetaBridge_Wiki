@@ -775,6 +775,14 @@ DNA 파일 또는 활성 슬롯의 DNA를 읽고, 파이프라인의 나머지�
 * Scene Mesh Garment:
 * Hair (Alembic -> XGen groom):
 
+### Fit to Skin (Maya-only)
+
+**버튼**
+
+| 버튼 | 실행되는 커맨드 |
+| --- | --- |
+| Fit Clothing to Skin | `mmb_fit_clothing_to_skin` - push the selected clothing (or what is worn) out of the character's skin: any vertex inside it, or closer than the Clothing Offset, is moved out along the skin's normal |
+
 ---
 
 [가이드로 돌아가기](KO_index.md)

@@ -452,9 +452,26 @@ character's rig is built from.
 - **Make Garment Rig**, then **Bind Garment To Character** — binding copies the
   body's skin weights onto the piece, so it moves the way the skin beneath it
   moves.
+- **Fit to the skin** keeps a garment out of the character's body. A garment
+  modelled over another build sinks into this one wherever the two differ; the
+  fit finds, for every vertex, the nearest point of the body and head skin,
+  and one that is inside it - or closer than the offset - is moved out along
+  the skin's normal. Nothing else moves, so loose cloth stays loose, and a
+  point that only slides along the skin is left alone.
+  - **Fit Clothing to Skin** (the *Fit to Skin* frame) fits the selected
+    garment - or everything worn when nothing is selected. It also runs by
+    itself on **Bind Garment To Character** and on **Refit**.
+  - **Clothing Offset** (0–0.02, the add-on's metres: 0.01 is one centimetre)
+    is the gap left between cloth and skin; the minimum is 0.2 cm, and
+    moving the slider refits what is worn straight away. The fit always starts
+    from the garment as it was first seen, so a smaller offset lets the cloth
+    come back out. A point deeper than 8 cm inside the skin is taken for
+    another surface (an arm behind the torso) and is not pulled across.
+  - On a skinned garment the fit is written to the rest shape the skin
+    cluster reads, so it stays when the character moves.
 - **Refit Clothing To Body** re-applies the proportions' girth field to
-  everything worn, so a changed waist changes the clothes over it too.
-  **Clothing Offset** (0–0.02) is the margin it fits with.
+  everything worn, so a changed waist changes the clothes over it too - and
+  then fits the result to the skin with the Clothing Offset.
 - Hair is a separate road, and it is an **XGen interactive groom**:
   - **Import Hair…** (Alembic) reads the file as data and makes *one* XGen
     spline description on the character's head mesh - no node per strand (a
@@ -639,6 +656,16 @@ bridge uses, so it can run beside one. Nothing leaves the machine.
 **Live: Mirror This Rig** sends frames while you animate, and **Stop Mirroring**
 stops; **Live Way** and **Live Bones** choose what a mirrored frame carries.
 Send the character first, then go live.
+
+**Clothes go with the character.** Every mesh skinned to the character's joints
+(what Bind Garment recorded, and anything else bound to the rig) leaves in the
+same FBX and follows the pose in Cascadeur. A garment is re-skinned on a copy
+from the body and the head under it - so a hood follows the head and a baggy leg
+follows its own leg - and the original is not touched; the head's own neck and
+shoulder collar takes the body's weights, so the head stays joined at the neck.
+Send the character in its **rest pose** and let the pose follow (a character
+sent while posed can tear its clothes in Cascadeur). A coat with 170,000
+vertices takes about half a minute.
 
 The character leaves as **one skeleton** - the head part's meshes are rebound to
 its body joints - and a take read back lands on **both** parts: the head's own

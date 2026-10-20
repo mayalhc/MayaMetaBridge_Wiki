@@ -775,6 +775,14 @@ Clothing, hair and accessories on the character: import, make a garment rig, bin
 * Scene Mesh Garment:
 * Hair (Alembic -> XGen groom):
 
+### Fit to Skin (Maya-only)
+
+**Buttons**
+
+| Button | Runs |
+| --- | --- |
+| Fit Clothing to Skin | `mmb_fit_clothing_to_skin` - push the selected clothing (or what is worn) out of the character's skin: any vertex inside it, or closer than the Clothing Offset, is moved out along the skin's normal |
+
 ---
 
 [Back to the guide](index.md)
