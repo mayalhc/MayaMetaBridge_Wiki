@@ -1,0 +1,2371 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="chamiseul" /><link rel="canonical" href="https://mayalhc.github.io/MayaMetaBridge_Wiki/panels/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Panel Reference - MayaMetaBridge — User Guide</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Panel Reference";
+        var mkdocs_page_input_path = "panels.md";
+        var mkdocs_page_url = "/MayaMetaBridge_Wiki/panels/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> MayaMetaBridge — User Guide
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">MayaMetaBridge Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="..">Welcome to MayaMetaBridge</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="..#whats-new">What's new</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#what-is-this-plug-in">What is this plug-in?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#installing">Installing</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="..#the-menu">The menu</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="..#the-hub-and-two-views-of-it">The hub, and two views of it</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="..#plug-ins-for-the-other-programs">Plug-ins for the other programs</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#1-assembling-a-metahuman">1. Assembling a MetaHuman</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#2-the-face-board">2. The face board</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#3-expression-presets">3. Expression presets</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#4-arkit-live-the-iphones-face">4. ARKit Live — the iPhone's face</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#5-proportions">5. Proportions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#6-the-body-rig-mgear-one-click">6. The body rig — mGear, one click</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="..#the-add-ons-own-rig-buttons">The add-on's own rig buttons</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#7-body-blend">7. Body Blend</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#8-wearables-clothing-and-hair">8. Wearables — clothing and hair</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#9-live-corrective-sculpting-beta">9. Live corrective sculpting (Beta)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#10-exporting">10. Exporting</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#11-dna-validation-and-batch-tools">11. DNA validation and batch tools</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#12-md-live-marvelous-designer">12. MD Live — Marvelous Designer</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#13-send-to-cascadeur">13. Send to Cascadeur</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#14-unreal-engine">14. Unreal Engine</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#15-animation-baker-pose-reset-preset-converter-retarget">15. Animation baker, pose reset, preset converter, retarget</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#quick-tips">Quick tips</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#limits-of-the-port">Limits of the port</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="..#panel-reference">Panel Reference</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../KO_index/">한국어 가이드</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#_1">이번 버전</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#_2">무엇을 하는 플러그인인가</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#_3">설치</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_index/#_4">메뉴</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_index/#_5">허브, 그리고 두 가지 보기</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_index/#_6">다른 프로그램용 플러그인</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#1-metahuman">1. MetaHuman 어셈블</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#2">2. 얼굴 보드</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#3">3. 표정 프리셋</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#4-arkit-live">4. ARKit Live — 아이폰의 얼굴</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#5-proportions">5. 비율(Proportions)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#6-mgear">6. 몸 리그 — mGear 원클릭</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_index/#_7">애드온 자체의 리그 버튼</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#7-body-blend">7. Body Blend</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#8-wearables">8. Wearables — 의상과 헤어</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#9-live-corrective-sculpting-beta">9. Live Corrective Sculpting (Beta)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#10">10. 내보내기</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#11-dna">11. DNA 검증과 일괄 도구</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#12-md-live-marvelous-designer">12. MD Live — Marvelous Designer</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#13-send-to-cascadeur">13. Send to Cascadeur</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#14-unreal-engine">14. Unreal Engine</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#15">15. 애니메이션 베이커, 포즈 리셋, 프리셋 변환기, 리타겟</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#_8">빠른 팁</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#_9">포팅의 한계</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_index/#_10">패널 레퍼런스</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Panel Reference</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Panel Reference</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#1-metabridge-dna">1. MetaBridge DNA</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#metahuman-assembler">MetaHuman Assembler</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#face-rig">Face Rig</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rigify-body-control-rig">Rigify Body Control Rig</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#additional-options">Additional Options</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rna">RNA</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#mgear-rig-maya-only">mGear Rig (Maya-only)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#arnold-look-dev-maya-only">Arnold Look-Dev (Maya-only)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-animation-baker">2. Animation Baker</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#at-the-top-of-the-panel">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-arkit-live">3. ARKit Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#at-the-top-of-the-panel_1">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-batch-tools">4. Batch Tools</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#at-the-top-of-the-panel_2">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-body-blend-experimental">5. Body Blend (experimental)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#at-the-top-of-the-panel_3">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-send-to-cascadeur">6. Send to Cascadeur</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#at-the-top-of-the-panel_4">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-dna-validation">7. DNA Validation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#at-the-top-of-the-panel_5">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-export-dna-fbx-gltf">8. Export (DNA / FBX / glTF)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#at-the-top-of-the-panel_6">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-md-live">9. MD Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#at-the-top-of-the-panel_7">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-expression-presets">10. Expression Presets</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#at-the-top-of-the-panel_8">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#11-external-preset-converter">11. External Preset Converter</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#at-the-top-of-the-panel_9">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-proportions">12. Proportions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#at-the-top-of-the-panel_10">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#13-pose-reset">13. Pose Reset</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#at-the-top-of-the-panel_11">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#14-retarget-rigify-animation-beta">14. Retarget Rigify Animation (Beta)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#at-the-top-of-the-panel_12">At the top of the panel</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#retarget-in-maya-humanik-mgear">Retarget in Maya (HumanIK / mGear)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#15-live-corrective-sculpting-beta">15. Live Corrective Sculpting (Beta)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#at-the-top-of-the-panel_13">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#16-unreal-live">16. Unreal Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#at-the-top-of-the-panel_14">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#17-follow-unreal">17. Follow Unreal</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#at-the-top-of-the-panel_15">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#18-wearables-experimental">18. Wearables (experimental)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#at-the-top-of-the-panel_16">At the top of the panel</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#fit-to-skin-maya-only">Fit to Skin (Maya-only)</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../KO_panels/">패널 레퍼런스</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#1-metabridge-dna">1. MetaBridge DNA</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#metahuman-assembler">MetaHuman Assembler</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#face-rig">Face Rig</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#rigify-body-control-rig">Rigify Body Control Rig</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#additional-options">Additional Options</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#rna">RNA</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#mgear-rig-maya-only">mGear Rig (Maya-only)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#arnold-look-dev-maya-only">Arnold Look-Dev (Maya-only)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#2-animation-baker">2. Animation Baker</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#_2">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#3-arkit-live">3. ARKit Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#_3">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#4-batch-tools">4. Batch Tools</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#_4">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#5-body-blend-experimental">5. Body Blend (experimental)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#_5">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#6-send-to-cascadeur">6. Send to Cascadeur</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#_6">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#7-dna-validation">7. DNA Validation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#_7">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#8-export-dna-fbx-gltf">8. Export (DNA / FBX / glTF)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#_8">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#9-md-live">9. MD Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#_9">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#10-expression-presets">10. Expression Presets</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#_10">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#11-external-preset-converter">11. External Preset Converter</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#_11">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#12-proportions">12. Proportions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#_12">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#13-pose-reset">13. Pose Reset</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#_13">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#14-retarget-rigify-animation-beta">14. Retarget Rigify Animation (Beta)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#_14">패널 위쪽</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#retarget-in-maya-humanik-mgear">Retarget in Maya (HumanIK / mGear)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#15-live-corrective-sculpting-beta">15. Live Corrective Sculpting (Beta)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#_15">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#16-unreal-live">16. Unreal Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#_16">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#17-follow-unreal">17. Follow Unreal</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#_17">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="../KO_panels/#18-wearables-experimental">18. Wearables (experimental)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#_18">패널 위쪽</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="../KO_panels/#fit-to-skin-maya-only">Fit to Skin (Maya-only)</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="https://mayalhc.github.io/metabridge_dna/">MetaBridge DNA (Blender)</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">MayaMetaBridge — User Guide</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Panel Reference</li>
+      <li class="breadcrumb-item active">Panel Reference</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="panel-reference">Panel Reference</h1>
+<p><a href="../KO_panels/">한국어</a></p>
+<p>Every panel of the plug-in, one page each: what it is for, what it looks like, and every control it draws.</p>
+<p>This page is generated from the plug-in's own registry by <code>tools/guide_panels.py</code>. Regenerate it after the registry changes.</p>
+<hr />
+<h2 id="1-metabridge-dna">1. MetaBridge DNA</h2>
+<p>Panel key: <code>main</code></p>
+<p>The MetaHuman assembler: point at a folder of MetaHumans, list the characters in it, and build one into this scene - then the face rig's own frame and the mGear rig's.</p>
+<p><img alt="MetaBridge DNA" src="../assets/panel_main.png" /></p>
+<h3 id="metahuman-assembler">MetaHuman Assembler</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Refresh Character List</td>
+<td><code>mmb_mh_scan_dir</code></td>
+</tr>
+<tr>
+<td>Re-Assemble</td>
+<td><code>mmb_mh_assemble</code></td>
+</tr>
+<tr>
+<td>Assemble</td>
+<td><code>mmb_mh_assemble</code></td>
+</tr>
+<tr>
+<td>New</td>
+<td><code>mmb_mh_new</code></td>
+</tr>
+<tr>
+<td>Load Head DNA...</td>
+<td><code>mmb_load_head_dna</code></td>
+</tr>
+<tr>
+<td>Load Body DNA...</td>
+<td><code>mmb_load_body_dna</code></td>
+</tr>
+<tr>
+<td>Activate Slot</td>
+<td><code>mmb_mh_activate_slot</code></td>
+</tr>
+<tr>
+<td>Toggle Face Rig</td>
+<td><code>mmb_toggle_face_rig_slot</code></td>
+</tr>
+<tr>
+<td>Delete Slot</td>
+<td><code>mmb_mh_delete_slot</code></td>
+</tr>
+<tr>
+<td>Relink DNA</td>
+<td><code>mmb_relink_dna</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Type</th>
+<th>Default</th>
+<th>Range</th>
+<th>Stored as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MetaHumans Directory</td>
+<td>Text</td>
+<td>—</td>
+<td>—</td>
+<td><code>ml_mh_dir</code></td>
+</tr>
+<tr>
+<td>Head</td>
+<td>Checkbox</td>
+<td>on</td>
+<td>—</td>
+<td><code>ml_mh_load_head</code></td>
+</tr>
+<tr>
+<td>Body</td>
+<td>Checkbox</td>
+<td>on</td>
+<td>—</td>
+<td><code>ml_mh_load_body</code></td>
+</tr>
+<tr>
+<td>Textures</td>
+<td>Checkbox</td>
+<td>on</td>
+<td>—</td>
+<td><code>ml_mh_load_textures</code></td>
+</tr>
+<tr>
+<td>LOD</td>
+<td>Number</td>
+<td><code>0</code></td>
+<td>0 – 7</td>
+<td><code>ml_lod_level</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lines the panel draws</strong></p>
+<ul>
+<li>MetaHumans Directory:</li>
+<li>Set directory above and click</li>
+<li>to scan for MetaHuman folders</li>
+<li>Assembled Characters:</li>
+</ul>
+<h3 id="face-rig">Face Rig</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Append GUIArmature</td>
+<td><code>mmb_append_gui_armature</code></td>
+</tr>
+<tr>
+<td>Toggle Face Rig</td>
+<td><code>mmb_toggle_face_rig_slot</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="rigify-body-control-rig">Rigify Body Control Rig</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Build Meta-Rig</td>
+<td><code>mmb_build_metarig_only</code></td>
+</tr>
+<tr>
+<td>2. Generate Control Rig</td>
+<td><code>mmb_generate_rig_only</code></td>
+</tr>
+<tr>
+<td>Remove Retarget</td>
+<td><code>mmb_remove_retarget</code></td>
+</tr>
+<tr>
+<td>3. Apply Retarget</td>
+<td><code>mmb_apply_retarget</code></td>
+</tr>
+<tr>
+<td>Unlink Head Rig</td>
+<td><code>mmb_unlink_head_rig</code></td>
+</tr>
+<tr>
+<td>Link Head Rig</td>
+<td><code>mmb_link_head_rig</code></td>
+</tr>
+<tr>
+<td>Toggle RBF Correctives (Body)</td>
+<td><code>mmb_toggle_body_correctives_rbf</code></td>
+</tr>
+<tr>
+<td>Body Correctives: none in this DNA</td>
+<td><code>mmb_toggle_body_correctives_rbf</code></td>
+</tr>
+<tr>
+<td>Show RBF Controls</td>
+<td><code>mmb_show_rbf_controllers</code></td>
+</tr>
+<tr>
+<td>Hide</td>
+<td><code>mmb_hide_rbf_controllers</code></td>
+</tr>
+<tr>
+<td>Import FBX Animation...</td>
+<td><code>mmb_import_fbx_animation</code></td>
+</tr>
+<tr>
+<td>Remove Control Rig</td>
+<td><code>mmb_remove_cloud_rig</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Type</th>
+<th>Default</th>
+<th>Range</th>
+<th>Stored as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Driver Bone</td>
+<td>Menu</td>
+<td>—</td>
+<td>built at run time</td>
+<td><code>ml_rbf_driver</code></td>
+</tr>
+<tr>
+<td>["rbf_influence"]</td>
+<td>List</td>
+<td>—</td>
+<td>—</td>
+<td><code>["rbf_influence"]</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lines the panel draws</strong></p>
+<ul>
+<li>Rigify: enabled</li>
+<li>Rigify: NOT enabled</li>
+<li>Pick a driver bone above, or select a control and leave it on Auto</li>
+<li>Active RBF Controllers:</li>
+</ul>
+<h3 id="additional-options">Additional Options</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toggle IK Stretch</td>
+<td><code>mmb_toggle_limb_ik_stretch</code></td>
+</tr>
+<tr>
+<td>Toggle Heel Pivot</td>
+<td><code>mmb_toggle_foot_spin_pivot</code></td>
+</tr>
+<tr>
+<td>Toggle Finger IK</td>
+<td><code>mmb_toggle_finger_ik</code></td>
+</tr>
+<tr>
+<td>IK to FK</td>
+<td><code>mmb_finger_ik_fk</code></td>
+</tr>
+<tr>
+<td>FK to IK</td>
+<td><code>mmb_finger_ik_fk</code></td>
+</tr>
+<tr>
+<td>Snap Fingertip Targets to Pose</td>
+<td><code>mmb_snap_finger_ik</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Type</th>
+<th>Default</th>
+<th>Range</th>
+<th>Stored as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>'["%s"]' % _crb._FINGER_IK_PROP</td>
+<td>List</td>
+<td>—</td>
+<td>—</td>
+<td><code>'["%s"]' % _crb._FINGER_IK_PROP</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lines the panel draws</strong></p>
+<ul>
+<li>Per-finger  (0 = joints, 1 = fingertip)</li>
+<li>Assemble body first</li>
+<li>Enable Rigify: Edit &gt; Preferences &gt; Add-ons</li>
+<li>Search 'Rigify'  →  Rigging: Rigify  →  Enable</li>
+</ul>
+<h3 id="rna">RNA</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Re-Auto Link</td>
+<td><code>mmb_re_auto_link</code></td>
+</tr>
+<tr>
+<td>Clear All</td>
+<td><code>mmb_clear_manual</code></td>
+</tr>
+<tr>
+<td>Print Full Map (console)</td>
+<td><code>mmb_print_gui_map</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Type</th>
+<th>Default</th>
+<th>Range</th>
+<th>Stored as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>View</td>
+<td>Menu</td>
+<td><code>DNA</code></td>
+<td>DNA = DNA RC View, BONE = Bone View</td>
+<td><code>ml_inspector_mode</code></td>
+</tr>
+<tr>
+<td>Filter</td>
+<td>Text</td>
+<td>—</td>
+<td>—</td>
+<td><code>ml_rc_filter2</code></td>
+</tr>
+<tr>
+<td>Show</td>
+<td>Menu</td>
+<td><code>ALL</code></td>
+<td>ALL = All, MAPPED = Mapped, UNMAPPED = Unmapped</td>
+<td><code>ml_rc_show</code></td>
+</tr>
+<tr>
+<td>Show Parent</td>
+<td>Checkbox</td>
+<td>off</td>
+<td>—</td>
+<td><code>ml_show_parent</code></td>
+</tr>
+<tr>
+<td>Per Page</td>
+<td>Number</td>
+<td><code>25</code></td>
+<td>10 – 60</td>
+<td><code>ml_rc_page_size</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lines the panel draws</strong></p>
+<ul>
+<li>Per page:</li>
+</ul>
+<h3 id="mgear-rig-maya-only">mGear Rig (Maya-only)</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>One-Click mGear Rig</td>
+<td><code>mmb_mgear_rig</code> - mGear's MetaHuman guide, snapped to the active character, and mGear's Shifter rig built over it</td>
+</tr>
+<tr>
+<td>Snap mGear Guide</td>
+<td><code>mmb_mgear_snap</code> - put the guide's locators back on the character's joints, for a guide that was placed or edited by hand</td>
+</tr>
+<tr>
+<td>Bind Head to mGear Rig</td>
+<td><code>mmb_mgear_bind_head</code> - constrain the character's head part to the body joints mGear drives, so the face and the expression sliders follow the rig (the one-click does this already)</td>
+</tr>
+<tr>
+<td>Unbind Head from mGear Rig</td>
+<td><code>mmb_mgear_unbind_head</code> - take the head constraints out again; the head keeps its own values where it stands</td>
+</tr>
+<tr>
+<td>Register Anim Picker</td>
+<td><code>mmb_mgear_anim_picker</code> - make mGear's Anim Picker for the MetaHuman rig - the node and the body and face pages - and open it</td>
+</tr>
+<tr>
+<td>Remove mGear Rig</td>
+<td><code>mmb_mgear_clear</code> - delete the guide and the rigs mGear built; the character stays as it is</td>
+</tr>
+</tbody>
+</table>
+<h3 id="arnold-look-dev-maya-only">Arnold Look-Dev (Maya-only)</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arnold Look-Dev</td>
+<td><code>mmb_arnold_lookdev</code> - Arnold shaders for the character's materials (the hair included), a key/fill/rim light rig aimed at its face, two cameras framed on it, the render settings a beauty still is rendered at, and a measured exposure - a probe render of the face, solved until the skin lands where a reference still's does, on the GPU</td>
+</tr>
+<tr>
+<td>Open Arnold RenderView</td>
+<td><code>mmb_arnold_render_view</code> - MtoA's RenderView on the look-dev camera, with its interactive render running</td>
+</tr>
+<tr>
+<td>Remove Look-Dev</td>
+<td><code>mmb_arnold_lookdev_clear</code> - the character's own shaders back on their sets, the Arnold ones, the rig and both cameras deleted</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-animation-baker">2. Animation Baker</h2>
+<p>Panel key: <code>anim_baker</code></p>
+<p>Bakes the face board's keyed controls across the frame range, so an expression performance becomes baked animation.</p>
+<p><img alt="Animation Baker" src="../assets/panel_anim_baker.png" /></p>
+<h3 id="at-the-top-of-the-panel">At the top of the panel</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bake Face Animation</td>
+<td><code>mmb_bake_face_animation</code></td>
+</tr>
+<tr>
+<td>Clear Baked Animation</td>
+<td><code>mmb_clear_baked_animation</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lines the panel draws</strong></p>
+<ul>
+<li>Keyframe GUI board bones first,</li>
+<li>then bake over the frame range</li>
+</ul>
+<hr />
+<h2 id="3-arkit-live">3. ARKit Live</h2>
+<p>Panel key: <code>arkit_live</code></p>
+<p>Takes the 52 ARKit blendshapes Live Link Face streams from an iPhone and drives the expression sliders with them, live.</p>
+<p><img alt="ARKit Live" src="../assets/panel_arkit_live.png" /></p>
+<h3 id="at-the-top-of-the-panel_1">At the top of the panel</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Connect</td>
+<td><code>mmb_arkit_connect</code></td>
+</tr>
+<tr>
+<td>Record</td>
+<td><code>mmb_arkit_toggle_recording</code></td>
+</tr>
+<tr>
+<td>Load Live Link Face CSV...</td>
+<td><code>mmb_arkit_load_csv</code></td>
+</tr>
+<tr>
+<td>Export Face CSV...</td>
+<td><code>mmb_export_face_csv</code></td>
+</tr>
+<tr>
+<td>Export ARKit Blend Shapes (FBX)...</td>
+<td><code>mmb_export_arkit_blendshapes</code></td>
+</tr>
+<tr>
+<td>Rebuild Name Mapping</td>
+<td><code>mmb_arkit_rebuild_mapping</code></td>
+</tr>
+<tr>
+<td>Calibrate Neutral Face</td>
+<td><code>mmb_arkit_calibrate_neutral</code></td>
+</tr>
+<tr>
+<td>Clear Neutral Calibration</td>
+<td><code>mmb_arkit_clear_calibration</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Type</th>
+<th>Default</th>
+<th>Range</th>
+<th>Stored as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Host</td>
+<td>Text</td>
+<td><code>0.0.0.0</code></td>
+<td>—</td>
+<td><code>ml_arkit_host</code></td>
+</tr>
+<tr>
+<td>Port</td>
+<td>Number</td>
+<td><code>11111</code></td>
+<td>1 – 65535</td>
+<td><code>ml_arkit_port</code></td>
+</tr>
+<tr>
+<td>Smoothing</td>
+<td>Number</td>
+<td><code>0.5</code></td>
+<td>0 – 0.95</td>
+<td><code>ml_arkit_smoothing</code></td>
+</tr>
+<tr>
+<td>Deadzone</td>
+<td>Number</td>
+<td><code>0.0</code></td>
+<td>0 – 0.9</td>
+<td><code>ml_arkit_deadzone</code></td>
+</tr>
+<tr>
+<td>Gain</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.1 – 4</td>
+<td><code>ml_arkit_gain</code></td>
+</tr>
+<tr>
+<td>Track Head Rotation</td>
+<td>Checkbox</td>
+<td>off</td>
+<td>—</td>
+<td><code>ml_arkit_head_tracking</code></td>
+</tr>
+<tr>
+<td>Invert Pitch</td>
+<td>Checkbox</td>
+<td>off</td>
+<td>—</td>
+<td><code>ml_arkit_head_invert_pitch</code></td>
+</tr>
+<tr>
+<td>Invert Yaw</td>
+<td>Checkbox</td>
+<td>off</td>
+<td>—</td>
+<td><code>ml_arkit_head_invert_yaw</code></td>
+</tr>
+<tr>
+<td>Invert Roll</td>
+<td>Checkbox</td>
+<td>off</td>
+<td>—</td>
+<td><code>ml_arkit_head_invert_roll</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lines the panel draws</strong></p>
+<ul>
+<li>Drives Preset Sliders live - always follows</li>
+<li>whichever character slot is active.</li>
+<li>Stream</li>
+<li>Host</li>
+<li>Port</li>
+<li>Smoothing</li>
+<li>Deadzone</li>
+<li>Gain</li>
+<li>Apply error (see console for full trace):</li>
+<li>Head Rotation (Experimental)</li>
+<li>Drives the 'head' bone on that slot's</li>
+<li>Rigify_Ctrl_NN rig (Apply Retarget +</li>
+<li>Link Head Rig first).</li>
+<li>No Rigify control rig for this slot</li>
+<li>This rig has no 'head' bone to drive</li>
+<li>'head' bone has a rotation axis LOCKED</li>
+<li>(Item tab &gt; Transform &gt; Rotation - unlock it)</li>
+<li>Head Rig not linked - click 'Link Head Rig' above</li>
+<li>Linked, but 'head' bone isn't in the retarget</li>
+<li>handler - try Unlink then Link Head Rig again</li>
+<li>Head Rig linked - ready</li>
+<li>No head rotation data in this stream</li>
+<li>Drives the Preset Sliders list (see</li>
+<li>Expression Presets) live - watch values</li>
+<li>update there while connected. The 52</li>
+<li>ARKit presets ship with MetaBridge.</li>
+</ul>
+<hr />
+<h2 id="4-batch-tools">4. Batch Tools</h2>
+<p>Panel key: <code>batch_tools</code></p>
+<p>Runs the two jobs that are worth doing to a whole folder: assemble every character, and export every slot.</p>
+<p><img alt="Batch Tools" src="../assets/panel_batch_tools.png" /></p>
+<h3 id="at-the-top-of-the-panel_2">At the top of the panel</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Assemble All Characters</td>
+<td><code>mmb_batch_assemble</code></td>
+</tr>
+<tr>
+<td>Export All Slots</td>
+<td><code>mmb_batch_export</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-body-blend-experimental">5. Body Blend (experimental)</h2>
+<p>Panel key: <code>body_blend</code></p>
+<p>Averages several bodies (DNA files or library archetypes) by weight into one new character.</p>
+<p><img alt="Body Blend (experimental)" src="../assets/panel_body_blend.png" /></p>
+<h3 id="at-the-top-of-the-panel_3">At the top of the panel</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Use Base DNA</td>
+<td><code>mmb_add_base_dna</code></td>
+</tr>
+<tr>
+<td>Add Folder...</td>
+<td><code>mmb_add_body_folder</code></td>
+</tr>
+<tr>
+<td>Add Body DNA</td>
+<td><code>mmb_add_body_source</code></td>
+</tr>
+<tr>
+<td>Load Library...</td>
+<td><code>mmb_load_archetype_library</code></td>
+</tr>
+<tr>
+<td>Export...</td>
+<td><code>mmb_export_archetype_library</code></td>
+</tr>
+<tr>
+<td>Build Blended Body</td>
+<td><code>mmb_build_blended_body</code></td>
+</tr>
+<tr>
+<td>Blend Active Character</td>
+<td><code>mmb_blend_active_character</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Type</th>
+<th>Default</th>
+<th>Range</th>
+<th>Stored as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ml Body Blend Name</td>
+<td>Text</td>
+<td><code>Blended_Body</code></td>
+<td>—</td>
+<td><code>ml_body_blend_name</code></td>
+</tr>
+<tr>
+<td>LOD</td>
+<td>Number</td>
+<td><code>0</code></td>
+<td>0 – 7</td>
+<td><code>ml_body_blend_lod</code></td>
+</tr>
+<tr>
+<td>Replace</td>
+<td>Checkbox</td>
+<td>off</td>
+<td>—</td>
+<td><code>ml_body_blend_replace</code></td>
+</tr>
+<tr>
+<td>Live Preview</td>
+<td>Checkbox</td>
+<td>on</td>
+<td>—</td>
+<td><code>ml_body_blend_live_preview</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6-send-to-cascadeur">6. Send to Cascadeur</h2>
+<p>Panel key: <code>cascadeur</code></p>
+<p>Sends the character or its animation to Cascadeur over localhost, and mirrors this rig onto the Cascadeur scene live.</p>
+<p><img alt="Send to Cascadeur" src="../assets/panel_cascadeur.png" /></p>
+<h3 id="at-the-top-of-the-panel_4">At the top of the panel</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Send to Cascadeur</td>
+<td><code>mmb_cascadeur_send</code></td>
+</tr>
+<tr>
+<td>Current Frame</td>
+<td><code>mmb_cascadeur_send</code></td>
+</tr>
+<tr>
+<td>Live: Mirror This Rig</td>
+<td><code>mmb_cascadeur_live_pose</code></td>
+</tr>
+<tr>
+<td>Stop Mirroring</td>
+<td><code>mmb_cascadeur_stop_live</code></td>
+</tr>
+<tr>
+<td>Cascadeur Status</td>
+<td><code>mmb_cascadeur_status</code></td>
+</tr>
+<tr>
+<td>Install Cascadeur Plug-in</td>
+<td><code>mmb_install_cascadeur_plugin</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Type</th>
+<th>Default</th>
+<th>Range</th>
+<th>Stored as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Send</td>
+<td>Menu</td>
+<td><code>CHARACTER</code></td>
+<td>CHARACTER = Character and Bones, KEYS = Keyframes Only</td>
+<td><code>ml_casc_mode</code></td>
+</tr>
+<tr>
+<td>Include Head</td>
+<td>Checkbox</td>
+<td>on</td>
+<td>—</td>
+<td><code>ml_casc_send_head</code></td>
+</tr>
+<tr>
+<td>Face Bones</td>
+<td>Checkbox</td>
+<td>off</td>
+<td>—</td>
+<td><code>ml_casc_face_bones</code></td>
+</tr>
+<tr>
+<td>Include Animation</td>
+<td>Checkbox</td>
+<td>on</td>
+<td>—</td>
+<td><code>ml_casc_send_anim</code></td>
+</tr>
+<tr>
+<td>Append</td>
+<td>Checkbox</td>
+<td>off</td>
+<td>—</td>
+<td><code>ml_casc_append</code></td>
+</tr>
+<tr>
+<td>Frame Rate</td>
+<td>Number</td>
+<td><code>30.0</code></td>
+<td>1 – 240</td>
+<td><code>ml_casc_fps</code></td>
+</tr>
+<tr>
+<td>Live</td>
+<td>Menu</td>
+<td><code>OUT</code></td>
+<td>OUT = Maya to Cascadeur, IN = Cascadeur to Maya, BOTH = Both Ways</td>
+<td><code>ml_casc_live_way</code></td>
+</tr>
+<tr>
+<td>Bones</td>
+<td>Menu</td>
+<td><code>ROLES</code></td>
+<td>ROLES = Mapped Bones, ALL = Whole Skeleton</td>
+<td><code>ml_casc_live_bones</code></td>
+</tr>
+<tr>
+<td>Port</td>
+<td>Number</td>
+<td>—</td>
+<td>1024 – 65535</td>
+<td><code>ml_casc_port</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lines the panel draws</strong></p>
+<ul>
+<li>Opens as a new scene in Cascadeur</li>
+<li>Overwrites from frame 0</li>
+<li>Send the character first, then Live.</li>
+<li>Run 'Animation Scripts &gt; MetaBridge Live' in Cascadeur first</li>
+</ul>
+<hr />
+<h2 id="7-dna-validation">7. DNA Validation</h2>
+<p>Panel key: <code>validation</code></p>
+<p>Reads a DNA file, or the active slot's own, and reports what is wrong with it before the rest of the pipeline meets it.</p>
+<p><img alt="DNA Validation" src="../assets/panel_validation.png" /></p>
+<h3 id="at-the-top-of-the-panel_5">At the top of the panel</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Validate DNA File...</td>
+<td><code>mmb_validate_dna_file</code></td>
+</tr>
+<tr>
+<td>Validate Active Slot</td>
+<td><code>mmb_validate_active_slot</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="8-export-dna-fbx-gltf">8. Export (DNA / FBX / glTF)</h2>
+<p>Panel key: <code>exporter</code></p>
+<p>Writes the active character out: head and body as DNA, the character as FBX, or as glTF.</p>
+<p><img alt="Export (DNA / FBX / glTF)" src="../assets/panel_exporter.png" /></p>
+<h3 id="at-the-top-of-the-panel_6">At the top of the panel</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Head</td>
+<td><code>mmb_export_head_dna</code></td>
+</tr>
+<tr>
+<td>Body</td>
+<td><code>mmb_export_body_dna</code></td>
+</tr>
+<tr>
+<td>Export FBX</td>
+<td><code>mmb_export_slot_fbx</code></td>
+</tr>
+<tr>
+<td>Export glTF</td>
+<td><code>mmb_export_slot_gltf</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lines the panel draws</strong></p>
+<ul>
+<li>DNA (.dna)</li>
+<li>FBX</li>
+<li>glTF</li>
+</ul>
+<hr />
+<h2 id="9-md-live">9. MD Live</h2>
+<p>Panel key: <code>md_live</code></p>
+<p>The Marvelous Designer round trip through one shared folder: an avatar out, a garment back, live on demand.</p>
+<p><img alt="MD Live" src="../assets/panel_md_live.png" /></p>
+<h3 id="at-the-top-of-the-panel_7">At the top of the panel</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Live</td>
+<td><code>mmb_md_live</code></td>
+</tr>
+<tr>
+<td>Get Garment Now</td>
+<td><code>mmb_md_request_garment</code></td>
+</tr>
+<tr>
+<td>Open Shared Folder</td>
+<td><code>mmb_md_open_folder</code></td>
+</tr>
+<tr>
+<td>Send Body to MD</td>
+<td><code>mmb_md_send_body</code></td>
+</tr>
+<tr>
+<td>Import Garment from MD...</td>
+<td><code>mmb_md_import_garment</code></td>
+</tr>
+<tr>
+<td>Open MD Plug-in Folder</td>
+<td><code>mmb_md_open_plugin_folder</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Type</th>
+<th>Default</th>
+<th>Range</th>
+<th>Stored as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Wear As</td>
+<td>Menu</td>
+<td>—</td>
+<td>built at run time</td>
+<td><code>ml_md_live_category</code></td>
+</tr>
+<tr>
+<td>MD Simulate Frames</td>
+<td>Number</td>
+<td><code>30</code></td>
+<td>0 – 500</td>
+<td><code>ml_md_sim_steps</code></td>
+</tr>
+<tr>
+<td>Auto-Return Garment</td>
+<td>Checkbox</td>
+<td>—</td>
+<td>—</td>
+<td><code>ml_md_auto_return</code></td>
+</tr>
+<tr>
+<td>Merge Pattern Pieces</td>
+<td>Checkbox</td>
+<td>off</td>
+<td>—</td>
+<td><code>ml_md_merge_pieces</code></td>
+</tr>
+<tr>
+<td>Shared Folder</td>
+<td>Text</td>
+<td>—</td>
+<td>—</td>
+<td><code>ml_md_folder</code></td>
+</tr>
+<tr>
+<td>MD Scale</td>
+<td>Number</td>
+<td><code>1000.0</code></td>
+<td>0.001</td>
+<td><code>ml_md_scale</code></td>
+</tr>
+<tr>
+<td>Include Head</td>
+<td>Checkbox</td>
+<td>on</td>
+<td>—</td>
+<td><code>ml_md_send_head</code></td>
+</tr>
+<tr>
+<td>Prepare for Auto-Fit</td>
+<td>Checkbox</td>
+<td>on</td>
+<td>—</td>
+<td><code>ml_md_prepare_autofit</code></td>
+</tr>
+<tr>
+<td>Import Scale</td>
+<td>Number</td>
+<td><code>100.0</code></td>
+<td>0.001</td>
+<td><code>ml_md_import_scale</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lines the panel draws</strong></p>
+<ul>
+<li>MD: run maya_live from the Plug-in menu</li>
+<li>Shared Folder:</li>
+<li>Maya to Marvelous Designer</li>
+<li>Marvelous Designer to Maya</li>
+<li>large - stitches are left out while reading</li>
+<li>no garment from MD yet</li>
+<li>MD Plug-ins (one-time setup)</li>
+<li>In MD: Plug-in &gt; Plug-in Manager &gt; Add</li>
+<li>maya_live.py from this folder (Live),</li>
+<li>maya_load_avatar / maya_send_garment (one-shot)</li>
+<li>plug-in knows the latest avatar</li>
+</ul>
+<hr />
+<h2 id="10-expression-presets">10. Expression Presets</h2>
+<p>Panel key: <code>pose_presets</code></p>
+<p>Expression presets as files: save the face board's dial values, put them back, and blend several at once as sliders.</p>
+<p><img alt="Expression Presets" src="../assets/panel_pose_presets.png" /></p>
+<h3 id="at-the-top-of-the-panel_8">At the top of the panel</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Save Current Expression</td>
+<td><code>mmb_save_pose_preset_overwrite</code></td>
+</tr>
+<tr>
+<td>Save As Current Expression...</td>
+<td><code>mmb_save_pose_preset</code></td>
+</tr>
+<tr>
+<td>Delete Expression Preset</td>
+<td><code>mmb_delete_pose_preset</code></td>
+</tr>
+<tr>
+<td>Apply Preset</td>
+<td><code>mmb_apply_pose_preset</code></td>
+</tr>
+<tr>
+<td>Add All From Active Folder</td>
+<td><code>mmb_add_folder_sliders</code></td>
+</tr>
+<tr>
+<td>Clear All Sliders</td>
+<td><code>mmb_clear_preset_sliders</code></td>
+</tr>
+<tr>
+<td>Import...</td>
+<td><code>mmb_import_pose_preset</code></td>
+</tr>
+<tr>
+<td>Set Folder...</td>
+<td><code>mmb_select_preset_folder</code></td>
+</tr>
+<tr>
+<td>Open Presets Folder</td>
+<td><code>mmb_open_preset_folder</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Type</th>
+<th>Default</th>
+<th>Range</th>
+<th>Stored as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Preset</td>
+<td>Menu</td>
+<td>—</td>
+<td>built at run time</td>
+<td><code>ml_preset_enum</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="11-external-preset-converter">11. External Preset Converter</h2>
+<p>Panel key: <code>preset_converter</code></p>
+<p>Brings a preset from another tool in - a Maya or Houdini preset, or an ARKit payload - by matching its names onto the board's controls.</p>
+<p><img alt="External Preset Converter" src="../assets/panel_preset_converter.png" /></p>
+<h3 id="at-the-top-of-the-panel_9">At the top of the panel</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Convert &amp; Import (Maya/Houdini)...</td>
+<td><code>mmb_convert_import_preset</code></td>
+</tr>
+<tr>
+<td>Convert ARKit Payload...</td>
+<td><code>mmb_convert_arkit_payload</code></td>
+</tr>
+<tr>
+<td>Edit Name Mapping</td>
+<td><code>mmb_edit_name_mapping</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lines the panel draws</strong></p>
+<ul>
+<li>Fill empty targets, then re-import</li>
+</ul>
+<hr />
+<h2 id="12-proportions">12. Proportions</h2>
+<p>Panel key: <code>proportions</code></p>
+<p>The body sliders: leg, torso and arm length, shoulder, waist and chest width, and heel and front height for shoes. A slider that moves moves the character.</p>
+<p><img alt="Proportions" src="../assets/panel_proportions.png" /></p>
+<h3 id="at-the-top-of-the-panel_10">At the top of the panel</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Long Legs</td>
+<td><code>mmb_proportion_preset</code></td>
+</tr>
+<tr>
+<td>Reset</td>
+<td><code>mmb_proportion_preset</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Type</th>
+<th>Default</th>
+<th>Range</th>
+<th>Stored as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leg Length</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.8 – 1.3</td>
+<td><code>leg</code></td>
+</tr>
+<tr>
+<td>Torso Length</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.85 – 1.2</td>
+<td><code>torso</code></td>
+</tr>
+<tr>
+<td>Neck Length</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.8 – 1.3</td>
+<td><code>neck</code></td>
+</tr>
+<tr>
+<td>Arm Length</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.85 – 1.2</td>
+<td><code>arm</code></td>
+</tr>
+<tr>
+<td>Shoulder Width</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.85 – 1.2</td>
+<td><code>shoulder</code></td>
+</tr>
+<tr>
+<td>Hip Width</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.85 – 1.2</td>
+<td><code>hip</code></td>
+</tr>
+<tr>
+<td>Waist</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.75 – 1.3</td>
+<td><code>waist</code></td>
+</tr>
+<tr>
+<td>Chest</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.8 – 1.25</td>
+<td><code>chest</code></td>
+</tr>
+<tr>
+<td>Hips</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.8 – 1.25</td>
+<td><code>hips</code></td>
+</tr>
+<tr>
+<td>Thigh</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.75 – 1.3</td>
+<td><code>thigh</code></td>
+</tr>
+<tr>
+<td>Calf</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.75 – 1.3</td>
+<td><code>calf</code></td>
+</tr>
+<tr>
+<td>Upper Arm</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.75 – 1.3</td>
+<td><code>upper_arm</code></td>
+</tr>
+<tr>
+<td>Forearm</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.75 – 1.3</td>
+<td><code>forearm</code></td>
+</tr>
+<tr>
+<td>Neck Thickness</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.8 – 1.25</td>
+<td><code>neck_girth</code></td>
+</tr>
+<tr>
+<td>Bust</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.5 – 1.5</td>
+<td><code>bust</code></td>
+</tr>
+<tr>
+<td>Head Size</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.9 – 1.1</td>
+<td><code>head</code></td>
+</tr>
+<tr>
+<td>Heel Height</td>
+<td>Number</td>
+<td><code>0.0</code></td>
+<td>0 – 15</td>
+<td><code>heel</code></td>
+</tr>
+<tr>
+<td>Front Height</td>
+<td>Number</td>
+<td><code>0.0</code></td>
+<td>0 – 5</td>
+<td><code>platform</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lines the panel draws</strong></p>
+<ul>
+<li>Assemble a character with a body first</li>
+<li>Remove the control rig first</li>
+<li>Build it again afterwards</li>
+<li>Bust needs the LOD 0 body</li>
+</ul>
+<hr />
+<h2 id="13-pose-reset">13. Pose Reset</h2>
+<p>Panel key: <code>pose_reset</code></p>
+<p>Puts the face board back to neutral - all of it, or only the controls that are selected.</p>
+<p><img alt="Pose Reset" src="../assets/panel_pose_reset.png" /></p>
+<h3 id="at-the-top-of-the-panel_11">At the top of the panel</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Reset All Controls</td>
+<td><code>mmb_reset_face_pose</code></td>
+</tr>
+<tr>
+<td>Reset Selected (Pose Mode)</td>
+<td><code>mmb_reset_selected_controls</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="14-retarget-rigify-animation-beta">14. Retarget Rigify Animation (Beta)</h2>
+<p>Panel key: <code>rig_retarget</code></p>
+<p>Retargets an animation from another rig (UE5, Mixamo, MetaHuman, Rigify) onto this character, onto HumanIK, or onto the mGear rig.</p>
+<p><img alt="Retarget Rigify Animation (Beta)" src="../assets/panel_rig_retarget.png" /></p>
+<h3 id="at-the-top-of-the-panel_12">At the top of the panel</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Retarget Rigify Animation</td>
+<td><code>mmb_retarget_rigify_animation</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Type</th>
+<th>Default</th>
+<th>Range</th>
+<th>Stored as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Source Type</td>
+<td>Menu</td>
+<td><code>UE5</code></td>
+<td>built at run time</td>
+<td><code>ml_retarget_source_type</code></td>
+</tr>
+<tr>
+<td>Source Rig</td>
+<td>Node picker</td>
+<td>—</td>
+<td>—</td>
+<td><code>ml_retarget_source_rig</code></td>
+</tr>
+<tr>
+<td>Target Rig</td>
+<td>Node picker</td>
+<td>—</td>
+<td>—</td>
+<td><code>ml_retarget_target_rig</code></td>
+</tr>
+<tr>
+<td>Quality</td>
+<td>Menu</td>
+<td><code>PRECISE</code></td>
+<td>built at run time</td>
+<td><code>ml_retarget_quality</code></td>
+</tr>
+</tbody>
+</table>
+<h3 id="retarget-in-maya-humanik-mgear">Retarget in Maya (HumanIK / mGear)</h3>
+<p><strong>Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Type</th>
+<th>Default</th>
+<th>Range</th>
+<th>Stored as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Retarget Onto</td>
+<td>Menu</td>
+<td><code>JOINTS</code></td>
+<td>JOINTS = Character Joints, HUMANIK = HumanIK (Maya), MGEAR = mGear Controls</td>
+<td><code>ml_retarget_target_mode</code></td>
+</tr>
+<tr>
+<td>Target Type</td>
+<td>Menu</td>
+<td><code>AUTO</code></td>
+<td>built at run time</td>
+<td><code>ml_retarget_target_type</code></td>
+</tr>
+<tr>
+<td>Legs on IK</td>
+<td>Checkbox</td>
+<td>on</td>
+<td>—</td>
+<td><code>ml_retarget_legs_ik</code></td>
+</tr>
+<tr>
+<td>Source Rest Frame</td>
+<td>Number</td>
+<td><code>-1</code></td>
+<td>-1 – 1000</td>
+<td><code>ml_retarget_rest_frame</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="15-live-corrective-sculpting-beta">15. Live Corrective Sculpting (Beta)</h2>
+<p>Panel key: <code>sculpt_correctives</code></p>
+<p>Sculpt the skin in a pose, keep the difference as a named corrective, and sync it to worn clothing.</p>
+<p><img alt="Live Corrective Sculpting (Beta)" src="../assets/panel_sculpt_correctives.png" /></p>
+<h3 id="at-the-top-of-the-panel_13">At the top of the panel</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Begin (Face)</td>
+<td><code>mmb_sculpt_corrective_begin</code></td>
+</tr>
+<tr>
+<td>Begin (Body)</td>
+<td><code>mmb_sculpt_corrective_begin</code></td>
+</tr>
+<tr>
+<td>Finish Sculpt</td>
+<td><code>mmb_sculpt_corrective_finish</code></td>
+</tr>
+<tr>
+<td>Export Edited Shape Keys</td>
+<td><code>mmb_export_edited_shape_keys</code></td>
+</tr>
+<tr>
+<td>Bake All to DNA</td>
+<td><code>mmb_bake_all_correctives_to_dna</code></td>
+</tr>
+<tr>
+<td>Export...</td>
+<td><code>mmb_export_correctives</code></td>
+</tr>
+<tr>
+<td>Import...</td>
+<td><code>mmb_import_correctives</code></td>
+</tr>
+<tr>
+<td>Sync to Wearables</td>
+<td><code>mmb_sync_correctives_to_garments</code></td>
+</tr>
+<tr>
+<td>Set Neutral</td>
+<td><code>mmb_sculpt_corrective_set_neutral</code></td>
+</tr>
+<tr>
+<td>Toggle Manual Override</td>
+<td><code>mmb_sculpt_corrective_toggle_manual</code></td>
+</tr>
+<tr>
+<td>Remove Corrective</td>
+<td><code>mmb_sculpt_corrective_remove</code></td>
+</tr>
+<tr>
+<td>Edit Sculpt</td>
+<td><code>mmb_sculpt_corrective_edit</code></td>
+</tr>
+<tr>
+<td>Bake Corrective to DNA</td>
+<td><code>mmb_bake_corrective_to_dna</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Type</th>
+<th>Default</th>
+<th>Range</th>
+<th>Stored as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Corrective</td>
+<td>Text</td>
+<td>—</td>
+<td>—</td>
+<td><code>ml_lcs_name</code></td>
+</tr>
+<tr>
+<td>Head Driver Bone</td>
+<td>Text</td>
+<td>—</td>
+<td>—</td>
+<td><code>ml_lcs_head_bone</code></td>
+</tr>
+<tr>
+<td>Body Driver Bone</td>
+<td>Menu</td>
+<td>—</td>
+<td>built at run time</td>
+<td><code>ml_lcs_body_bone</code></td>
+</tr>
+<tr>
+<td>Value</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0 – 1</td>
+<td><code>value</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lines the panel draws</strong></p>
+<ul>
+<li>Name is required for both Face and Body below</li>
+<li>No bone with that name on the head armature</li>
+<li>No body armature in the active character</li>
+<li>Body correctives not registered - Apply Retarget on the body first</li>
+<li>No bone with that name on the body armature</li>
+<li>Write to DNA (head only)</li>
+<li>Sculpt a DNA key (e.g. jaw_open), then this replaces that channel</li>
+<li>⇱ on a face shape key row assigns its channel</li>
+</ul>
+<hr />
+<h2 id="16-unreal-live">16. Unreal Live</h2>
+<p>Panel key: <code>unreal_live</code></p>
+<p>Streams the face to Unreal Engine as it is worked on, so the MetaHuman there performs with this one.</p>
+<p><img alt="Unreal Live" src="../assets/panel_unreal_live.png" /></p>
+<h3 id="at-the-top-of-the-panel_14">At the top of the panel</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Start Unreal Live</td>
+<td><code>mmb_unreal_live_start</code></td>
+</tr>
+<tr>
+<td>Stop Unreal Live</td>
+<td><code>mmb_unreal_live_stop</code></td>
+</tr>
+<tr>
+<td>Open Unreal Plug-in Folder</td>
+<td><code>mmb_open_unreal_plugin_folder</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Type</th>
+<th>Default</th>
+<th>Range</th>
+<th>Stored as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Port</td>
+<td>Number</td>
+<td>—</td>
+<td>1024 – 65535</td>
+<td><code>ml_unreal_live_port</code></td>
+</tr>
+<tr>
+<td>Rate</td>
+<td>Number</td>
+<td><code>30</code></td>
+<td>1 – 120</td>
+<td><code>ml_unreal_live_fps</code></td>
+</tr>
+<tr>
+<td>Mirror</td>
+<td>Menu</td>
+<td><code>Y</code></td>
+<td>NONE = None, X = Flip X, Y = Flip Y, Z = Flip Z</td>
+<td><code>ml_unreal_live_mirror</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lines the panel draws</strong></p>
+<ul>
+<li>Load a character first</li>
+<li>Add a MotionForge source in Unreal's Live Link window</li>
+</ul>
+<hr />
+<h2 id="17-follow-unreal">17. Follow Unreal</h2>
+<p>Panel key: <code>unreal_follow</code></p>
+<p>The other direction: this character follows a MetaHuman Unreal is animating.</p>
+<p><img alt="Follow Unreal" src="../assets/panel_unreal_follow.png" /></p>
+<h3 id="at-the-top-of-the-panel_15">At the top of the panel</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Follow Unreal</td>
+<td><code>mmb_unreal_follow_start</code></td>
+</tr>
+<tr>
+<td>Stop Following</td>
+<td><code>mmb_unreal_follow_stop</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Type</th>
+<th>Default</th>
+<th>Range</th>
+<th>Stored as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Host</td>
+<td>Text</td>
+<td><code>127.0.0.1</code></td>
+<td>—</td>
+<td><code>ml_unreal_follow_host</code></td>
+</tr>
+<tr>
+<td>Port</td>
+<td>Number</td>
+<td>—</td>
+<td>1024 – 65535</td>
+<td><code>ml_unreal_follow_port</code></td>
+</tr>
+<tr>
+<td>Apply Rate</td>
+<td>Number</td>
+<td><code>15</code></td>
+<td>1 – 60</td>
+<td><code>ml_unreal_follow_rate</code></td>
+</tr>
+<tr>
+<td>Body</td>
+<td>Checkbox</td>
+<td>on</td>
+<td>—</td>
+<td><code>ml_unreal_follow_body</code></td>
+</tr>
+<tr>
+<td>Face</td>
+<td>Checkbox</td>
+<td>on</td>
+<td>—</td>
+<td><code>ml_unreal_follow_face</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lines the panel draws</strong></p>
+<ul>
+<li>Run MotionForge.Send.Start in Unreal</li>
+<li>Rigify is stood down while following</li>
+</ul>
+<hr />
+<h2 id="18-wearables-experimental">18. Wearables (experimental)</h2>
+<p>Panel key: <code>wearables</code></p>
+<p>Clothing, hair and accessories on the character: import, make a garment rig, bind, and refit when the body changes.</p>
+<p><img alt="Wearables (experimental)" src="../assets/panel_wearables.png" /></p>
+<h3 id="at-the-top-of-the-panel_16">At the top of the panel</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Import Clothing (FBX)...</td>
+<td><code>mmb_import_clothing_fbx</code></td>
+</tr>
+<tr>
+<td>Head Accessory...</td>
+<td><code>mmb_import_clothing_fbx</code></td>
+</tr>
+<tr>
+<td>Refit Clothing To Body</td>
+<td><code>mmb_refit_wearables</code></td>
+</tr>
+<tr>
+<td>Make Garment Rig</td>
+<td><code>mmb_make_garment_rig</code></td>
+</tr>
+<tr>
+<td>Bind Garment To Character</td>
+<td><code>mmb_bind_garment</code></td>
+</tr>
+<tr>
+<td>Import Hair...</td>
+<td><code>mmb_import_hair_abc</code></td>
+</tr>
+<tr>
+<td>Apply Hair Offset / Scale</td>
+<td><code>mmb_apply_hair_offset</code></td>
+</tr>
+<tr>
+<td>Bind Hair To Head</td>
+<td><code>mmb_bind_hair_to_head</code></td>
+</tr>
+<tr>
+<td>Align Active Mesh to DNA Head</td>
+<td><code>mmb_align_mesh_to_dna_head</code></td>
+</tr>
+<tr>
+<td>Retarget Hair to Selected Mesh</td>
+<td><code>mmb_retarget_hair</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Type</th>
+<th>Default</th>
+<th>Range</th>
+<th>Stored as</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Clothing Offset</td>
+<td>Number</td>
+<td>—</td>
+<td>0 – 0.02</td>
+<td><code>ml_wearable_fit_margin</code></td>
+</tr>
+<tr>
+<td>Import</td>
+<td>Menu</td>
+<td><code>ALL</code></td>
+<td>ALL = Guides + Strands, STRANDS = Strands only, GUIDES = Guides only</td>
+<td><code>ml_hair_kind</code></td>
+</tr>
+<tr>
+<td>Hair Strands (0 = all)</td>
+<td>Number</td>
+<td><code>10000</code></td>
+<td>0 – 400000</td>
+<td><code>ml_hair_max_strands</code></td>
+</tr>
+<tr>
+<td>Hair Offset X</td>
+<td>Number</td>
+<td><code>0.0</code></td>
+<td>-100 – 100</td>
+<td><code>ml_hair_offset_x</code></td>
+</tr>
+<tr>
+<td>Hair Offset Y</td>
+<td>Number</td>
+<td><code>0.0</code></td>
+<td>-100 – 100</td>
+<td><code>ml_hair_offset_y</code></td>
+</tr>
+<tr>
+<td>Hair Offset Z</td>
+<td>Number</td>
+<td><code>0.0</code></td>
+<td>-100 – 100</td>
+<td><code>ml_hair_offset_z</code></td>
+</tr>
+<tr>
+<td>Hair Scale</td>
+<td>Number</td>
+<td><code>1.0</code></td>
+<td>0.1 – 3</td>
+<td><code>ml_hair_scale</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Lines the panel draws</strong></p>
+<ul>
+<li>No active character - Assemble or Build one first</li>
+<li>Clothing (FBX):</li>
+<li>Scene Mesh Garment:</li>
+<li>Hair (Alembic -&gt; XGen groom):</li>
+</ul>
+<h3 id="fit-to-skin-maya-only">Fit to Skin (Maya-only)</h3>
+<p><strong>Buttons</strong></p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>Runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fit Clothing to Skin</td>
+<td><code>mmb_fit_clothing_to_skin</code> - push the selected clothing (or what is worn) out of the character's skin: any vertex inside it, or closer than the Clothing Offset, is moved out along the skin's normal</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><a href="../">Back to the guide</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../KO_index/" class="btn btn-neutral float-left" title="한국어 가이드"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../KO_panels/" class="btn btn-neutral float-right" title="패널 레퍼런스">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../KO_index/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../KO_panels/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
