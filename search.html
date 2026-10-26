@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="chamiseul" />
+      <link rel="shortcut icon" href="./img/favicon.ico" />
+    <title>MayaMetaBridge — User Guide</title>
+    <link rel="stylesheet" href="./css/theme.css" />
+    <link rel="stylesheet" href="./css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+    <!--[if lt IE 9]>
+      <script src="./js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="./." class="icon icon-home"> MayaMetaBridge — User Guide
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">MayaMetaBridge Guide</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="./.">Welcome to MayaMetaBridge</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="./.#see-it-in-action">See it in action</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#whats-new">What's new</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#what-is-this-plug-in">What is this plug-in?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#installing">Installing</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./.#the-menu">The menu</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./.#the-hub-and-two-views-of-it">The hub, and two views of it</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./.#plug-ins-for-the-other-programs">Plug-ins for the other programs</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#1-assembling-a-metahuman">1. Assembling a MetaHuman</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#2-the-face-board">2. The face board</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#3-expression-presets">3. Expression presets</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#4-arkit-live-the-iphones-face">4. ARKit Live — the iPhone's face</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#5-proportions">5. Proportions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#6-the-body-rig-mgear-one-click">6. The body rig — mGear, one click</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./.#the-add-ons-own-rig-buttons">The add-on's own rig buttons</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#7-body-blend">7. Body Blend</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#8-wearables-clothing-and-hair">8. Wearables — clothing and hair</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#9-live-corrective-sculpting-beta">9. Live corrective sculpting (Beta)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#10-exporting">10. Exporting</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#11-dna-validation-and-batch-tools">11. DNA validation and batch tools</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#12-md-live-marvelous-designer">12. MD Live — Marvelous Designer</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#13-send-to-cascadeur">13. Send to Cascadeur</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#14-unreal-engine">14. Unreal Engine</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#15-animation-baker-pose-reset-preset-converter-retarget">15. Animation baker, pose reset, preset converter, retarget</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#quick-tips">Quick tips</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#limits-of-the-port">Limits of the port</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./.#panel-reference">Panel Reference</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="./KO_index/">한국어 가이드</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#_1">실제 모습</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#_2">이번 버전</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#_3">무엇을 하는 플러그인인가</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#_4">설치</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_index/#_5">메뉴</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_index/#_6">허브, 그리고 두 가지 보기</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_index/#_7">다른 프로그램용 플러그인</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#1-metahuman">1. MetaHuman 어셈블</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#2">2. 얼굴 보드</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#3">3. 표정 프리셋</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#4-arkit-live">4. ARKit Live — 아이폰의 얼굴</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#5-proportions">5. 비율(Proportions)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#6-mgear">6. 몸 리그 — mGear 원클릭</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_index/#_8">애드온 자체의 리그 버튼</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#7-body-blend">7. Body Blend</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#8-wearables">8. Wearables — 의상과 헤어</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#9-live-corrective-sculpting-beta">9. Live Corrective Sculpting (Beta)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#10">10. 내보내기</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#11-dna">11. DNA 검증과 일괄 도구</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#12-md-live-marvelous-designer">12. MD Live — Marvelous Designer</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#13-send-to-cascadeur">13. Send to Cascadeur</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#14-unreal-engine">14. Unreal Engine</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#15">15. 애니메이션 베이커, 포즈 리셋, 프리셋 변환기, 리타겟</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#_9">빠른 팁</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#_10">포팅의 한계</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_index/#_11">패널 레퍼런스</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Panel Reference</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="./panels/">Panel Reference</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#1-metabridge-dna">1. MetaBridge DNA</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#metahuman-assembler">MetaHuman Assembler</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#face-rig">Face Rig</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#rigify-body-control-rig">Rigify Body Control Rig</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#additional-options">Additional Options</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#rna">RNA</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#mgear-rig-maya-only">mGear Rig (Maya-only)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#arnold-look-dev-maya-only">Arnold Look-Dev (Maya-only)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#2-animation-baker">2. Animation Baker</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#at-the-top-of-the-panel">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#3-arkit-live">3. ARKit Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#at-the-top-of-the-panel_1">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#4-batch-tools">4. Batch Tools</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#at-the-top-of-the-panel_2">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#5-body-blend-experimental">5. Body Blend (experimental)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#at-the-top-of-the-panel_3">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#6-send-to-cascadeur">6. Send to Cascadeur</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#at-the-top-of-the-panel_4">At the top of the panel</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#send-options-maya-only">Send Options (Maya-only)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#7-dna-validation">7. DNA Validation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#at-the-top-of-the-panel_5">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#8-export-dna-fbx-gltf">8. Export (DNA / FBX / glTF)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#at-the-top-of-the-panel_6">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#9-md-live">9. MD Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#at-the-top-of-the-panel_7">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#10-expression-presets">10. Expression Presets</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#at-the-top-of-the-panel_8">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#11-external-preset-converter">11. External Preset Converter</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#at-the-top-of-the-panel_9">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#12-proportions">12. Proportions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#at-the-top-of-the-panel_10">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#13-pose-reset">13. Pose Reset</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#at-the-top-of-the-panel_11">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#14-retarget-rigify-animation-beta">14. Retarget Rigify Animation (Beta)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#at-the-top-of-the-panel_12">At the top of the panel</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#retarget-in-maya-humanik-mgear">Retarget in Maya (HumanIK / mGear)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#15-live-corrective-sculpting-beta">15. Live Corrective Sculpting (Beta)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#at-the-top-of-the-panel_13">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#16-unreal-live">16. Unreal Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#at-the-top-of-the-panel_14">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#17-follow-unreal">17. Follow Unreal</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#at-the-top-of-the-panel_15">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./panels/#18-wearables-experimental">18. Wearables (experimental)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#at-the-top-of-the-panel_16">At the top of the panel</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./panels/#fit-to-skin-maya-only">Fit to Skin (Maya-only)</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="./KO_panels/">패널 레퍼런스</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#1-metabridge-dna">1. MetaBridge DNA</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#metahuman-assembler">MetaHuman Assembler</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#face-rig">Face Rig</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#rigify-body-control-rig">Rigify Body Control Rig</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#additional-options">Additional Options</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#rna">RNA</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#mgear-rig-maya-only">mGear Rig (Maya-only)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#arnold-look-dev-maya-only">Arnold Look-Dev (Maya-only)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#2-animation-baker">2. Animation Baker</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#_2">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#3-arkit-live">3. ARKit Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#_3">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#4-batch-tools">4. Batch Tools</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#_4">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#5-body-blend-experimental">5. Body Blend (experimental)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#_5">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#6-send-to-cascadeur">6. Send to Cascadeur</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#_6">패널 위쪽</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#send-options-maya-only">Send Options (Maya-only)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#7-dna-validation">7. DNA Validation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#_7">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#8-export-dna-fbx-gltf">8. Export (DNA / FBX / glTF)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#_8">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#9-md-live">9. MD Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#_9">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#10-expression-presets">10. Expression Presets</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#_10">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#11-external-preset-converter">11. External Preset Converter</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#_11">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#12-proportions">12. Proportions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#_12">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#13-pose-reset">13. Pose Reset</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#_13">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#14-retarget-rigify-animation-beta">14. Retarget Rigify Animation (Beta)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#_14">패널 위쪽</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#retarget-in-maya-humanik-mgear">Retarget in Maya (HumanIK / mGear)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#15-live-corrective-sculpting-beta">15. Live Corrective Sculpting (Beta)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#_15">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#16-unreal-live">16. Unreal Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#_16">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#17-follow-unreal">17. Follow Unreal</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#_17">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="./KO_panels/#18-wearables-experimental">18. Wearables (experimental)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#_18">패널 위쪽</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="./KO_panels/#fit-to-skin-maya-only">Fit to Skin (Maya-only)</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="https://mayalhc.github.io/metabridge_dna/">MetaBridge DNA (Blender)</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="./.">MayaMetaBridge — User Guide</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="./." class="icon icon-home" aria-label="Docs"></a></li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+
+  <h1 id="search">Search Results</h1>
+
+  <form id="content_search" action="search.html">
+    <span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+    <input name="q" id="mkdocs-search-query" type="text" class="search_input search-query ui-autocomplete-input" placeholder="Search the Docs" aria-label="Search the Docs" autocomplete="off" autofocus title="Type search term here">
+  </form>
+
+  <div id="mkdocs-search-results" class="search-results" data-no-results-text="No results found">
+    Searching...
+  </div>
+
+
+            </div>
+          </div><footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+  </span>
+</div>
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="./js/theme_extra.js"></script>
+    <script src="./js/theme.js"></script>
+      <script src="./search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,1485 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="chamiseul" /><link rel="canonical" href="https://mayalhc.github.io/MayaMetaBridge_Wiki/" />
+      <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>Welcome to MayaMetaBridge - MayaMetaBridge — User Guide</title>
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Welcome to MayaMetaBridge";
+        var mkdocs_page_input_path = "index.md";
+        var mkdocs_page_url = "/MayaMetaBridge_Wiki/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="." class="icon icon-home"> MayaMetaBridge — User Guide
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">MayaMetaBridge Guide</span></p>
+              <ul class="current">
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Welcome to MayaMetaBridge</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#see-it-in-action">See it in action</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#whats-new">What's new</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#what-is-this-plug-in">What is this plug-in?</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installing">Installing</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#the-menu">The menu</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#the-hub-and-two-views-of-it">The hub, and two views of it</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#plug-ins-for-the-other-programs">Plug-ins for the other programs</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#1-assembling-a-metahuman">1. Assembling a MetaHuman</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#2-the-face-board">2. The face board</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#3-expression-presets">3. Expression presets</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#4-arkit-live-the-iphones-face">4. ARKit Live — the iPhone's face</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#5-proportions">5. Proportions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#6-the-body-rig-mgear-one-click">6. The body rig — mGear, one click</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#the-add-ons-own-rig-buttons">The add-on's own rig buttons</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#7-body-blend">7. Body Blend</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#8-wearables-clothing-and-hair">8. Wearables — clothing and hair</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#9-live-corrective-sculpting-beta">9. Live corrective sculpting (Beta)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#10-exporting">10. Exporting</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#11-dna-validation-and-batch-tools">11. DNA validation and batch tools</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#12-md-live-marvelous-designer">12. MD Live — Marvelous Designer</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#13-send-to-cascadeur">13. Send to Cascadeur</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#14-unreal-engine">14. Unreal Engine</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#15-animation-baker-pose-reset-preset-converter-retarget">15. Animation baker, pose reset, preset converter, retarget</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#quick-tips">Quick tips</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#limits-of-the-port">Limits of the port</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#panel-reference">Panel Reference</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="KO_index/">한국어 가이드</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#_1">실제 모습</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#_2">이번 버전</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#_3">무엇을 하는 플러그인인가</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#_4">설치</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_index/#_5">메뉴</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="KO_index/#_6">허브, 그리고 두 가지 보기</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="KO_index/#_7">다른 프로그램용 플러그인</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#1-metahuman">1. MetaHuman 어셈블</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#2">2. 얼굴 보드</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#3">3. 표정 프리셋</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#4-arkit-live">4. ARKit Live — 아이폰의 얼굴</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#5-proportions">5. 비율(Proportions)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#6-mgear">6. 몸 리그 — mGear 원클릭</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_index/#_8">애드온 자체의 리그 버튼</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#7-body-blend">7. Body Blend</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#8-wearables">8. Wearables — 의상과 헤어</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#9-live-corrective-sculpting-beta">9. Live Corrective Sculpting (Beta)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#10">10. 내보내기</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#11-dna">11. DNA 검증과 일괄 도구</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#12-md-live-marvelous-designer">12. MD Live — Marvelous Designer</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#13-send-to-cascadeur">13. Send to Cascadeur</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#14-unreal-engine">14. Unreal Engine</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#15">15. 애니메이션 베이커, 포즈 리셋, 프리셋 변환기, 리타겟</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#_9">빠른 팁</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#_10">포팅의 한계</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_index/#_11">패널 레퍼런스</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Panel Reference</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="panels/">Panel Reference</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#1-metabridge-dna">1. MetaBridge DNA</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#metahuman-assembler">MetaHuman Assembler</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#face-rig">Face Rig</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#rigify-body-control-rig">Rigify Body Control Rig</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#additional-options">Additional Options</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#rna">RNA</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#mgear-rig-maya-only">mGear Rig (Maya-only)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#arnold-look-dev-maya-only">Arnold Look-Dev (Maya-only)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#2-animation-baker">2. Animation Baker</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#at-the-top-of-the-panel">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#3-arkit-live">3. ARKit Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#at-the-top-of-the-panel_1">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#4-batch-tools">4. Batch Tools</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#at-the-top-of-the-panel_2">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#5-body-blend-experimental">5. Body Blend (experimental)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#at-the-top-of-the-panel_3">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#6-send-to-cascadeur">6. Send to Cascadeur</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#at-the-top-of-the-panel_4">At the top of the panel</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#send-options-maya-only">Send Options (Maya-only)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#7-dna-validation">7. DNA Validation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#at-the-top-of-the-panel_5">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#8-export-dna-fbx-gltf">8. Export (DNA / FBX / glTF)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#at-the-top-of-the-panel_6">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#9-md-live">9. MD Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#at-the-top-of-the-panel_7">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#10-expression-presets">10. Expression Presets</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#at-the-top-of-the-panel_8">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#11-external-preset-converter">11. External Preset Converter</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#at-the-top-of-the-panel_9">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#12-proportions">12. Proportions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#at-the-top-of-the-panel_10">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#13-pose-reset">13. Pose Reset</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#at-the-top-of-the-panel_11">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#14-retarget-rigify-animation-beta">14. Retarget Rigify Animation (Beta)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#at-the-top-of-the-panel_12">At the top of the panel</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#retarget-in-maya-humanik-mgear">Retarget in Maya (HumanIK / mGear)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#15-live-corrective-sculpting-beta">15. Live Corrective Sculpting (Beta)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#at-the-top-of-the-panel_13">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#16-unreal-live">16. Unreal Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#at-the-top-of-the-panel_14">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#17-follow-unreal">17. Follow Unreal</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#at-the-top-of-the-panel_15">At the top of the panel</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="panels/#18-wearables-experimental">18. Wearables (experimental)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#at-the-top-of-the-panel_16">At the top of the panel</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="panels/#fit-to-skin-maya-only">Fit to Skin (Maya-only)</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="KO_panels/">패널 레퍼런스</a>
+    <ul>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#1-metabridge-dna">1. MetaBridge DNA</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#metahuman-assembler">MetaHuman Assembler</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#face-rig">Face Rig</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#rigify-body-control-rig">Rigify Body Control Rig</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#additional-options">Additional Options</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#rna">RNA</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#mgear-rig-maya-only">mGear Rig (Maya-only)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#arnold-look-dev-maya-only">Arnold Look-Dev (Maya-only)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#2-animation-baker">2. Animation Baker</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#_2">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#3-arkit-live">3. ARKit Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#_3">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#4-batch-tools">4. Batch Tools</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#_4">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#5-body-blend-experimental">5. Body Blend (experimental)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#_5">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#6-send-to-cascadeur">6. Send to Cascadeur</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#_6">패널 위쪽</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#send-options-maya-only">Send Options (Maya-only)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#7-dna-validation">7. DNA Validation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#_7">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#8-export-dna-fbx-gltf">8. Export (DNA / FBX / glTF)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#_8">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#9-md-live">9. MD Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#_9">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#10-expression-presets">10. Expression Presets</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#_10">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#11-external-preset-converter">11. External Preset Converter</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#_11">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#12-proportions">12. Proportions</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#_12">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#13-pose-reset">13. Pose Reset</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#_13">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#14-retarget-rigify-animation-beta">14. Retarget Rigify Animation (Beta)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#_14">패널 위쪽</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#retarget-in-maya-humanik-mgear">Retarget in Maya (HumanIK / mGear)</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#15-live-corrective-sculpting-beta">15. Live Corrective Sculpting (Beta)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#_15">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#16-unreal-live">16. Unreal Live</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#_16">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#17-follow-unreal">17. Follow Unreal</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#_17">패널 위쪽</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="KO_panels/#18-wearables-experimental">18. Wearables (experimental)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#_18">패널 위쪽</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="KO_panels/#fit-to-skin-maya-only">Fit to Skin (Maya-only)</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="" href="https://mayalhc.github.io/metabridge_dna/">MetaBridge DNA (Blender)</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href=".">MayaMetaBridge — User Guide</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">MayaMetaBridge Guide</li>
+      <li class="breadcrumb-item active">Welcome to MayaMetaBridge</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="mayametabridge-user-guide">MayaMetaBridge — User Guide</h1>
+<p>🇺🇸 English | <a href="KO_index/">🇰🇷 한국어</a></p>
+<p>MayaMetaBridge (MMB) brings Epic Games <strong>MetaHuman</strong> characters into Maya 2027:
+assemble one from its DNA files, drive the face, reshape the body, dress it, rig
+it with mGear, and send it out to Unreal Engine, Cascadeur, Marvelous Designer
+and ARKit.</p>
+<p>It is a port of the Blender add-on <strong>MetaBridge DNA</strong> — the same DNA files, the
+same RigLogic face rig, the same rules — reached through <code>maya.cmds</code> and
+OpenMaya. The panels, their rows and their buttons come from that add-on, so
+between the two guides the same panel is the same panel.</p>
+<p><a href="assets/wide_en.png"><img src="assets/wide_en.png" alt="MayaMetaBridge - overview"></a></p>
+<p><a href="assets/shots/hero_face.png"><img src="assets/shots/hero_face.png" alt="The MetaHuman the plug-in assembled, inside Maya"></a></p>
+<p><em>The face above is the plug-in's own output: a MetaHuman assembled from
+<code>head.dna</code> and <code>body.dna</code> in a Maya 2027 viewport, wearing the maps from its own
+<code>Maps</code> folder. No stand-in render.</em></p>
+<h2 id="see-it-in-action">See it in action</h2>
+<p>Every picture and clip in this guide is a Maya 2027 session with the bundled
+reference character - the viewport drawn by Maya, the dials moved by the
+plug-in. Where a picture was touched after Maya drew it, its caption says so.</p>
+<p align="center">
+<video src="assets/video/expressions.mp4" width="760" controls autoplay muted loop playsinline></video>
+</p>
+
+<p><em>The face board (§2) and expression presets (§3): four ARKit expressions
+blended in and out - the dials on the board move, and RigLogic moves the
+head's joints with them.</em></p>
+<p align="center">
+<video src="assets/video/turntable.mp4" width="300" controls autoplay muted loop playsinline></video>
+&nbsp;
+<video src="assets/video/proportions.mp4" width="300" controls autoplay muted loop playsinline></video>
+</p>
+
+<p><em>Left: the assembled character, textured, turning in the viewport. Right: the
+proportion sliders (§5) - the reset body, <strong>Long Legs</strong>, a taller build and a
+heavier one - eased into each other.</em></p>
+<p><a href="assets/shots/lookdev_styles.png"><img src="assets/shots/lookdev_styles.png" alt="Realistic and Stylized Blue look-dev renders"></a></p>
+<p><em>The Arnold Look-Dev (see <strong>What's new</strong>) on the same character, both
+rendered by Arnold from the button's own camera and light rig, each exposed by
+its own measured probe: <strong>Realistic</strong> on the left, <strong>Stylized Blue</strong> on the
+right. Only the light, the backdrop and how the materials take it differ - the
+character is the same.</em></p>
+<h2 id="whats-new">What's new</h2>
+<p><strong>v0.2.0 — characters, clothes and Cascadeur</strong></p>
+<p><em>Added</em></p>
+<ul>
+<li><strong>Several characters at once</strong> — every assembled character keeps its own
+  face board (a namespace per character), its own thumbnail in the
+  character gallery, and a row in the <strong>Assembled Characters</strong> list with a
+  Rig ON/OFF switch. The <code>Character</code> pick and the Active Slot decide which one
+  every command works on, and moving a character no longer resets it when you
+  turn a face dial.</li>
+<li><strong>Clothes go to Cascadeur with the character</strong> — whatever is bound to the rig
+  is sent as clean skinned copies (weights taken from the body and head), so the
+  clothes follow the legs and arms instead of tearing. <strong>Clothes Detail</strong>
+  (Full / Half / None) keeps Cascadeur's memory in check: a 170,000-vertex coat
+  is most of what Cascadeur holds for a character.</li>
+<li><strong>One Cascadeur scene per character</strong> — sending a second character opens a new
+  scene instead of overwriting the first. <strong>Live: Mirror This Rig</strong> is one global
+  switch, and the <strong>Active Slot</strong> picks which character talks to Cascadeur.</li>
+<li><strong>Look Style for the Arnold Look-Dev</strong> — <em>Realistic</em> (the beauty rig) or
+  <em>Stylized Blue</em>: cyan rim and blue fill light, a glowing blue backdrop, smooth
+  bright porcelain skin, a glossy outfit, stronger bloom and a light colour
+  grade. Only light, backdrop and how materials take it change - never the
+  character. Switching back restores the materials.</li>
+<li><strong>Clothing that follows the body</strong> — <strong>Bind Garment</strong> adopts the rig, flattens
+  history, transfers weights and fits the garment; imported clothing attaches
+  itself; worn garments are found again when a scene is reopened.</li>
+</ul>
+<p><em>Fixed</em></p>
+<ul>
+<li>Clothes did not follow <strong>Body Blend</strong> and sank into the skin when the body
+  changed: garments are now carried with the blended body and pushed back out
+  of the skin (<strong>Refit Clothing To Body</strong>, <strong>Fit Clothing to Skin</strong>).</li>
+<li>Garment weights were wrong (clothes tore when a leg moved, the head ring of a
+  top stayed behind); the head and body were disconnected after a send.</li>
+<li>Pressing a second Assemble dropped the face rig; a new DNA folder or a fresh
+  Maya session did not list the new character; the Active Slot window flickered
+  and did not apply to the picked character.</li>
+<li>Bind Garment raised <code>_smooth_over_mesh() missing 2 required positional
+  arguments</code>.</li>
+<li><strong>Arnold Look-Dev</strong>: the first press framed the camera for the scene's old
+  resolution (a long shot where a bust was asked for) - it now sets the render
+  size first; the exposure measurement needed Pillow, which Maya does not ship,
+  so on most machines the rig stayed at its blown-out design values - it now
+  reads the probe with Maya's own <code>MImage</code>; and each character's face board
+  (they live in a namespace per character now) was left in the render.</li>
+<li>The character thumbnail was missing in the Assembly list.</li>
+</ul>
+<p><em>Guide</em></p>
+<ul>
+<li>The guide now shows the character in a Maya viewport - stills, a Maya window
+  with the plug-in's panels, an Arnold look-dev comparison - and short clips:
+  the face board playing expressions, a turntable, and the proportion sliders.
+  See <strong>See it in action</strong>.</li>
+</ul>
+<p><em>Faster</em></p>
+<ul>
+<li>Sending with clothes, refitting and the live Body Blend preview are faster
+  (lean nearest-point search, float matrices, changed-joints-only
+  face writes, deferred refit while dragging).</li>
+</ul>
+<p><em>Upgrading from 0.1.0</em></p>
+<ul>
+<li>Press <strong>Install Cascadeur Plug-in</strong> once and restart Cascadeur: the plug-in
+  is now MetaBridge Live 1.1, the one with a scene per character. With the old
+  one a second character replaces the first one's scene - Maya says so when it
+  sends.</li>
+</ul>
+<p><strong>v0.1.0 — the Maya port</strong></p>
+<ul>
+<li><strong>Assemble</strong> — a MetaHuman folder in, a rigged, textured character out. In
+  the reference character this guide's pictures come from: <strong>1212 joints</strong>
+  (870 in the head, 342 in the body) and <strong>17 maps</strong> from its own <code>Maps</code>
+  folder wired through 20 materials.</li>
+<li><strong>The face board</strong> — Epic's own picker, built from the plug-in's own
+  <code>faceboard.json</code>, so the dials are the ones the character expects.</li>
+<li><strong>124 of the add-on's 143 commands</strong> are ported, across all 18 panels and all
+  122 buttons those panels draw. The 19 that are not are the 18 panel ids plus
+  one operator (<code>mmb_save_mat_defaults</code>, see <a href="#limits-of-the-port">Limits</a>).</li>
+<li><strong>Hair as an XGen groom</strong> — an Alembic groom comes in as <em>one</em> XGen
+  interactive-groom description on the head (not a node per strand), with a
+  guides / strands choice, a live preview you drag to line it up, and a bind
+  that makes it follow the head. See <a href="#8-wearables-clothing-and-hair">Wearables</a>.</li>
+<li><strong>ARKit that matches the rig</strong> — head rotation about the world's axes, a
+  <em>Calibrate Neutral Face</em> button, and the blink, tongue, cheek-puff and "oo"
+  corrected against what the rig actually does. See
+  <a href="#4-arkit-live-the-iphones-face">ARKit Live</a>.</li>
+<li><strong>Body Blend, the add-on's way</strong> — a source list with thumbnails, a primary
+  row, head blending, a character built into a registered slot, and a live
+  preview; and <strong>Expression Presets as sliders</strong> that blend. See
+  <a href="#7-body-blend">Body Blend</a>.</li>
+<li><strong>Arnold Look-Dev</strong> — the port's own scene to look at a character in: an
+  Arnold twin of every material (<strong>the XGen groom's hair included</strong>, which used
+  to be the one part of a character the port could not shade), a five-light
+  beauty rig with a sky dome, an 85 mm bust and a 50 mm full-figure camera, and
+  the render settings a still is normally shot at - rendered on the <strong>GPU</strong>,
+  with the CPU as the fallback. Two things Arnold's GPU cannot do are handled
+  rather than discovered: a groom is given an <code>aiStandardHair</code> (Maya's own
+  <code>hairPhysicalShader</code> has no GPU implementation at all, and MtoA answers that
+  by crashing the whole session), and adaptive sampling is turned <strong>off</strong> for
+  the GPU, because MtoA 5.6.2 crashes on it instead of refusing it. The press
+  also <strong>exposes the rig</strong>, which is the difference between a lit character and
+  a white blob: it renders a small probe of the face, reads the skin's own
+  brightness in the display space the RenderView shows, and moves the rig (the
+  sky dome included, since that is what lights a face here) until the lit cheek
+  lands on the reference still's own measured skin - 0.59 median / 0.79 at its
+  75th percentile - while what the camera sees of the dome stays where the
+  design put it, so the backdrop does not go dark with it. Measured on a real
+  character, the design values read 1.00 in the face box and the press lands
+  them at 0.61 / 0.78 with no clipped pixels, against the reference's 0.59 /
+  0.79 and a 0.84 backdrop. The three rows are in the main panel's <strong>Arnold
+  Look-Dev (Maya-only)</strong> frame.
+  <strong>Look Style</strong> (same frame): <em>Realistic</em> is the beauty rig above; <em>Stylized
+  Blue</em> gives the cool, glowing mood of a blue/white sci-fi key illustration -
+  cyan rim and blue fill light, a glowing blue backdrop, smooth bright porcelain
+  skin (less scattering, a soft clear-coat sheen), a glossy outfit, a stronger
+  bloom and a light colour grade. It changes only the light, the backdrop and how
+  the materials take it - never the character's mesh, maps or colours. Pick it,
+  press <strong>Arnold Look-Dev</strong> again, and switch back the same way.</li>
+<li><strong>mGear, one click</strong> — the port's own feature, not a port of anything: the
+  Blender add-on rigs with Rigify, and Maya has mGear. The click places mGear's
+  MetaHuman guide on the character's joints and builds the Shifter rig over it,
+  then binds the head so the face follows the body.</li>
+</ul>
+<h2 id="what-is-this-plug-in">What is this plug-in?</h2>
+<p>With it you can:</p>
+<ul>
+<li>Load a MetaHuman character (head + body) into Maya from its <code>.dna</code> files</li>
+<li>Move the face board's dials, or drive the face from an <strong>iPhone</strong>, live</li>
+<li>Save expressions as presets and blend several at once as sliders</li>
+<li>Reshape the body with proportion sliders — the DNA follows the sliders</li>
+<li>Blend several bodies into a new one</li>
+<li>Put clothing, hair and accessories on the character, and keep them on</li>
+<li>Build an animatable body rig with <strong>mGear</strong>, and retarget animation onto it</li>
+<li>Sculpt correctives on the skin and sync them to worn clothing</li>
+<li>Export everything back to <strong>DNA</strong>, <strong>FBX</strong> or <strong>glTF</strong></li>
+</ul>
+<p>There is no <strong>N panel</strong> in Maya. The add-on draws eighteen panels down one
+sidebar; here each panel is a window of its own, and there are two ways to reach
+them: the <strong>MMB</strong> menu in Maya's menu bar, and the hub (<strong>Show MMB Window</strong>),
+which lists every panel and says how much of the port is done.</p>
+<h2 id="installing">Installing</h2>
+<ol>
+<li>Unzip this folder anywhere you keep tools. <strong>The folder is used where it
+   is</strong> — do not move it afterwards.</li>
+<li>Run the installer with Maya's Python (or any Python 3):</li>
+</ol>
+<div class="highlight"><pre><span></span><code>python installer/install.py
+</code></pre></div>
+<p>Add <code>--maya-version 2027</code> if you have more than one Maya installed, and
+   <code>--remove</code> to take it out again.
+3. Restart Maya. The <strong>MMB</strong> menu appears in the menu bar.</p>
+<p>What the installer touches is one block in your Maya preferences —
+<code>&lt;prefs&gt;/scripts/userSetup.py</code> — which defers one <code>loadPlugin</code> to the first
+idle. Your previous <code>userSetup.py</code> is kept beside it as
+<code>userSetup.py.bak-mmbb</code>, and the block is replaced rather than appended, so
+running the installer twice is the same as running it once. It does not touch
+<code>Maya.env</code>, your modules folder, or anything else in the preferences.</p>
+<p>To load it for one session only, run this in the Script Editor:</p>
+<div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">maya.cmds</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">cmds</span>
+<span class="n">cmds</span><span class="o">.</span><span class="n">loadPlugin</span><span class="p">(</span><span class="sa">r</span><span class="s2">"&lt;this folder&gt;/mmb_plugin.py"</span><span class="p">)</span>
+</code></pre></div>
+<p>Maya needs <strong>2027</strong> (Python 3.13), Windows 64-bit. The DNA and RigLogic
+libraries for Windows are bundled in <code>mmb/lib</code>, so nothing else has to be
+installed.</p>
+<h3 id="the-menu">The menu</h3>
+<p><a href="assets/menu.png"><img src="assets/menu.png" alt="The MMB menu"></a></p>
+<p>Eight entries and two dividers: the hub, then the six things a character
+actually needs, then <strong>All Panels</strong>. <code>Assemble a MetaHuman</code> <strong>opens the
+assembler</strong> rather than building straight away — the button that builds is in
+the panel, where the character to build is picked and where a click that would
+rebuild the character under you can say so instead.</p>
+<p><a href="assets/menu_all_panels.png"><img src="assets/menu_all_panels.png" alt="The All Panels submenu"></a></p>
+<p>Under <strong>All Panels</strong> every panel is one item, grouped the way the hub's Pro view
+groups them: <strong>Character</strong>, <strong>Face &amp; Animation</strong>, <strong>Body Rig &amp; Sculpt</strong>,
+<strong>Live Links</strong>, <strong>Assets &amp; Export</strong>. Each item opens that panel's own window;
+the menu does not draw its buttons a second time.</p>
+<h3 id="the-hub-and-two-views-of-it">The hub, and two views of it</h3>
+<p><strong>Show MMB Window</strong> opens the hub. Its first control is the view:</p>
+<p><a href="assets/hub_simple.png"><img src="assets/hub_simple.png" width="300" alt="The hub, Simple view"></a>
+<a href="assets/hub_pro.png"><img src="assets/hub_pro.png" width="300" alt="The hub, Pro view"></a></p>
+<p><em>Simple (left) is six numbered steps in the order the work happens — assemble,
+reshape, try on expressions, add clothing, record, export — and one button to
+the whole list. Pro (right) is all eighteen panels grouped by what they are
+for, each row saying how many buttons it holds. The line under the switch is
+the port's own progress — <code>18 panels, 122 buttons, 90 settings —</code>
+<code>124 of 143 commands</code> — and the view you leave it in is remembered.</em></p>
+<p><a href="assets/maya_window.png"><img src="assets/maya_window.png" alt="The plug-in's windows over Maya"></a></p>
+<p><em>The port's windows are ordinary Maya windows: they dock where you drop them,
+and a saved Maya layout brings them back (each one restores through its own
+<code>uiScript</code>).</em></p>
+<p><a href="assets/shots/workspace.png"><img src="assets/shots/workspace.png" alt="Two panels beside the character, in Maya's window"></a></p>
+<p><em>Two of them over the character: the assembler and the proportion sliders.
+This is the shape of a session — the character in the viewport, the panel you
+are working in beside it.</em></p>
+<h3 id="plug-ins-for-the-other-programs">Plug-ins for the other programs</h3>
+<p>Four features reach into a program outside Maya, and each needs something on
+that side.</p>
+<table>
+<thead>
+<tr>
+<th>Program</th>
+<th>What it is</th>
+<th>Needed for</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mGear</td>
+<td>your own install — put its <code>scripts</code> folder on <code>MAYA_MODULE_PATH</code></td>
+<td><strong>One-Click mGear Rig</strong>, the Anim Picker (§6)</td>
+</tr>
+<tr>
+<td>Cascadeur</td>
+<td>the <code>third_party/MetaBridgeLive</code> folder</td>
+<td><strong>Send to Cascadeur</strong> (§13)</td>
+</tr>
+<tr>
+<td>Unreal Engine</td>
+<td><code>third_party/MotionForgeLiveLink</code>, or downloaded on first use</td>
+<td><strong>Unreal Live</strong>, <strong>Follow Unreal</strong> (§14)</td>
+</tr>
+<tr>
+<td>Marvelous Designer</td>
+<td>the <code>mmb/md_plugin</code> folder</td>
+<td><strong>MD Live</strong> (§12)</td>
+</tr>
+</tbody>
+</table>
+<p>Cascadeur's and Marvelous Designer's plug-ins <strong>come with this package</strong> —
+nothing to download. The Unreal one is fetched from GitHub the first time you
+press <strong>Open Unreal Plug-in Folder</strong>; needs an internet connection just that
+once. Install none of them to start with: each section below sets up its own
+when you get there.</p>
+<h2 id="1-assembling-a-metahuman">1. Assembling a MetaHuman</h2>
+<p><a href="assets/panel_main.png"><img src="assets/panel_main.png" width="330" alt="The MetaBridge DNA panel"></a></p>
+<ol>
+<li>In <strong>MetaHumans Directory</strong>, pick the folder your MetaHumans live in — the
+   one with <code>head.dna</code> inside. A folder is a character when it holds
+   <code>head.dna</code>; pointing at a character folder also lists that character's own
+   siblings.</li>
+<li>Press <strong>Refresh Character List</strong> and pick the character.</li>
+<li>Leave <strong>Head</strong>, <strong>Body</strong> and <strong>Textures</strong> on. <strong>LOD</strong> chooses which mesh
+   level to load — 0 is the fullest, and the only level the <strong>Bust</strong> slider
+   works on (§5).</li>
+<li>Press <strong>Assemble</strong>.</li>
+</ol>
+<p>The character arrives as ordinary Maya nodes: a skeleton, skinned meshes with
+their materials wired to the <code>Maps</code> folder beside the DNA, and the <strong>face
+board</strong> (§2). Measured on the reference character this guide's pictures come
+from: <strong>1212 joints</strong> (870 in the head part and 342 in the body), and <strong>17
+maps</strong> wired through 20 materials.</p>
+<p><a href="assets/shots/hero_full.png"><img src="assets/shots/hero_full.png" alt="The assembled character"></a></p>
+<p>Under the folder field, <strong>Character</strong> is the pick of the characters the folder
+holds; <strong>Assemble</strong> builds the one it shows. (A folder that is itself a
+character folder is that character.)</p>
+<p><strong>Assembled Characters</strong> is the add-on's list, one row per character in the
+scene - its head and body parts are one row:</p>
+<ul>
+<li>the round button on the left <strong>activates</strong> it (most of the plug-in works on
+  the active character, and the row says which slots it holds),</li>
+<li><strong>Rig: ON / OFF</strong> puts the character's own face board in the scene, or takes
+  it out - every character can have its own board at the same time, and
+  dialling one moves that character's face and no other,</li>
+<li><strong>X</strong> deletes the character's slots,</li>
+<li>the mark after the name says whether its nodes are all still in the scene.</li>
+</ul>
+<p>The buttons under the list (<strong>Activate Slot</strong>, <strong>Toggle Face Rig</strong>,
+<strong>Delete Slot</strong>) do the same for the character they are given, and <strong>Relink
+DNA</strong> re-points a slot at its DNA file after the file moved. <strong>Load Head DNA…</strong>
+and <strong>Load Body DNA…</strong> bring a single part in on its own.</p>
+<p>Two more things in the panel worth knowing: <strong>Re-Assemble</strong> is the same command
+as <strong>Assemble</strong> (it is there because a slot that drifted halfway through the
+work is the reason to press it), and the <strong>mGear Rig</strong> frame at the foot of the
+panel is §6.</p>
+<h2 id="2-the-face-board">2. The face board</h2>
+<p><a href="assets/shots/face_board.png"><img src="assets/shots/face_board.png" alt="The face board beside the character, mid-smile"></a></p>
+<p><em>The board and the face it drives: the dials a smile moves, and the head following them.</em></p>
+<p>Assembling a MetaHuman leaves more in the scene than a rig: a <strong>face board
+(picker)</strong> beside the head, one control per facial expression. It is Epic's own
+board, not the port's invention — the plug-in builds it from the same
+<code>faceboard.json</code> its Maya plug-in uses (175 GUI controls and 3 analog ones,
+each with its shape, colour, limits and slider track), so a jaw you open here
+is the jaw the character's RigLogic expects.</p>
+<p>Dial values on the board are the interface everything else uses:</p>
+<ul>
+<li><strong>ARKit Live</strong> (§4) drives them from your iPhone,</li>
+<li><strong>Expression Presets</strong> (§3) save and reapply them,</li>
+<li><strong>Animation Baker</strong> (§15) bakes them over the frame range,</li>
+<li><strong>Pose Reset</strong> (§15) puts them back to neutral,</li>
+<li>and the <strong>RigLogic face rig</strong> evaluates them, which is what makes the skin
+  move — there are no shape keys to edit.</li>
+</ul>
+<p><strong>Toggle Face Rig</strong> (main panel, Face Rig frame) shows the board and hides it
+again; <strong>Rig: ON / OFF</strong> on a character's row (§1) does it for that character.
+Each character has a board of its own: the board is built into a namespace
+named after the character (<code>mmbFace_&lt;name&gt;:</code>), so two characters' boards never
+share a node. The board moves the <strong>face only</strong> - a character you have moved or
+posed by hand stays where it is while you dial. While the body is on a rig (§5
+or §6) the head part follows it: a character whose head is not linked turns
+its face and not its head.</p>
+<p><strong>The RNA list</strong> (main panel, <em>RNA</em> tab) lists the DNA's raw-control channels
+beside the control that drives each one. <strong>View</strong> switches between the DNA
+view (one row per channel: <code>rc#</code>, the channel, the connected control and
+<em>Connect</em> / <em>Change</em> / <em>x</em>) and the Bone view (one row per control with its
+channels); <strong>Filter</strong>, <strong>Show</strong> (All / Mapped / Unmapped), <strong>Parent</strong> and
+<strong>Per Page</strong> narrow it and the list redraws as you change them, with <strong>&lt; Prev /
+Next &gt;</strong> for pages. <em>Connect</em> asks for a control and stores the mapping with
+the character; <strong>Clear All</strong> drops every manual mapping and puts the channels
+back on their own controls. A body-only DNA has no face channels, and the list
+says so.</p>
+<h2 id="3-expression-presets">3. Expression presets</h2>
+<p><a href="assets/shots/expressions.png"><img src="assets/shots/expressions.png" alt="Four expressions, ARKit presets on the head"></a></p>
+<p><em>A smile, a surprise, a wink and a frown - each one ARKit preset blend, applied from the panel.</em></p>
+<p><a href="assets/panel_pose_presets.png"><img src="assets/panel_pose_presets.png" width="330" alt="The Expression Presets panel"></a></p>
+<p>A preset is a JSON file of the face board's dial values, keyed by control name,
+so it travels between scenes and machines.</p>
+<ul>
+<li><strong>Save Current Expression</strong> writes the board's current values over the preset
+  picked in the list; <strong>Save As Current Expression…</strong> writes a new one.</li>
+<li><strong>Apply Preset</strong> does <strong>not</strong> snap the face to that pose: it adds the preset
+  to the slider list at <code>1.0</code>, and the face becomes the blend of every slider
+  in that list. Two presets that open the same jaw do not add up past the bigger
+  one — the blend takes the largest contribution per control.</li>
+<li><strong>Add All From Active Folder</strong> adds every preset in the folder at <code>0.0</code>, so a
+  folder becomes a bank of sliders you fade in.</li>
+<li><strong>Clear All Sliders</strong> empties the list and puts the face back to neutral;
+  <strong>Delete Expression Preset</strong> deletes the file; <strong>Set Folder…</strong> and <strong>Open
+  Presets Folder</strong> work on the folder the presets live in.</li>
+</ul>
+<p>The <strong>ARKit presets ship with the plug-in</strong>: <code>mmb/presets/ARKit</code>, one
+<code>ARKit_&lt;name&gt;.json</code> per blendshape, with the name mapping beside them. That
+mapping is what ARKit Live (§4) drives.</p>
+<h2 id="4-arkit-live-the-iphones-face">4. ARKit Live — the iPhone's face</h2>
+<p><a href="assets/panel_arkit_live.png"><img src="assets/panel_arkit_live.png" width="330" alt="The ARKit Live panel"></a></p>
+<p>Apple's <strong>Live Link Face</strong> app streams the 52 ARKit blendshapes over UDP as
+big-endian floats. The plug-in receives them on a background socket, and the
+scene is touched on the idle job — Maya's main thread.</p>
+<ol>
+<li>In Live Link Face, point the stream at this machine (the app's default port
+   is <strong>11111</strong>, which is what the panel is set to).</li>
+<li><strong>Host</strong> <code>0.0.0.0</code> takes the stream on every interface; change it to pin one.</li>
+<li><strong>Connect</strong>. The face follows as you talk.</li>
+<li>Tune with <strong>Smoothing</strong> (<code>0.5</code>), <strong>Deadzone</strong> (<code>0</code>) and <strong>Gain</strong> (<code>1.0</code>),
+   which are applied per blendshape exactly as the add-on applies them.</li>
+</ol>
+<p><strong>Record</strong> records what is applied as keys; <strong>Load Live Link Face CSV…</strong> takes
+the app's own recording instead (one row per frame), and <strong>Export Face CSV…</strong>
+writes the current face out the same way. <strong>Export ARKit Blend Shapes (FBX)…</strong>
+writes an ARKit-named blendshape set as FBX for other tools, and <strong>Rebuild Name
+Mapping</strong> rebuilds the mapping between ARKit names and the board's controls when
+a character arrives with a naming that does not match.</p>
+<p><strong>Head Rotation (Experimental)</strong> turns the character's head from the phone's
+head pose: pitch nods about the world's X, yaw turns about Y and roll tilts
+about Z, on top of the head's own orientation. Use <strong>Invert Pitch / Yaw /
+Roll</strong> if a direction is the wrong way round for the way the phone is held.</p>
+<p><strong>Calibrate Neutral Face</strong> — a phone never reads a relaxed face as zero: the
+mouth-shrug, roll and stretch shapes each sit at 0.1–0.3 and together open the
+mouth a little, and a relaxed eye reads as <code>eyeWide</code> 0.4. Relax, mouth closed,
+eyes as you normally hold them, and press it: the average of a second of
+frames becomes the resting face, every shape is measured from it, and a
+slightly narrower eye (a <em>smaller</em> <code>eyeWide</code>) now closes the lids a little
+instead of being lost. <strong>Clear Neutral Calibration</strong> forgets it. It is kept
+with the settings.</p>
+<p>Four shapes are corrected for this rig, because the add-on's presets and the
+board's DNA put some controls the other way round (36 channels, among them the
+blink and the tongue's in/out): the <strong>blink</strong> closes the lids and <em>eyeWide</em>
+opens them, <strong>tongueOut</strong> puts the tongue out, <strong>cheekPuff</strong> blows the cheeks
+with the lips sealed (the preset also blew the lips forward), and
+<strong>mouthPucker</strong> narrows the mouth through the corner controls so an "oo"
+reads as one.</p>
+<h2 id="5-proportions">5. Proportions</h2>
+<p><a href="assets/shots/proportions.png"><img src="assets/shots/proportions.png" alt="The proportion sliders: reset, Long Legs, a taller build, a heavier build"></a></p>
+<p><em>The same character through the sliders: reset, <strong>Long Legs</strong>, a taller build, a heavier one.</em></p>
+<p><a href="assets/panel_proportions.png"><img src="assets/panel_proportions.png" width="330" alt="The Proportions panel"></a></p>
+<p>Eighteen sliders, all factors on the character as it was built, with <code>1.0</code> being
+that character. <strong>A slider that moves moves the character</strong> — there is no Apply
+button, the same as in the add-on.</p>
+<table>
+<thead>
+<tr>
+<th>Group</th>
+<th>Slider</th>
+<th>Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Length</td>
+<td>Leg Length</td>
+<td>0.80 – 1.30</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>Torso Length</td>
+<td>0.85 – 1.20</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>Neck Length</td>
+<td>0.80 – 1.30</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>Arm Length</td>
+<td>0.85 – 1.20</td>
+</tr>
+<tr>
+<td>Width</td>
+<td>Shoulder Width</td>
+<td>0.85 – 1.20</td>
+</tr>
+<tr>
+<td>Width</td>
+<td>Hip Width</td>
+<td>0.85 – 1.20</td>
+</tr>
+<tr>
+<td>Width</td>
+<td>Waist</td>
+<td>0.75 – 1.30</td>
+</tr>
+<tr>
+<td>Width</td>
+<td>Chest</td>
+<td>0.80 – 1.25</td>
+</tr>
+<tr>
+<td>Width</td>
+<td>Hips</td>
+<td>0.80 – 1.25</td>
+</tr>
+<tr>
+<td>Width</td>
+<td>Thigh</td>
+<td>0.75 – 1.30</td>
+</tr>
+<tr>
+<td>Width</td>
+<td>Calf</td>
+<td>0.75 – 1.30</td>
+</tr>
+<tr>
+<td>Width</td>
+<td>Upper Arm</td>
+<td>0.75 – 1.30</td>
+</tr>
+<tr>
+<td>Width</td>
+<td>Forearm</td>
+<td>0.75 – 1.30</td>
+</tr>
+<tr>
+<td>Width</td>
+<td>Neck Thickness</td>
+<td>0.80 – 1.25</td>
+</tr>
+<tr>
+<td>Shape</td>
+<td>Bust</td>
+<td>0.50 – 1.50 — needs the <strong>LOD 0</strong> body</td>
+</tr>
+<tr>
+<td>Size</td>
+<td>Head Size</td>
+<td>0.90 – 1.10</td>
+</tr>
+<tr>
+<td>Shoes</td>
+<td>Heel Height</td>
+<td>0 – 15 cm</td>
+</tr>
+<tr>
+<td>Shoes</td>
+<td>Front Height</td>
+<td>0 – 5 cm</td>
+</tr>
+</tbody>
+</table>
+<p>What the sliders do, and what they deliberately do not:</p>
+<ul>
+<li>lengths stretch a <strong>segment</strong> by moving the joint at its end, never by scaling
+  a bone — a longer thigh is not a fatter one;</li>
+<li>widths move the joint the width is measured at, and the hip keeps only its
+  left-right offset scaled;</li>
+<li>the whole body rides with the feet, so longer legs lift the character instead
+  of pushing the soles through the floor;</li>
+<li>the skin follows through its own <strong>skinning</strong>, which is what a Maya character
+  does when its joints move, and the mesh fields (girths, bust, shoes, head)
+  come on top of the same bone moves;</li>
+<li>every change is worked out from the rest skeleton <strong>again</strong>, so nothing drifts
+  and setting a slider back to <code>1.0</code> gives the original character back exactly.</li>
+</ul>
+<p><strong>Long Legs</strong> sets the one-click look the add-on has; <strong>Reset</strong> puts every
+slider back.</p>
+<p>Two things the panel says and means: assemble a character <strong>with a body</strong>
+first, and if a control rig (§6) is standing over the character, remove it
+before reshaping and build it again afterwards.</p>
+<h2 id="6-the-body-rig-mgear-one-click">6. The body rig — mGear, one click</h2>
+<p><a href="assets/shots/rig_joints.png"><img src="assets/shots/rig_joints.png" alt="The character's joints"></a></p>
+<p><em>The character's own skeleton — 1212 joints — which any body rig is built over. The skin is hidden and the joint lines are repainted cyan: Maya draws joints in a dark violet that disappears on this backdrop.</em></p>
+<p><a href="assets/viewport_mgear_rig.png"><img src="assets/viewport_mgear_rig.png" alt="The character on the mGear rig"></a></p>
+<p><em>The same character on the rig the one click builds.</em></p>
+<p>This is the port's own feature. The Blender add-on rigs with <strong>Rigify</strong>; Maya
+has <strong>mGear</strong>, and a MetaHuman user already has it installed — so the click
+places mGear's own MetaHuman guide on the character's joints and builds mGear's
+<strong>Shifter</strong> rig over it.</p>
+<p>Put mGear's <code>scripts</code> folder on <code>MAYA_MODULE_PATH</code> first. Then, in the main
+panel's <strong>mGear Rig (Maya-only)</strong> frame:</p>
+<table>
+<thead>
+<tr>
+<th>Button</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>One-Click mGear Rig</td>
+<td>snap the guide onto the character, build the rig, and bind the head</td>
+</tr>
+<tr>
+<td>Snap mGear Guide</td>
+<td>put the guide's locators back on the joints, for a guide you moved by hand</td>
+</tr>
+<tr>
+<td>Bind Head to mGear Rig</td>
+<td>constrain the head part to the body joints mGear drives (the one-click does this already)</td>
+</tr>
+<tr>
+<td>Unbind Head from mGear Rig</td>
+<td>take those constraints out again; the head keeps its values where it stands</td>
+</tr>
+<tr>
+<td>Register Anim Picker</td>
+<td>make mGear's Anim Picker for the rig — body and face pages — and open it</td>
+</tr>
+<tr>
+<td>Remove mGear Rig</td>
+<td>delete the guide and the rigs; the character stays as it is</td>
+</tr>
+</tbody>
+</table>
+<p>Two details the plug-in reports rather than hides: a guide locator whose joint
+the character does not have is <strong>left where the template put it</strong> (and the
+console says which), and a MetaHuman is <strong>two skeletons that share joint
+names</strong> — the neck's, among others — so the other part's joints are given names
+of their own while mGear connects and their own names back afterwards.</p>
+<h3 id="the-add-ons-own-rig-buttons">The add-on's own rig buttons</h3>
+<p>The <strong>Rigify Body Control Rig</strong> frame in the main panel is the add-on's rig
+workflow, and in Maya it builds a <strong>Maya control rig</strong> over the character's key
+joints (the add-on's two steps, <code>1. Build Meta-Rig</code> and <code>2. Generate Control
+Rig</code>, then <code>3. Apply Retarget</code> so the character follows it). Alongside them:</p>
+<ul>
+<li><strong>Remove Retarget</strong> / <strong>Remove Control Rig</strong> take it back out;</li>
+<li><strong>Link Head Rig</strong> / <strong>Unlink Head Rig</strong> attach the head part, which is what
+  makes the face follow the body;</li>
+<li><strong>Toggle RBF Correctives (Body)</strong>, <strong>Driver Bone</strong>, <strong>Show RBF Controls</strong> /
+  <strong>Hide</strong> — the add-on's RBF corrective pass and its manual controls;</li>
+<li><strong>Import FBX Animation…</strong> imports animation onto the rig;</li>
+<li><strong>Toggle IK Stretch</strong>, <strong>Toggle Heel Pivot</strong>, <strong>Toggle Finger IK</strong>,
+  <strong>IK to FK</strong> / <strong>FK to IK</strong>, <strong>Snap Fingertip Targets</strong> — the limb and finger
+  switches, including the per-finger <code>0 = joints, 1 = fingertip</code> blend.</li>
+</ul>
+<p>Retargeting an animation <em>from</em> another rig is its own panel — §15.</p>
+<h2 id="7-body-blend">7. Body Blend</h2>
+<p><a href="assets/panel_body_blend.png"><img src="assets/panel_body_blend.png" width="330" alt="The Body Blend panel"></a></p>
+<p>Several bodies averaged into one new character.</p>
+<p>A <strong>source row</strong> is either a body DNA file (with the head DNA that goes with
+it) or one archetype of a library file, and each has a weight. One row is the
+<strong>primary</strong> — the highlighted one — and it has to be a real DNA file, because a
+library entry carries no RigLogic data of its own: the primary is what the new
+character's rig is built from.</p>
+<ul>
+<li><strong>Use Base DNA</strong> adds the bundled reference <code>Body.dna</code> (and <code>Head.dna</code>) as the
+  primary row; <strong>Add Body DNA</strong> / <strong>Add Folder…</strong> add files at weight <code>0</code>;
+  <strong>Load Library…</strong> adds a library's archetypes at <code>0</code>; <strong>Export…</strong> writes a
+  library file out.</li>
+<li><strong>Build Blended Body</strong> averages the rows that carry weight — body and, when
+  every one of them has head data, head too — and builds a <strong>new character</strong> in
+  the slot list. <strong>Blend Active Character</strong> applies the blend to the character
+  you already have instead, and <strong>Replace</strong> chooses between adding and
+  replacing.</li>
+<li><strong>Live Preview</strong> is off by default: it is the switch that makes a weight drag
+  show its result while you drag.</li>
+<li><strong>What the character wears follows the blend.</strong> After <strong>Blend Active
+  Character</strong> (and every Live Preview step) the garments worn on it are fitted to
+  the new skin: they go with the bones through their skin, and wherever the new
+  body reaches through the cloth it is pushed back out, the Clothing Offset kept
+  (§8). <strong>Build Blended Body</strong> makes a new character, and what the active one
+  wears is moved onto it - carried to the new character's bones, bound there and
+  fitted - instead of staying behind on the old one.</li>
+</ul>
+<h2 id="8-wearables-clothing-and-hair">8. Wearables — clothing and hair</h2>
+<p><a href="assets/panel_wearables.png"><img src="assets/panel_wearables.png" width="330" alt="The Wearables panel"></a></p>
+<ul>
+<li><strong>Import Clothing (FBX)…</strong> brings a garment in (and <strong>Head Accessory…</strong> the
+  same for something that goes on the head) <strong>and attaches it to the active
+  character</strong>: skinned to the character's own skeleton and fitted to its skin,
+  the way the add-on does it. A garment that is only a mesh in the scene does
+  not follow the body, a blend or a reshape - <strong>Bind Garment To Character</strong>
+  attaches one that was brought in some other way.</li>
+<li><strong>Make Garment Rig</strong>, then <strong>Bind Garment To Character</strong> — binding copies the
+  body's skin weights onto the piece, so it moves the way the skin beneath it
+  moves. Every vertex gets weights from the nearest body vertices (a
+  vertex on one leg only looks at that side, so a baggy trouser leg does not
+  pick up the other leg), blended over its neighbours; vertices a plain copy
+  leaves at zero - nearly half of a coat modelled before its UV seams were
+  split - are filled in as well. A garment whose skin was made before later
+  edits (a coat with its UV seams cut afterwards) is baked first, so the
+  vertices those edits added are weighted too, and a garment that came with its
+  own copy of the skeleton (a clothing FBX) is carried onto the character's own
+  bones - each vertex by its own weights, so the cloth is retargeted to this
+  character's proportions - instead of staying behind on a skeleton nothing
+  drives.</li>
+<li><strong>What counts as worn.</strong> A mesh skinned to the character's own joints is worn
+  whether or not it was recorded: Refit, Fit to Skin and the blend find it and add
+  it to the list (a scene saved and opened again does not lose its clothes).</li>
+<li><strong>Fit to the skin</strong> keeps a garment out of the character's body. A garment
+  modelled over another build sinks into this one wherever the two differ; the
+  fit finds, for every vertex, the nearest point of the body and head skin,
+  and one that is inside it - or closer than the offset - is moved out along
+  the skin's normal. Nothing else moves, so loose cloth stays loose, and a
+  point that only slides along the skin is left alone.</li>
+<li><strong>Fit Clothing to Skin</strong> (the <em>Fit to Skin</em> frame) fits the selected
+    garment - or everything worn when nothing is selected. It also runs by
+    itself on <strong>Bind Garment To Character</strong> and on <strong>Refit</strong>.</li>
+<li><strong>Clothing Offset</strong> (0–0.02, the add-on's metres: 0.01 is one centimetre)
+    is the gap left between cloth and skin; the minimum is 0.2 cm, and
+    moving the slider refits what is worn straight away. The fit always starts
+    from the garment as it was first seen, so a smaller offset lets the cloth
+    come back out. A point deeper than 8 cm inside the skin is taken for
+    another surface (an arm behind the torso) and is not pulled across.</li>
+<li>On a skinned garment the fit is written to the rest shape the skin
+    cluster reads, so it stays when the character moves.</li>
+<li><strong>Refit Clothing To Body</strong> re-applies the proportions' girth field to
+  everything worn, so a changed waist changes the clothes over it too - and
+  then fits the result to the skin with the Clothing Offset.</li>
+<li>Hair is a separate road, and it is an <strong>XGen interactive groom</strong>:</li>
+<li><strong>Import Hair…</strong> (Alembic) reads the file as data and makes <em>one</em> XGen
+    spline description on the character's head mesh - no node per strand (a
+    MetaHuman groom has hundreds of thousands, which is what took Maya down
+    when the file was imported the ordinary way). The groom's Z-up is turned
+    to Maya's Y-up.</li>
+<li><strong>Import</strong> chooses <em>Guides + Strands</em>, <em>Strands only</em> or <em>Guides only</em>.
+    A file written by a groom exporter marks each curve (<code>groom_guide</code>), so
+    the three really differ; a file without that mark is all strands.</li>
+<li><strong>Hair Strands (0 = all)</strong> limits how many are built. XGen evaluates about
+    1.4 ms a strand, so the default of 10,000 is a few seconds; raise it for a
+    finished groom.</li>
+<li><strong>Line it up by eye.</strong> XGen holds a groom's own node at identity, so moving
+    it does nothing. The import gives a locator, <code>MMB_Hair_…_move</code>, and a light
+    <strong>preview</strong> of 250 strands under it: drag it and the preview follows at
+    once. Nothing is written on release - the placement is applied by the
+    press that seats the groom (<strong>Bind</strong>, <strong>Retarget</strong>, <strong>Apply Hair Offset /
+    Scale</strong>), so lining hair up stays a drag and not a wait. Picking the hair picks the
+    locator for you. <strong>Align Active Mesh to DNA Head</strong> seats the groom's roots
+    <strong>on the head's surface</strong>: the mean vector from each root to the nearest
+    point of the character mesh, iterated, all three axes of it, and the answer
+    carries the measurement (the roots' mean and worst distance to the surface,
+    before and after). It used to be a bounding box - the groom's <em>control</em>
+    centred on the character mesh's box in X and Z, the height left alone - and
+    measured on the sample guide groom over the bundled body that took the roots
+    <em>further</em> from the head: 13.23 units off the surface before the button,
+    17.34 after. The surface fit takes the same groom, deliberately slid by
+    <code>(12, 15, -9)</code>, from 20.14 back to 2.52 - and a groom that is already
+    seated is left alone, because a step is only taken when it measures better.
+    <strong>Hair Offset X/Y/Z</strong>, <strong>Hair Scale</strong> and <strong>Apply Hair Offset / Scale</strong>
+    place it by number instead, and the numbers are <strong>absolute</strong>: the button
+    puts the locator at the groom's own centre plus the offset (uniform scale
+    from <strong>Hair Scale</strong>) and writes the file in that same press, so it does
+    <em>not</em> add to a hand drag - a groom lined up by eye returns to centre plus
+    offset. What that buys is repeatability: the same numbers give the same
+    placement in any scene.</li>
+<li><strong>Bind Hair To Head</strong> re-seats the groom on the head mesh, so it follows
+    the skin and Body Blend (a hair <em>mesh</em> or curves are constrained to the
+    head joint instead). The light strand display the import made <strong>stays</strong> -
+    it is the visible hair, and it is moved onto the head joint with the rest,
+    so it follows the skin too. (It used to be deleted here, which is why the
+    curves seemed to vanish on bind.) <strong>Retarget Hair to Selected Mesh</strong> does
+    the same onto another mesh: select the hair, then the mesh.</li>
+<li>Sculpt brushes (Comb, Grab, Length, Smooth…) work on the groom. <strong>Density
+    and Place are a different matter</strong>: they paint how strands are <em>generated</em>,
+    and an imported groom is the file's own strands - measured, its density
+    mask, its multiplier and its interpolation move 2745 splines not at all,
+    and two renders of the same frame differ in 0 of 864000 bytes.</li>
+<li><strong>There is no XGen grooming conversion, and the panel no longer offers one.</strong>
+    Maya 2027 cannot turn an Alembic groom into XGen's own spline or guide data:
+    the only ABC path is a spline <em>modifier</em> that streams the file
+    (<code>xgmCurveToSpline</code>), so the description holds no splines of its own and
+    the ABC has to travel with the scene. Measured here: the reader keeps the
+    file open, and Epic's own groom exporter refuses a spline description
+    (<code>Must select either palette or description</code>) - it is built for classic
+    descriptions only, and that path crashed this Maya in the batch test. The
+    buttons that grew a second, classic description out of the curves
+    (<strong>Create XGen Groom</strong>, <strong>Apply Hair Length</strong>, <strong>Apply Hair Width</strong>,
+    <strong>Write Groom Collection</strong>, <strong>Bake Hair for Render</strong>) were therefore taken
+    out of the panel: they did not convert the imported hair, they made a
+    different one. What the port does instead is what XGen supports - import,
+    place, bind, and groom with the interactive brushes, whose edits are
+    sculpt layers on top of the file's splines.</li>
+<li><strong>Place first, bind once.</strong> Dragging <code>MMB_Hair_…_move</code> moves the stand-in
+    curves only; the groom's Alembic is written by the press that says where it
+    belongs - <strong>Bind Hair To Head</strong>, <strong>Retarget Hair to Selected Mesh</strong>,
+    <strong>Apply Hair Offset / Scale</strong> or <strong>Align Active Mesh to DNA Head</strong>. Those
+    place the groom where it was dragged and then seat it. Re-writing the file
+    on every drag release was the seconds-long stall the stand-in was invented
+    for.</li>
+<li><strong>Deleting the character takes its hair with it.</strong> An imported groom is a
+    scene root of its own - XGen makes it beside the mesh, and the placement
+    locator beside that - so removing a character used to leave the groom, its
+    locator and its 250 stand-in curves floating over nothing. The character's
+    record now carries its hair, so all three go with it.</li>
+</ul>
+<h2 id="9-live-corrective-sculpting-beta">9. Live corrective sculpting (Beta)</h2>
+<p><a href="assets/panel_sculpt_correctives.png"><img src="assets/panel_sculpt_correctives.png" width="330" alt="The Live Corrective Sculpting panel"></a></p>
+<p>The add-on's workflow, translated: sculpt the skin in a pose, and keep the
+difference as a named corrective that comes back with that pose.</p>
+<ol>
+<li>Name the corrective (<strong>Corrective</strong>), and give it the bone it hangs off for a
+   face (<code>Head Bone</code>) or a body (<code>Body Driver Bone</code>) pass.</li>
+<li><strong>Begin (Face)</strong> or <strong>Begin (Body)</strong> takes a baseline: the mesh as it stands
+   and the pose that stands with it. Sculpt the vertices — the port's delta is
+   taken against that baseline.</li>
+<li><strong>Finish Sculpt</strong> stores the difference, sparse and named, on the character.
+   <strong>Edit Sculpt</strong> loads a stored corrective back for another pass, <strong>Set
+   Neutral</strong> re-keys the pose it hangs off, <strong>Toggle Manual Override</strong> marks it
+   always-on, and <strong>Remove Corrective</strong> deletes it.</li>
+<li><strong>Sync to Wearables</strong> carries the applied difference onto worn garments
+   through the same nearest-vertex map the garment bind uses.</li>
+<li><strong>Bake Corrective to DNA</strong> writes it into the DNA file; <strong>Write to DNA (head
+   only)</strong> (<strong>Export Edited Shape Keys</strong>) and <strong>Bake All to DNA</strong> do the same for
+   a batch. A DNA key you sculpted yourself — <code>jaw_open</code>, say — replaces that
+   channel when you press <strong>Export Edited Shape Keys</strong>. <strong>Export…</strong> and
+   <strong>Import…</strong> move the whole registry as JSON.</li>
+</ol>
+<p>The deltas are the data; everything else in the panel is bookkeeping around
+them.</p>
+<h2 id="10-exporting">10. Exporting</h2>
+<p><a href="assets/panel_exporter.png"><img src="assets/panel_exporter.png" width="330" alt="The Export panel"></a></p>
+<ul>
+<li><strong>Head</strong> and <strong>Body</strong> write the active slot's DNA, through the library's own
+  writer, read back as proof.</li>
+<li><strong>Export FBX</strong> writes the character through the FBX plug-in; <strong>Export glTF</strong>
+  through Maya's glTF translator. With no path given, a file dialog asks.</li>
+</ul>
+<p>The Save Head / Save Body DNA commands are the same two files with a suggested
+name — <code>&lt;source stem&gt;_export.dna</code>, beside the DNA it was read from — and with
+the <strong>Include Mesh Edits</strong> question answered: what Proportions (§5) and Sculpt
+(§9) did lives on the Maya skeleton and mesh, and the writer patches those edits
+into the file the character came from, so the DNA is the character on screen.
+Lower LODs follow the nearest LOD-0 vertex, or they would keep the unedited
+shape and pop in the distance. If the mesh edits cannot be written, the port
+says so loudly instead of writing a file that quietly dropped them.</p>
+<p><strong>Export All Slots</strong> (§11) does the DNA export for every slot in the list.</p>
+<h2 id="11-dna-validation-and-batch-tools">11. DNA validation and batch tools</h2>
+<p><a href="assets/panel_validation.png"><img src="assets/panel_validation.png" width="330" alt="The DNA Validation panel"></a>
+<a href="assets/panel_batch_tools.png"><img src="assets/panel_batch_tools.png" width="330" alt="The Batch Tools panel"></a></p>
+<p><strong>Validate DNA File…</strong> reads a <code>.dna</code> and reports what is wrong with it;
+<strong>Validate Active Slot</strong> does the same for the character you are working on, so
+a file that will not assemble is a sentence before the pipeline meets it rather
+than a stack trace later.</p>
+<p><strong>Batch Tools</strong> is two buttons: <strong>Assemble All Characters</strong> (every character in
+the folder the plug-in is pointed at) and <strong>Export All Slots</strong> (the DNA of every
+slot in the scene).</p>
+<h2 id="12-md-live-marvelous-designer">12. MD Live — Marvelous Designer</h2>
+<p><a href="assets/panel_md_live.png"><img src="assets/panel_md_live.png" width="330" alt="The MD Live panel"></a></p>
+<p>Plain files in <strong>one shared folder</strong>, and the plug-in that ships in
+<code>mmb/md_plugin</code>.</p>
+<p>Maya → MD: <strong>Send Body to MD</strong> writes an avatar <code>.obj</code> into the shared folder
+(<strong>Send Scale</strong>, <strong>Include Head</strong> and <strong>Prepare for Auto-Fit</strong> decide what goes
+in it). In Marvelous Designer, add the scripts from the plug-in folder in
+<em>Plug-in &gt; Plug-in Manager</em> — <code>maya_live.py</code> for <strong>Live</strong>, and
+<code>maya_load_avatar.py</code> / <code>maya_send_garment.py</code> for a one-shot round trip — and
+run the one you need. <strong>Open MD Plug-in Folder</strong> opens that folder for you.</p>
+<p>MD → Maya: the garment lands in the same folder. <strong>Get Garment Now</strong> imports the
+newest one, <strong>Import Garment from MD…</strong> picks a file by hand, and <strong>Live</strong>
+watches the folder on idle and imports the moment a garment lands, so the round
+trip is one click on each side. Buttons and zippers are dropped, the avatar and
+lean copies are excluded, and units are honoured through the plug-in's own
+<code>.mayaunits.json</code>. <strong>Merge Pattern Pieces</strong> chooses between the patterns as cut
+and one welded mesh; <strong>Wear As</strong> is the category the garment is worn as, and
+<strong>Sim Steps</strong> / <strong>Auto Return</strong> tune what the round trip does.</p>
+<h2 id="13-send-to-cascadeur">13. Send to Cascadeur</h2>
+<p><a href="assets/panel_cascadeur.png"><img src="assets/panel_cascadeur.png" width="330" alt="The Send to Cascadeur panel"></a></p>
+<p>Two localhost ports, MetaBridge Live's own: <code>9584</code> receives characters and
+poses, <code>9586</code> is the live link. They are not the ports any other Cascadeur
+bridge uses, so it can run beside one. Nothing leaves the machine.</p>
+<ol>
+<li>Press <strong>Install Cascadeur Plug-in</strong> once. The plug-in - <strong>MetaBridge Live</strong>, two
+   files - ships in <code>third_party/MetaBridgeLive</code>; Cascadeur keeps its scripts
+   inside its own installation, which usually needs Administrator rights — the installer
+   does the copy through a short-lived helper and reports what happened, and
+   says so when the prompt is refused rather than half-installing.</li>
+<li>Choose what to send: <strong>Send</strong> (<em>Character and Bones</em> or <em>Keyframes Only</em>),
+   <strong>Send Head</strong>, <strong>Face Bones</strong>, <strong>Send Anim</strong>, <strong>Append</strong>, <strong>Frame Rate</strong>.</li>
+<li>Press <strong>Send to Cascadeur</strong> (the whole scene, opens as a new scene in
+   Cascadeur) or <strong>Current Frame</strong> (one frame, over the top from frame 0).</li>
+<li>Restart Cascadeur, then run <code>Animation Scripts &gt; MetaBridge Live</code> once per
+   session (run it again to stop). <strong>Cascadeur Status</strong> answers whether it
+   is listening.</li>
+</ol>
+<p><strong>Live: Mirror This Rig</strong> is the live link's one on/off switch - for the whole
+cast. While it is on, <strong>the active slot</strong> (§1) is the character that talks to
+Cascadeur, with its own scene over there; pick another character in the
+<strong>Assembled Characters</strong> list and the link hands over to it, with no second
+press. Only one character is mirrored at a time, so a scene with several does
+not slow down, and you drive each one in turn by choosing it. What Cascadeur
+shows of that character moves it in Maya, and what you move in Maya moves its
+scene. Press the button again to switch the link off; <strong>Stop Mirroring</strong> does
+the same. <strong>Live Way</strong> and <strong>Live Bones</strong> choose what a mirrored frame carries.
+Send each character first, then go live.</p>
+<p><strong>One scene a character.</strong> Cascadeur holds one character a scene, so each
+character you send opens a scene of its own: sending a different character
+leaves the others' scenes open, and sending the same one again replaces its own.
+The pose, the read-back and the live link find a character's scene by its name.</p>
+<p><strong>Clothes go with the character.</strong> Every mesh skinned to the character's joints
+(what Bind Garment recorded, and anything else bound to the rig) leaves in the
+same FBX and follows the pose in Cascadeur. A garment is re-skinned on a copy
+from the body and the head under it - so a hood follows the head and a baggy leg
+follows its own leg - and the original is not touched; the head's own neck and
+shoulder collar takes the body's weights, so the head stays joined at the neck.
+Send the character in its <strong>rest pose</strong> and let the pose follow (a character
+sent while posed can tear its clothes in Cascadeur). A coat with 170,000
+vertices takes about half a minute.</p>
+<p><strong>Memory.</strong> Cascadeur holds every scene you send in memory, and a dressed
+character is heavy: a coat with 170,000 vertices is most of it, and a scene with
+it passed 6 GB (Cascadeur then clears its undo history, "History was cleared
+because of: Memory usage"). <strong>Clothes Detail</strong> (<em>Send Options (Maya-only)</em> in the
+Send to Cascadeur panel) sets how much of the clothes goes: <strong>Half</strong> (the
+default, about half the polygons - the silhouette stays, the folds thin out),
+<strong>Full</strong>, or <strong>None</strong> for a character that only needs animating. Close the scenes
+you are finished with in Cascadeur; for a long live session, send the characters
+without clothes.</p>
+<p>The character leaves as <strong>one skeleton</strong> - the head part's meshes are rebound to
+its body joints - and a take read back lands on <strong>both</strong> parts: the head's own
+copy of the body chain (<code>spine_04</code> up to <code>head</code>, the clavicles and the
+upperarms, at the body's exact rest transforms) is written from the body joints
+of the same name, so the head and its face ride along instead of standing in
+their rest pose. A character with no head part beside it is unaffected, and so
+is the face itself, which keeps being driven by the DNA's rig logic.</p>
+<h2 id="14-unreal-engine">14. Unreal Engine</h2>
+<p><a href="assets/panel_unreal_live.png"><img src="assets/panel_unreal_live.png" width="330" alt="The Unreal Live panel"></a>
+<a href="assets/panel_unreal_follow.png"><img src="assets/panel_unreal_follow.png" width="330" alt="The Follow Unreal panel"></a></p>
+<p><strong>Out (9561)</strong> — press <strong>Open Unreal Plug-in Folder</strong> once; it fetches
+<code>MotionForgeLiveLink</code> from GitHub the first time, and you copy it into your
+project's <code>Plugins</code> folder and restart the editor. In Unreal's <strong>Live Link</strong>
+window add the <strong>MotionForge</strong> source (port 9561); in the character Blueprint
+keep <strong>Use Live Link off</strong>. Then <strong>Start Unreal Live</strong> streams the face as you
+work — the same RigLogic runs on both sides, so only control values cross, one
+small frame per tick at the <strong>Rate</strong> you set. <strong>Mirror</strong> chooses what the stream
+carries.</p>
+<p><strong>In (9562)</strong> — <strong>Follow Unreal</strong> makes this character follow a MetaHuman Unreal
+is animating: <strong>Host</strong>, <strong>Port</strong>, <strong>Rate</strong>, <strong>Body</strong> and <strong>Face</strong> decide what
+follows, and each frame's per-joint turns and offsets are applied as a delta
+from the rest pose captured when the follow began — and put back when it stops.
+Run <code>MotionForge.Send.Start</code> in Unreal first.</p>
+<h2 id="15-animation-baker-pose-reset-preset-converter-retarget">15. Animation baker, pose reset, preset converter, retarget</h2>
+<p><a href="assets/panel_anim_baker.png"><img src="assets/panel_anim_baker.png" width="330" alt="The Animation Baker panel"></a></p>
+<p><strong>Animation Baker</strong> — keyframe the face board's controls, then <strong>Bake Face
+Animation</strong> over the frame range; <strong>Clear Baked Animation</strong> takes the bake out
+again. (The panel's own line says the order: key the board first, then bake.)</p>
+<p><a href="assets/panel_pose_reset.png"><img src="assets/panel_pose_reset.png" width="330" alt="The Pose Reset panel"></a></p>
+<p><strong>Pose Reset</strong> — <strong>Reset All Controls</strong> puts the whole face board back to
+neutral, <strong>Reset Selected</strong> only the controls you have selected, which is the
+one you want in the middle of a pose.</p>
+<p><a href="assets/panel_preset_converter.png"><img src="assets/panel_preset_converter.png" width="330" alt="The External Preset Converter panel"></a></p>
+<p><strong>External Preset Converter</strong> — a foreign preset names <strong>bones</strong>; the board
+names <strong>controls</strong>, so the two are matched through a <code>name_mapping.json</code>.
+<strong>Convert &amp; Import (Maya/Houdini)…</strong> brings a preset in from those tools and
+<strong>Convert ARKit Payload…</strong> from an ARKit payload; <strong>Edit Name Mapping</strong> opens
+the mapping to fill the empty targets before a re-import.</p>
+<p><a href="assets/panel_rig_retarget.png"><img src="assets/panel_rig_retarget.png" width="330" alt="The Retarget panel"></a></p>
+<p><strong>Retarget Rigify Animation</strong> — bring animation from another rig onto this
+character. <strong>Source Type</strong> picks the profile — fifteen of them, from <em>Auto
+Detect</em>, <em>UE5 Mannequin</em>, <em>Fortnite</em>, <em>MetaHuman</em>, <em>Mixamo</em> and <em>Rigify</em> to
+<em>SMPL-X</em>, <em>SOMA</em> and <em>Unitree G1</em> — <strong>Source Rig</strong> / <strong>Target Rig</strong> point at
+the two rigs, and <strong>Quality</strong> chooses the solve: <em>Precise (floor + legs on
+IK)</em>, <em>Balanced (legs on IK)</em> or <em>Fast (rotations only)</em>.</p>
+<p>Under the add-on's rows is the port's own frame, <strong>Retarget in Maya (HumanIK /
+mGear)</strong>, and it is where the take lands:</p>
+<ul>
+<li><strong>Retarget Onto</strong> — the character's own <strong>joints</strong> (the solve keyed on the
+  character's skeleton: rest poses aligned, root travel scaled, feet on IK,
+  floor matched), <strong>HumanIK (Maya)</strong> (both rigs defined as HIK characters and
+  Maya's own retarget baked), or the one-click <strong>mGear Controls</strong>.</li>
+<li><strong>Target Type</strong> picks which rig on the character side the solve uses, <strong>Legs
+  on IK</strong> keeps the feet on the floor rather than rotating them, and <strong>Source
+  Rest Frame</strong> is the frame of the source take that stands <em>as the rest pose</em>
+  (<code>-1</code> lets the solver work it out).</li>
+</ul>
+<h2 id="quick-tips">Quick tips</h2>
+<ul>
+<li><strong>Anything a panel does, a command does.</strong> Every button is a Maya runtime
+  command: <code>cmds.mmb_mh_assemble()</code> from the Script Editor, a MEL script or a
+  shelf button. Maya's own tooltip on a button says which add-on feature it
+  stands for and whether the work behind it is ported; the command's own name
+  is beside each button in the <a href="panels/">Panel Reference</a>.</li>
+<li><strong>Settings are optionVars</strong>, prefixed <code>mmb.</code>, named after the add-on's
+  property (the Textures checkbox is <code>mmb.ml_mh_load_textures</code>). They survive a
+  restart and can be set from MEL: <code>optionVar -iv "mmb.ml_mh_load_textures" 0;</code></li>
+<li><strong>From Python</strong>, <code>mmb.api</code> is the facade:</li>
+</ul>
+<p><div class="highlight"><pre><span></span><code><span class="kn">import</span><span class="w"> </span><span class="nn">mmb.api</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">api</span>
+<span class="n">api</span><span class="o">.</span><span class="n">status</span><span class="p">()</span>                <span class="c1"># how much of the add-on is ported</span>
+<span class="n">api</span><span class="o">.</span><span class="n">panels</span><span class="p">()</span>                <span class="c1"># the eighteen panels, in sidebar order</span>
+<span class="n">api</span><span class="o">.</span><span class="n">window</span><span class="p">()</span>                <span class="c1"># open the hub</span>
+<span class="n">api</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="s2">"mmb_mh_assemble"</span><span class="p">)</span>  <span class="c1"># run one button</span>
+</code></pre></div>
+- <strong>Batch hosts</strong>: anything that needs a window refuses in <code>mayapy</code> and says
+  so; the work that does not — assembling, exporting to a path you give,
+  validating, baking — runs there, which is how the port's own test suite runs
+  it (<code>tests/run_tests.py</code>).
+- <strong>Nothing is hidden in the scene</strong>: a character is a group of ordinary joints
+  and meshes, the slot list is one network node (<code>MMB_Slots</code>) holding the data,
+  and every setting is an optionVar — so a scene saved by the plug-in opens in
+  any Maya, with or without the plug-in loaded.</p>
+<h2 id="limits-of-the-port">Limits of the port</h2>
+<ul>
+<li><strong>124 of the add-on's 143 commands</strong> are implemented. The 19 that are not are
+  the <strong>18 panel ids</strong> (the add-on's panel classes, which have no Maya
+  counterpart — the port draws its own windows) and <strong><code>mmb_save_mat_defaults</code></strong>,
+  <em>Save Material as Default</em>: it would capture Blender's Principled BSDF socket
+  values, and the port's materials are Arnold <code>standardSurface</code> nodes whose
+  attribute names are entirely different — and nothing in the port reads such a
+  file yet, so writing one would be a button that produces a file nobody reads.
+  <em>(Reload Materials</em> and <em>Reset Material Defaults</em> are there and work.)*</li>
+<li><strong>The plug-in's own checking happens out loud</strong>: a command that cannot do its
+  work prints why in the Script Editor and, where it can, says it in the
+  viewport, rather than changing nothing.</li>
+<li><strong>The Cascadeur elevated install</strong> — the copy into a <code>Program Files</code> Cascadeur
+  — is implemented and its planning half is tested, but the elevation half has
+  not been run against a real installation of that kind. Report what happens if
+  you use it.</li>
+<li>This guide's screenshots come from Maya <strong>2027</strong> on Windows, with the
+  reference MetaHuman. Menu wording and window decoration differ on other
+  systems; the panels are the same panels.</li>
+</ul>
+<h2 id="panel-reference">Panel Reference</h2>
+<p>Every panel, what it is for, and every control it draws — generated from the
+plug-in's own registry:</p>
+<ul>
+<li><strong><a href="panels/">Panel Reference</a></strong> (English)</li>
+<li><strong><a href="KO_panels/">패널 레퍼런스</a></strong> (한국어)</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="KO_index/" class="btn btn-neutral float-right" title="한국어 가이드">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+    
+      <span><a href="KO_index/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = ".";</script>
+    <script src="js/theme_extra.js"></script>
+    <script src="js/theme.js"></script>
+      <script src="search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
