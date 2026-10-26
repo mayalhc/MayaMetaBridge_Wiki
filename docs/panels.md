@@ -29,7 +29,7 @@ The MetaHuman assembler: point at a folder of MetaHumans, list the characters in
 | Load Head DNA... | `mmb_load_head_dna` |
 | Load Body DNA... | `mmb_load_body_dna` |
 | Activate Slot | `mmb_mh_activate_slot` |
-| Toggle Face Rig | `mmb_toggle_face_rig_slot` |
+| Toggle Face Rig | `mmb_toggle_face_rig_slot` (not ported yet) |
 | Delete Slot | `mmb_mh_delete_slot` |
 | Relink DNA | `mmb_relink_dna` |
 
@@ -56,8 +56,8 @@ The MetaHuman assembler: point at a folder of MetaHumans, list the characters in
 
 | Button | Runs |
 | --- | --- |
-| Append GUIArmature | `mmb_append_gui_armature` |
-| Toggle Face Rig | `mmb_toggle_face_rig_slot` |
+| Append GUIArmature | `mmb_append_gui_armature` (not ported yet) |
+| Toggle Face Rig | `mmb_toggle_face_rig_slot` (not ported yet) |
 
 ### Rigify Body Control Rig
 
@@ -65,18 +65,18 @@ The MetaHuman assembler: point at a folder of MetaHumans, list the characters in
 
 | Button | Runs |
 | --- | --- |
-| 1. Build Meta-Rig | `mmb_build_metarig_only` |
-| 2. Generate Control Rig | `mmb_generate_rig_only` |
-| Remove Retarget | `mmb_remove_retarget` |
-| 3. Apply Retarget | `mmb_apply_retarget` |
-| Unlink Head Rig | `mmb_unlink_head_rig` |
-| Link Head Rig | `mmb_link_head_rig` |
-| Toggle RBF Correctives (Body) | `mmb_toggle_body_correctives_rbf` |
-| Body Correctives: none in this DNA | `mmb_toggle_body_correctives_rbf` |
-| Show RBF Controls | `mmb_show_rbf_controllers` |
-| Hide | `mmb_hide_rbf_controllers` |
-| Import FBX Animation... | `mmb_import_fbx_animation` |
-| Remove Control Rig | `mmb_remove_cloud_rig` |
+| 1. Build Meta-Rig | `mmb_build_metarig_only` (not ported yet) |
+| 2. Generate Control Rig | `mmb_generate_rig_only` (not ported yet) |
+| Remove Retarget | `mmb_remove_retarget` (not ported yet) |
+| 3. Apply Retarget | `mmb_apply_retarget` (not ported yet) |
+| Unlink Head Rig | `mmb_unlink_head_rig` (not ported yet) |
+| Link Head Rig | `mmb_link_head_rig` (not ported yet) |
+| Toggle RBF Correctives (Body) | `mmb_toggle_body_correctives_rbf` (not ported yet) |
+| Body Correctives: none in this DNA | `mmb_toggle_body_correctives_rbf` (not ported yet) |
+| Show RBF Controls | `mmb_show_rbf_controllers` (not ported yet) |
+| Hide | `mmb_hide_rbf_controllers` (not ported yet) |
+| Import FBX Animation... | `mmb_import_fbx_animation` (not ported yet) |
+| Remove Control Rig | `mmb_remove_cloud_rig` (not ported yet) |
 
 **Settings**
 
@@ -98,12 +98,12 @@ The MetaHuman assembler: point at a folder of MetaHumans, list the characters in
 
 | Button | Runs |
 | --- | --- |
-| Toggle IK Stretch | `mmb_toggle_limb_ik_stretch` |
-| Toggle Heel Pivot | `mmb_toggle_foot_spin_pivot` |
-| Toggle Finger IK | `mmb_toggle_finger_ik` |
-| IK to FK | `mmb_finger_ik_fk` |
-| FK to IK | `mmb_finger_ik_fk` |
-| Snap Fingertip Targets to Pose | `mmb_snap_finger_ik` |
+| Toggle IK Stretch | `mmb_toggle_limb_ik_stretch` (not ported yet) |
+| Toggle Heel Pivot | `mmb_toggle_foot_spin_pivot` (not ported yet) |
+| Toggle Finger IK | `mmb_toggle_finger_ik` (not ported yet) |
+| IK to FK | `mmb_finger_ik_fk` (not ported yet) |
+| FK to IK | `mmb_finger_ik_fk` (not ported yet) |
+| Snap Fingertip Targets to Pose | `mmb_snap_finger_ik` (not ported yet) |
 
 **Settings**
 
@@ -124,9 +124,9 @@ The MetaHuman assembler: point at a folder of MetaHumans, list the characters in
 
 | Button | Runs |
 | --- | --- |
-| Re-Auto Link | `mmb_re_auto_link` |
-| Clear All | `mmb_clear_manual` |
-| Print Full Map (console) | `mmb_print_gui_map` |
+| Re-Auto Link | `mmb_re_auto_link` (not ported yet) |
+| Clear All | `mmb_clear_manual` (not ported yet) |
+| Print Full Map (console) | `mmb_print_gui_map` (not ported yet) |
 
 **Settings**
 
@@ -148,12 +148,12 @@ The MetaHuman assembler: point at a folder of MetaHumans, list the characters in
 
 | Button | Runs |
 | --- | --- |
-| One-Click mGear Rig | `mmb_mgear_rig` - mGear's MetaHuman guide, snapped to the active character, and mGear's Shifter rig built over it |
-| Snap mGear Guide | `mmb_mgear_snap` - put the guide's locators back on the character's joints, for a guide that was placed or edited by hand |
-| Bind Head to mGear Rig | `mmb_mgear_bind_head` - constrain the character's head part to the body joints mGear drives, so the face and the expression sliders follow the rig (the one-click does this already) |
-| Unbind Head from mGear Rig | `mmb_mgear_unbind_head` - take the head constraints out again; the head keeps its own values where it stands |
-| Register Anim Picker | `mmb_mgear_anim_picker` - make mGear's Anim Picker for the MetaHuman rig - the node and the body and face pages - and open it |
-| Remove mGear Rig | `mmb_mgear_clear` - delete the guide and the rigs mGear built; the character stays as it is |
+| One-Click mGear Rig | `mmb_mgear_rig` - mGear's MetaHuman guide, snapped to the active character, and mGear's Shifter rig built over it (not ported yet) |
+| Snap mGear Guide | `mmb_mgear_snap` - put the guide's locators back on the character's joints, for a guide that was placed or edited by hand (not ported yet) |
+| Bind Head to mGear Rig | `mmb_mgear_bind_head` - constrain the character's head part to the body joints mGear drives, so the face and the expression sliders follow the rig (the one-click does this already) (not ported yet) |
+| Unbind Head from mGear Rig | `mmb_mgear_unbind_head` - take the head constraints out again; the head keeps its own values where it stands (not ported yet) |
+| Register Anim Picker | `mmb_mgear_anim_picker` - make mGear's Anim Picker for the MetaHuman rig - the node and the body and face pages - and open it (not ported yet) |
+| Remove mGear Rig | `mmb_mgear_clear` - delete the guide and the rigs mGear built; the character stays as it is (not ported yet) |
 
 ### Arnold Look-Dev (Maya-only)
 
@@ -161,9 +161,15 @@ The MetaHuman assembler: point at a folder of MetaHumans, list the characters in
 
 | Button | Runs |
 | --- | --- |
-| Arnold Look-Dev | `mmb_arnold_lookdev` - Arnold shaders for the character's materials (the hair included), a key/fill/rim light rig aimed at its face, two cameras framed on it, the render settings a beauty still is rendered at, and a measured exposure - a probe render of the face, solved until the skin lands where a reference still's does, on the GPU |
-| Open Arnold RenderView | `mmb_arnold_render_view` - MtoA's RenderView on the look-dev camera, with its interactive render running |
-| Remove Look-Dev | `mmb_arnold_lookdev_clear` - the character's own shaders back on their sets, the Arnold ones, the rig and both cameras deleted |
+| Arnold Look-Dev | `mmb_arnold_lookdev` - Arnold shaders for the character's materials (the hair included), a key/fill/rim light rig aimed at its face, two cameras framed on it, the render settings a beauty still is rendered at, and a measured exposure - a probe render of the face, solved until the skin lands where a reference still's does, on the GPU (not ported yet) |
+| Open Arnold RenderView | `mmb_arnold_render_view` - MtoA's RenderView on the look-dev camera, with its interactive render running (not ported yet) |
+| Remove Look-Dev | `mmb_arnold_lookdev_clear` - the character's own shaders back on their sets, the Arnold ones, the rig and both cameras deleted (not ported yet) |
+
+**Settings**
+
+| Control | Type | Default | Range | Stored as |
+| --- | --- | --- | --- | --- |
+| Look Style | Menu | `REALISTIC` | REALISTIC = Realistic (beauty), STYLIZED = Stylized Blue (cool glow) | `ml_lookdev_style` |
 
 ---
 
@@ -181,8 +187,8 @@ Bakes the face board's keyed controls across the frame range, so an expression p
 
 | Button | Runs |
 | --- | --- |
-| Bake Face Animation | `mmb_bake_face_animation` |
-| Clear Baked Animation | `mmb_clear_baked_animation` |
+| Bake Face Animation | `mmb_bake_face_animation` (not ported yet) |
+| Clear Baked Animation | `mmb_clear_baked_animation` (not ported yet) |
 
 **Lines the panel draws**
 
@@ -205,14 +211,14 @@ Takes the 52 ARKit blendshapes Live Link Face streams from an iPhone and drives 
 
 | Button | Runs |
 | --- | --- |
-| Connect | `mmb_arkit_connect` |
-| Record | `mmb_arkit_toggle_recording` |
-| Load Live Link Face CSV... | `mmb_arkit_load_csv` |
-| Export Face CSV... | `mmb_export_face_csv` |
-| Export ARKit Blend Shapes (FBX)... | `mmb_export_arkit_blendshapes` |
-| Rebuild Name Mapping | `mmb_arkit_rebuild_mapping` |
-| Calibrate Neutral Face | `mmb_arkit_calibrate_neutral` |
-| Clear Neutral Calibration | `mmb_arkit_clear_calibration` |
+| Connect | `mmb_arkit_connect` (not ported yet) |
+| Record | `mmb_arkit_toggle_recording` (not ported yet) |
+| Load Live Link Face CSV... | `mmb_arkit_load_csv` (not ported yet) |
+| Export Face CSV... | `mmb_export_face_csv` (not ported yet) |
+| Export ARKit Blend Shapes (FBX)... | `mmb_export_arkit_blendshapes` (not ported yet) |
+| Rebuild Name Mapping | `mmb_arkit_rebuild_mapping` (not ported yet) |
+| Calibrate Neutral Face | `mmb_arkit_calibrate_neutral` (not ported yet) |
+| Clear Neutral Calibration | `mmb_arkit_clear_calibration` (not ported yet) |
 
 **Settings**
 
@@ -273,8 +279,8 @@ Runs the two jobs that are worth doing to a whole folder: assemble every charact
 
 | Button | Runs |
 | --- | --- |
-| Assemble All Characters | `mmb_batch_assemble` |
-| Export All Slots | `mmb_batch_export` |
+| Assemble All Characters | `mmb_batch_assemble` (not ported yet) |
+| Export All Slots | `mmb_batch_export` (not ported yet) |
 
 ---
 
@@ -292,13 +298,13 @@ Averages several bodies (DNA files or library archetypes) by weight into one new
 
 | Button | Runs |
 | --- | --- |
-| Use Base DNA | `mmb_add_base_dna` |
-| Add Folder... | `mmb_add_body_folder` |
-| Add Body DNA | `mmb_add_body_source` |
-| Load Library... | `mmb_load_archetype_library` |
-| Export... | `mmb_export_archetype_library` |
-| Build Blended Body | `mmb_build_blended_body` |
-| Blend Active Character | `mmb_blend_active_character` |
+| Use Base DNA | `mmb_add_base_dna` (not ported yet) |
+| Add Folder... | `mmb_add_body_folder` (not ported yet) |
+| Add Body DNA | `mmb_add_body_source` (not ported yet) |
+| Load Library... | `mmb_load_archetype_library` (not ported yet) |
+| Export... | `mmb_export_archetype_library` (not ported yet) |
+| Build Blended Body | `mmb_build_blended_body` (not ported yet) |
+| Blend Active Character | `mmb_blend_active_character` (not ported yet) |
 
 **Settings**
 
@@ -325,12 +331,12 @@ Sends the character or its animation to Cascadeur over localhost, and mirrors th
 
 | Button | Runs |
 | --- | --- |
-| Send to Cascadeur | `mmb_cascadeur_send` |
-| Current Frame | `mmb_cascadeur_send` |
-| Live: Mirror This Rig | `mmb_cascadeur_live_pose` |
-| Stop Mirroring | `mmb_cascadeur_stop_live` |
-| Cascadeur Status | `mmb_cascadeur_status` |
-| Install Cascadeur Plug-in | `mmb_install_cascadeur_plugin` |
+| Send to Cascadeur | `mmb_cascadeur_send` (not ported yet) |
+| Current Frame | `mmb_cascadeur_send` (not ported yet) |
+| Live: Mirror This Rig | `mmb_cascadeur_live_pose` (not ported yet) |
+| Stop Mirroring | `mmb_cascadeur_stop_live` (not ported yet) |
+| Cascadeur Status | `mmb_cascadeur_status` (not ported yet) |
+| Install Cascadeur Plug-in | `mmb_install_cascadeur_plugin` (not ported yet) |
 
 **Settings**
 
@@ -352,6 +358,14 @@ Sends the character or its animation to Cascadeur over localhost, and mirrors th
 * Overwrites from frame 0
 * Send the character first, then Live.
 * Run 'Animation Scripts > MetaBridge Live' in Cascadeur first
+
+### Send Options (Maya-only)
+
+**Settings**
+
+| Control | Type | Default | Range | Stored as |
+| --- | --- | --- | --- | --- |
+| Clothes Detail | Menu | `HALF` | FULL = Full, HALF = Half, NONE = None (no clothes) | `ml_casc_clothes` |
 
 ---
 
@@ -388,10 +402,10 @@ Writes the active character out: head and body as DNA, the character as FBX, or 
 
 | Button | Runs |
 | --- | --- |
-| Head | `mmb_export_head_dna` |
-| Body | `mmb_export_body_dna` |
-| Export FBX | `mmb_export_slot_fbx` |
-| Export glTF | `mmb_export_slot_gltf` |
+| Head | `mmb_export_head_dna` (not ported yet) |
+| Body | `mmb_export_body_dna` (not ported yet) |
+| Export FBX | `mmb_export_slot_fbx` (not ported yet) |
+| Export glTF | `mmb_export_slot_gltf` (not ported yet) |
 
 **Lines the panel draws**
 
@@ -415,12 +429,12 @@ The Marvelous Designer round trip through one shared folder: an avatar out, a ga
 
 | Button | Runs |
 | --- | --- |
-| Live | `mmb_md_live` |
-| Get Garment Now | `mmb_md_request_garment` |
-| Open Shared Folder | `mmb_md_open_folder` |
-| Send Body to MD | `mmb_md_send_body` |
-| Import Garment from MD... | `mmb_md_import_garment` |
-| Open MD Plug-in Folder | `mmb_md_open_plugin_folder` |
+| Live | `mmb_md_live` (not ported yet) |
+| Get Garment Now | `mmb_md_request_garment` (not ported yet) |
+| Open Shared Folder | `mmb_md_open_folder` (not ported yet) |
+| Send Body to MD | `mmb_md_send_body` (not ported yet) |
+| Import Garment from MD... | `mmb_md_import_garment` (not ported yet) |
+| Open MD Plug-in Folder | `mmb_md_open_plugin_folder` (not ported yet) |
 
 **Settings**
 
@@ -466,15 +480,15 @@ Expression presets as files: save the face board's dial values, put them back, a
 
 | Button | Runs |
 | --- | --- |
-| Save Current Expression | `mmb_save_pose_preset_overwrite` |
-| Save As Current Expression... | `mmb_save_pose_preset` |
-| Delete Expression Preset | `mmb_delete_pose_preset` |
-| Apply Preset | `mmb_apply_pose_preset` |
-| Add All From Active Folder | `mmb_add_folder_sliders` |
-| Clear All Sliders | `mmb_clear_preset_sliders` |
-| Import... | `mmb_import_pose_preset` |
-| Set Folder... | `mmb_select_preset_folder` |
-| Open Presets Folder | `mmb_open_preset_folder` |
+| Save Current Expression | `mmb_save_pose_preset_overwrite` (not ported yet) |
+| Save As Current Expression... | `mmb_save_pose_preset` (not ported yet) |
+| Delete Expression Preset | `mmb_delete_pose_preset` (not ported yet) |
+| Apply Preset | `mmb_apply_pose_preset` (not ported yet) |
+| Add All From Active Folder | `mmb_add_folder_sliders` (not ported yet) |
+| Clear All Sliders | `mmb_clear_preset_sliders` (not ported yet) |
+| Import... | `mmb_import_pose_preset` (not ported yet) |
+| Set Folder... | `mmb_select_preset_folder` (not ported yet) |
+| Open Presets Folder | `mmb_open_preset_folder` (not ported yet) |
 
 **Settings**
 
@@ -498,9 +512,9 @@ Brings a preset from another tool in - a Maya or Houdini preset, or an ARKit pay
 
 | Button | Runs |
 | --- | --- |
-| Convert & Import (Maya/Houdini)... | `mmb_convert_import_preset` |
-| Convert ARKit Payload... | `mmb_convert_arkit_payload` |
-| Edit Name Mapping | `mmb_edit_name_mapping` |
+| Convert & Import (Maya/Houdini)... | `mmb_convert_import_preset` (not ported yet) |
+| Convert ARKit Payload... | `mmb_convert_arkit_payload` (not ported yet) |
+| Edit Name Mapping | `mmb_edit_name_mapping` (not ported yet) |
 
 **Lines the panel draws**
 
@@ -522,8 +536,8 @@ The body sliders: leg, torso and arm length, shoulder, waist and chest width, an
 
 | Button | Runs |
 | --- | --- |
-| Long Legs | `mmb_proportion_preset` |
-| Reset | `mmb_proportion_preset` |
+| Long Legs | `mmb_proportion_preset` (not ported yet) |
+| Reset | `mmb_proportion_preset` (not ported yet) |
 
 **Settings**
 
@@ -571,8 +585,8 @@ Puts the face board back to neutral - all of it, or only the controls that are s
 
 | Button | Runs |
 | --- | --- |
-| Reset All Controls | `mmb_reset_face_pose` |
-| Reset Selected (Pose Mode) | `mmb_reset_selected_controls` |
+| Reset All Controls | `mmb_reset_face_pose` (not ported yet) |
+| Reset Selected (Pose Mode) | `mmb_reset_selected_controls` (not ported yet) |
 
 ---
 
@@ -590,7 +604,7 @@ Retargets an animation from another rig (UE5, Mixamo, MetaHuman, Rigify) onto th
 
 | Button | Runs |
 | --- | --- |
-| Retarget Rigify Animation | `mmb_retarget_rigify_animation` |
+| Retarget Rigify Animation | `mmb_retarget_rigify_animation` (not ported yet) |
 
 **Settings**
 
@@ -628,19 +642,19 @@ Sculpt the skin in a pose, keep the difference as a named corrective, and sync i
 
 | Button | Runs |
 | --- | --- |
-| Begin (Face) | `mmb_sculpt_corrective_begin` |
-| Begin (Body) | `mmb_sculpt_corrective_begin` |
-| Finish Sculpt | `mmb_sculpt_corrective_finish` |
-| Export Edited Shape Keys | `mmb_export_edited_shape_keys` |
-| Bake All to DNA | `mmb_bake_all_correctives_to_dna` |
-| Export... | `mmb_export_correctives` |
-| Import... | `mmb_import_correctives` |
-| Sync to Wearables | `mmb_sync_correctives_to_garments` |
-| Set Neutral | `mmb_sculpt_corrective_set_neutral` |
-| Toggle Manual Override | `mmb_sculpt_corrective_toggle_manual` |
-| Remove Corrective | `mmb_sculpt_corrective_remove` |
-| Edit Sculpt | `mmb_sculpt_corrective_edit` |
-| Bake Corrective to DNA | `mmb_bake_corrective_to_dna` |
+| Begin (Face) | `mmb_sculpt_corrective_begin` (not ported yet) |
+| Begin (Body) | `mmb_sculpt_corrective_begin` (not ported yet) |
+| Finish Sculpt | `mmb_sculpt_corrective_finish` (not ported yet) |
+| Export Edited Shape Keys | `mmb_export_edited_shape_keys` (not ported yet) |
+| Bake All to DNA | `mmb_bake_all_correctives_to_dna` (not ported yet) |
+| Export... | `mmb_export_correctives` (not ported yet) |
+| Import... | `mmb_import_correctives` (not ported yet) |
+| Sync to Wearables | `mmb_sync_correctives_to_garments` (not ported yet) |
+| Set Neutral | `mmb_sculpt_corrective_set_neutral` (not ported yet) |
+| Toggle Manual Override | `mmb_sculpt_corrective_toggle_manual` (not ported yet) |
+| Remove Corrective | `mmb_sculpt_corrective_remove` (not ported yet) |
+| Edit Sculpt | `mmb_sculpt_corrective_edit` (not ported yet) |
+| Bake Corrective to DNA | `mmb_bake_corrective_to_dna` (not ported yet) |
 
 **Settings**
 
@@ -678,9 +692,9 @@ Streams the face to Unreal Engine as it is worked on, so the MetaHuman there per
 
 | Button | Runs |
 | --- | --- |
-| Start Unreal Live | `mmb_unreal_live_start` |
-| Stop Unreal Live | `mmb_unreal_live_stop` |
-| Open Unreal Plug-in Folder | `mmb_open_unreal_plugin_folder` |
+| Start Unreal Live | `mmb_unreal_live_start` (not ported yet) |
+| Stop Unreal Live | `mmb_unreal_live_stop` (not ported yet) |
+| Open Unreal Plug-in Folder | `mmb_open_unreal_plugin_folder` (not ported yet) |
 
 **Settings**
 
@@ -711,8 +725,8 @@ The other direction: this character follows a MetaHuman Unreal is animating.
 
 | Button | Runs |
 | --- | --- |
-| Follow Unreal | `mmb_unreal_follow_start` |
-| Stop Following | `mmb_unreal_follow_stop` |
+| Follow Unreal | `mmb_unreal_follow_start` (not ported yet) |
+| Stop Following | `mmb_unreal_follow_stop` (not ported yet) |
 
 **Settings**
 
@@ -745,16 +759,16 @@ Clothing, hair and accessories on the character: import, make a garment rig, bin
 
 | Button | Runs |
 | --- | --- |
-| Import Clothing (FBX)... | `mmb_import_clothing_fbx` |
-| Head Accessory... | `mmb_import_clothing_fbx` |
-| Refit Clothing To Body | `mmb_refit_wearables` |
-| Make Garment Rig | `mmb_make_garment_rig` |
-| Bind Garment To Character | `mmb_bind_garment` |
-| Import Hair... | `mmb_import_hair_abc` |
-| Apply Hair Offset / Scale | `mmb_apply_hair_offset` |
-| Bind Hair To Head | `mmb_bind_hair_to_head` |
-| Align Active Mesh to DNA Head | `mmb_align_mesh_to_dna_head` |
-| Retarget Hair to Selected Mesh | `mmb_retarget_hair` |
+| Import Clothing (FBX)... | `mmb_import_clothing_fbx` (not ported yet) |
+| Head Accessory... | `mmb_import_clothing_fbx` (not ported yet) |
+| Refit Clothing To Body | `mmb_refit_wearables` (not ported yet) |
+| Make Garment Rig | `mmb_make_garment_rig` (not ported yet) |
+| Bind Garment To Character | `mmb_bind_garment` (not ported yet) |
+| Import Hair... | `mmb_import_hair_abc` (not ported yet) |
+| Apply Hair Offset / Scale | `mmb_apply_hair_offset` (not ported yet) |
+| Bind Hair To Head | `mmb_bind_hair_to_head` (not ported yet) |
+| Align Active Mesh to DNA Head | `mmb_align_mesh_to_dna_head` (not ported yet) |
+| Retarget Hair to Selected Mesh | `mmb_retarget_hair` (not ported yet) |
 
 **Settings**
 
@@ -781,7 +795,7 @@ Clothing, hair and accessories on the character: import, make a garment rig, bin
 
 | Button | Runs |
 | --- | --- |
-| Fit Clothing to Skin | `mmb_fit_clothing_to_skin` - push the selected clothing (or what is worn) out of the character's skin: any vertex inside it, or closer than the Clothing Offset, is moved out along the skin's normal |
+| Fit Clothing to Skin | `mmb_fit_clothing_to_skin` - push the selected clothing (or what is worn) out of the character's skin: any vertex inside it, or closer than the Clothing Offset, is moved out along the skin's normal (not ported yet) |
 
 ---
 

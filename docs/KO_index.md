@@ -13,13 +13,104 @@ Designer · ARKit으로 내보냅니다.
 
 <a href="assets/wide_ko.png"><img src="assets/wide_ko.png" alt="MayaMetaBridge - 개요"></a>
 
-<a href="assets/viewport_face.png"><img src="assets/viewport_face.png" alt="플러그인이 어셈블한 MetaHuman"></a>
+<a href="assets/shots/hero_face.png"><img src="assets/shots/hero_face.png" alt="플러그인이 어셈블한 MetaHuman"></a>
 
 *위 얼굴은 플러그인 자체의 출력입니다. Maya 2027 뷰포트에 `head.dna`와
 `body.dna`로 어셈블한 MetaHuman이 자기 `Maps` 폴더의 맵을 입고 있습니다.
 대역 렌더가 아닙니다.*
 
+## 실제 모습
+
+이 가이드의 모든 그림과 영상은 번들 기준 캐릭터로 Maya 2027에서 직접 찍은
+것입니다 - 뷰포트는 Maya가 그렸고, 다이얼은 플러그인이 움직였습니다. Maya가
+그린 뒤에 손을 댄 그림은 캡션에 그렇게 적었습니다.
+
+<p align="center">
+<video src="assets/video/expressions.mp4" width="760" controls autoplay muted loop playsinline></video>
+</p>
+
+*얼굴 보드(§2)와 표정 프리셋(§3): ARKit 표정 네 개가 섞이며 들어오고 나갑니다
+- 보드의 다이얼이 움직이고, RigLogic이 그에 맞춰 머리 관절을 움직입니다.*
+
+<p align="center">
+<video src="assets/video/turntable.mp4" width="300" controls autoplay muted loop playsinline></video>
+&nbsp;
+<video src="assets/video/proportions.mp4" width="300" controls autoplay muted loop playsinline></video>
+</p>
+
+*왼쪽: 어셈블되어 텍스처가 입혀진 캐릭터가 뷰포트에서 도는 모습. 오른쪽: 비율
+슬라이더(§5) - 기본 몸, **Long Legs**, 키가 큰 체형, 건장한 체형이 서로
+부드럽게 이어집니다.*
+
+<a href="assets/shots/lookdev_styles.png"><img src="assets/shots/lookdev_styles.png" alt="Realistic과 Stylized Blue 룩데브 렌더"></a>
+
+*같은 캐릭터에 Arnold 룩데브(**이번 버전** 참고)를 적용해 버튼 자체의 카메라와
+조명으로 Arnold가 렌더한 것입니다. 각각 자기 측정 프로브로 노출을 맞췄습니다:
+왼쪽 **Realistic**, 오른쪽 **Stylized Blue**. 다른 것은 조명, 배경, 재질이 빛을
+받는 방식뿐이고 캐릭터는 같습니다.*
+
 ## 이번 버전
+
+**v0.2.0 — 멀티 캐릭터 · 의상 · 케스케이더**
+
+*추가*
+
+- **여러 캐릭터 동시 사용** — 어셈블한 캐릭터마다 자기 얼굴 보드(캐릭터별
+  네임스페이스), 캐릭터 갤러리 썸네일, **Assembled Characters** 목록의 한 줄과
+  Rig ON/OFF 스위치가 생깁니다. `Character` 선택과 Active Slot이 모든 커맨드의
+  대상을 정하며, 얼굴 다이얼을 돌려도 옮겨 둔 캐릭터 위치가 초기화되지
+  않습니다.
+- **케스케이더로 의상도 함께 전송** — 리그에 바인드된 메쉬가 깨끗한 스킨
+  복사본으로(웨이트는 몸·머리에서 가져옴) 같이 넘어가서 다리를 움직여도 옷이
+  찢어지지 않습니다. **Clothes Detail**(Full / Half / None)로 케스케이더 메모리를
+  조절합니다(17만 버텍스 코트 하나가 캐릭터 메모리의 대부분입니다).
+- **캐릭터당 케스케이더 씬 하나** — 두 번째 캐릭터는 첫 씬을 덮어쓰지 않고 새
+  씬으로 갑니다. **Live: Mirror This Rig**는 전체 on/off 스위치 하나이고, **Active
+  Slot**이 케스케이더와 통신할 캐릭터를 고릅니다.
+- **Arnold 룩데브 Look Style** — *Realistic*(뷰티 리그) 또는 *Stylized Blue*:
+  시안 림라이트와 푸른 필 라이트, 빛나는 푸른 배경, 매끈하고 밝은 도자기 피부,
+  광택 의상, 더 강한 블룸, 가벼운 색보정. 바뀌는 것은 조명·배경·재질이 빛을
+  받는 방식뿐이고 캐릭터는 그대로입니다. 되돌리면 재질도 복구됩니다.
+- **몸을 따라가는 의상** — **Bind Garment**가 리그 채택 → 히스토리 정리 →
+  웨이트 전송 → 피팅까지 한 번에 하고, 불러온 의상은 자동으로 붙으며, 씬을 다시
+  열어도 입고 있는 의상을 찾습니다.
+
+*수정*
+
+- Body Blend 후 의상이 몸을 따라가지 않거나 피부 속으로 파고들던 문제: 이제
+  블렌드된 몸과 함께 옮겨지고 피부 밖으로 밀려납니다(**Refit Clothing To Body**,
+  **Fit Clothing to Skin**).
+- 의상 웨이트 오류(다리를 움직이면 옷이 찢어짐, 상의 목 부분이 남음), 전송 후
+  머리와 몸 연결이 끊기던 문제.
+- 두 번째 어셈블에서 페이스 리그가 빠지던 문제, 새 DNA 폴더·새 Maya 실행에서
+  새 캐릭터가 안 불러지던 문제, Active Slot 창 깜빡임과 선택 캐릭터에 적용 안
+  되던 문제.
+- Bind Garment의 `_smooth_over_mesh() missing 2 required positional arguments`
+  오류.
+- **Arnold 룩데브**: 처음 누르면 카메라가 씬의 이전 해상도에 맞춰져서 상반신 대신
+  먼 샷이 나오던 문제(이제 렌더 크기를 먼저 설정), 노출 측정이 Maya에 없는
+  Pillow를 요구해서 대부분의 환경에서 조명이 하얗게 날아간 설계값 그대로 남던
+  문제(이제 Maya 자체의 `MImage`로 프로브를 읽음), 캐릭터별 네임스페이스로
+  만들어진 얼굴 보드가 렌더에 그대로 찍히던 문제.
+- 어셈블리 목록에 캐릭터 썸네일이 안 보이던 문제.
+
+*가이드*
+
+- 가이드에 Maya 뷰포트 속의 캐릭터가 들어갔습니다 - 정지 화면, 플러그인 패널이 뜬
+  Maya 창, Arnold 룩데브 비교 - 그리고 짧은 영상: 표정을 재생하는 얼굴 보드,
+  턴테이블, 비율 슬라이더. **실제 모습** 절을 보세요.
+
+*속도*
+
+- 의상 포함 전송, 리핏, 실시간 Body Blend 미리보기가 빨라졌습니다(경량
+  최근접점 검색, 실수 행렬, 바뀐 관절만 쓰는 얼굴 갱신, 드래그 중 리핏 지연).
+
+*0.1.0에서 업그레이드할 때*
+
+- **Install Cascadeur Plug-in**을 한 번 누르고 케스케이더를 재시작하세요.
+  플러그인이 캐릭터별 씬을 지원하는 MetaBridge Live 1.1로 바뀌었습니다. 예전
+  플러그인에서는 두 번째 캐릭터가 첫 캐릭터의 씬을 덮어쓰며, 전송할 때 Maya가
+  경고를 띄웁니다.
 
 **v0.1.0 — 마야 포팅**
 
@@ -60,6 +151,12 @@ Designer · ARKit으로 내보냅니다.
   1.00(전부 잘림)이었는데 버튼 한 번에 0.61 / 0.78, 잘린 픽셀 0%, 배경
   0.84가 됩니다(샘플 사진 0.59 / 0.79, 배경 0.90). 세 버튼은 메인 패널의
   **Arnold Look-Dev (Maya-only)** 프레임에 있습니다.
+  같은 프레임의 **Look Style**: *Realistic*은 위의 뷰티 리그, *Stylized Blue*는
+  파랑/흰색 SF 일러스트 같은 차갑고 빛나는 분위기입니다 - 시안 림라이트와 푸른
+  필 라이트, 빛나는 푸른 배경, 매끈하고 밝은 도자기 피부(산란을 줄이고 부드러운
+  코팅 광택), 광택 있는 의상, 더 강한 블룸과 가벼운 색보정. 바뀌는 것은 조명,
+  배경, 재질이 빛을 받는 방식뿐이고 캐릭터의 메시·맵·색은 그대로입니다. 고른 뒤
+  **Arnold Look-Dev**를 다시 누르면 적용되고, 되돌릴 때도 같은 방법입니다.
 - **mGear 원클릭** — 포팅이 아니라 이 포트의 자체 기능입니다. 블렌더
   애드온은 Rigify로 리깅하고, 마야에는 mGear가 있습니다. 한 번 누르면
   mGear의 MetaHuman 가이드를 캐릭터 관절에 놓고 Shifter 리그를 그 위에
@@ -147,7 +244,7 @@ Links**, **Assets & Export**)으로 들어 있습니다. 각 항목은 그 패�
 *포트의 창은 평범한 마야 창입니다. 놓은 자리에 도킹되고, 저장한 마야
 레이아웃이 다시 불러옵니다(창마다 자기 `uiScript`로 복원합니다).*
 
-<a href="assets/panels_over_character.png"><img src="assets/panels_over_character.png" alt="캐릭터 옆에 놓인 두 패널"></a>
+<a href="assets/shots/workspace.png"><img src="assets/shots/workspace.png" alt="Maya 창 안, 캐릭터 옆에 놓인 두 패널"></a>
 
 *캐릭터 위에 놓인 둘: 어셈블러와 비율 슬라이더. 세션의 모양이 이렇습니다 —
 뷰포트에 캐릭터, 그 옆에 작업 중인 패널.*
@@ -187,20 +284,37 @@ Cascadeur와 Marvelous Designer 플러그인은 **이 패키지에 들어 있습
 가이드의 그림이 나온 기준 캐릭터에서 측정한 값: **관절 1212개**(머리
 870개, 몸 342개), 맵 **17장**이 20개 재질로 연결.
 
-<a href="assets/viewport_full_body.png"><img src="assets/viewport_full_body.png" alt="어셈블된 캐릭터"></a>
+<a href="assets/shots/hero_full.png"><img src="assets/shots/hero_full.png" alt="어셈블된 캐릭터"></a>
 
-**Assembled Characters**는 씬에 있는 캐릭터 목록입니다. **Activate
-Slot**은 하나를 활성으로 만들고(플러그인의 나머지 대부분이 활성 슬롯을
-대상으로 합니다), **Toggle Face Rig**는 그 캐릭터의 얼굴 보드를 보이거나
-숨기고, **Delete Slot**은 목록에서 빼고, **Relink DNA**는 파일이 옮겨진
-슬롯을 다시 그 DNA 파일로 연결합니다. **Load Head DNA…**, **Load Body
-DNA…**는 한쪽 파트만 따로 가져옵니다.
+폴더 입력칸 아래의 **Character**는 폴더에 들어 있는 캐릭터 중 하나를 고르는
+메뉴이고, **Assemble**은 거기 보이는 캐릭터를 만듭니다. (폴더 자체가 캐릭터
+폴더이면 그 캐릭터입니다.)
+
+**Assembled Characters**는 애드온의 목록으로, 씬의 캐릭터마다 한 줄입니다
+(머리와 몸 파트가 한 줄):
+
+- 왼쪽 둥근 버튼이 그 캐릭터를 **활성**으로 만듭니다(플러그인의 나머지 대부분이
+  활성 캐릭터를 대상으로 하고, 줄에 그 캐릭터가 가진 슬롯이 표시됩니다).
+- **Rig: ON / OFF**는 그 캐릭터의 얼굴 보드를 씬에 올리거나 뺍니다. 캐릭터마다
+  자기 보드를 동시에 가질 수 있고, 한 보드를 돌리면 그 캐릭터의 얼굴만
+  움직입니다.
+- **X**는 그 캐릭터의 슬롯을 지웁니다.
+- 이름 뒤 표시는 노드가 모두 씬에 남아 있는지를 나타냅니다.
+
+목록 아래 버튼(**Activate Slot**, **Toggle Face Rig**, **Delete Slot**)은 지정한
+캐릭터에 같은 일을 하고, **Relink DNA**는 파일이 옮겨진 슬롯을 다시 그 DNA
+파일로 연결합니다. **Load Head DNA…**, **Load Body DNA…**는 한쪽 파트만 따로
+가져옵니다.
 
 패널에서 알아 둘 두 가지: **Re-Assemble**은 **Assemble**과 같은
 커맨드입니다(작업 도중 슬롯이 어긋났을 때 누르라고 있는 버튼입니다).
 그리고 패널 아래쪽 **mGear Rig** 프레임은 6절입니다.
 
 ## 2. 얼굴 보드
+
+<a href="assets/shots/face_board.png"><img src="assets/shots/face_board.png" alt="웃는 순간의 캐릭터와 얼굴 보드"></a>
+
+*보드와 그것이 움직이는 얼굴: 웃음이 움직이는 다이얼, 그리고 그에 따라가는 머리.*
 
 MetaHuman을 어셈블하면 리그 말고도 하나가 더 씬에 남습니다. 머리 옆의
 **얼굴 보드(피커)** 이고, 표정마다 컨트롤이 하나씩 있습니다. 이것은 포트가
@@ -218,9 +332,14 @@ MetaHuman을 어셈블하면 리그 말고도 하나가 더 씬에 남습니다.
 - **RigLogic 얼굴 리그**가 이 값을 계산해 피부를 움직입니다 — 편집할
   셰이프 키가 없습니다.
 
-**Toggle Face Rig**(메인 패널, Face Rig 프레임)가 보드를 보이고 숨깁니다.
-몸이 리그 위에 있으면(5절이나 6절) 머리 파트가 그 리그를 따라갑니다.
-머리가 링크되지 않은 캐릭터는 목이 아니라 얼굴만 돌아갑니다.
+**Toggle Face Rig**(메인 패널, Face Rig 프레임)가 보드를 보이고 숨기고,
+캐릭터 줄의 **Rig: ON / OFF**(1절)는 그 캐릭터에 대해 같은 일을 합니다.
+캐릭터마다 자기 보드가 있습니다. 보드는 캐릭터 이름의 네임스페이스
+(`mmbFace_<이름>:`)에 만들어져서 두 캐릭터의 보드가 노드를 공유하지 않습니다.
+보드는 **얼굴만** 움직이므로, 손으로 옮기거나 포즈를 잡은 캐릭터는 보드를
+돌려도 그 자리에 있습니다. 몸이 리그 위에 있으면(5절이나 6절) 머리 파트가 그
+리그를 따라갑니다. 머리가 링크되지 않은 캐릭터는 목이 아니라 얼굴만
+돌아갑니다.
 
 **RNA 목록**(메인 패널의 *RNA* 탭)은 DNA의 raw 컨트롤 채널을 그것을 구동하는
 컨트롤과 함께 보여 줍니다. **View**로 DNA 보기(채널 한 줄: `rc#`, 채널, 연결된
@@ -232,6 +351,10 @@ All**은 수동 매핑을 모두 지워 채널을 원래 컨트롤로 돌려놓�
 DNA에는 얼굴 채널이 없고, 목록이 그렇게 말해 줍니다.
 
 ## 3. 표정 프리셋
+
+<a href="assets/shots/expressions.png"><img src="assets/shots/expressions.png" alt="머리에 적용한 ARKit 표정 프리셋 네 개"></a>
+
+*웃음, 놀람, 윙크, 찡그림 - 각각 패널에서 적용한 ARKit 프리셋 블렌드입니다.*
 
 <a href="assets/panel_pose_presets.png"><img src="assets/panel_pose_presets.png" width="330" alt="Expression Presets 패널"></a>
 
@@ -299,6 +422,10 @@ in/out 포함). **눈 깜빡임**은 눈꺼풀을 닫고 *eyeWide*는 엽니다.
 
 ## 5. 비율(Proportions)
 
+<a href="assets/shots/proportions.png"><img src="assets/shots/proportions.png" alt="비율 슬라이더: 기본, Long Legs, 키가 큰 체형, 건장한 체형"></a>
+
+*같은 캐릭터를 슬라이더로 바꾼 모습: 기본, **Long Legs**, 키가 큰 체형, 건장한 체형.*
+
 <a href="assets/panel_proportions.png"><img src="assets/panel_proportions.png" width="330" alt="Proportions 패널"></a>
 
 슬라이더 18개, 모두 캐릭터를 만든 그 상태에 대한 배수이고 `1.0`이 그
@@ -348,9 +475,9 @@ in/out 포함). **눈 깜빡임**은 눈꺼풀을 닫고 *eyeWide*는 엽니다.
 
 ## 6. 몸 리그 — mGear 원클릭
 
-<a href="assets/viewport_rig.png"><img src="assets/viewport_rig.png" alt="캐릭터의 관절"></a>
+<a href="assets/shots/rig_joints.png"><img src="assets/shots/rig_joints.png" alt="캐릭터의 관절"></a>
 
-*캐릭터 자체의 스켈레톤 — 관절 1212개 — 이고, 몸 리그는 이 위에 만들어집니다.*
+*캐릭터 자체의 스켈레톤 — 관절 1212개 — 이고, 몸 리그는 이 위에 만들어집니다. 피부는 숨겼고 관절 선은 청록색으로 다시 칠했습니다: Maya는 관절을 짙은 보라색으로 그려서 이 배경에서는 보이지 않기 때문입니다.*
 
 <a href="assets/viewport_mgear_rig.png"><img src="assets/viewport_mgear_rig.png" alt="mGear 리그 위의 캐릭터"></a>
 
@@ -420,16 +547,35 @@ mGear의 **Shifter** 리그를 만듭니다.
   Character**를 쓰고, **Replace**가 추가와 교체 중 무엇인지 정합니다.
 - **Live Preview**는 기본적으로 꺼져 있습니다. 켜면 가중치를 끄는 동안
   결과가 바로 보입니다.
+- **캐릭터가 입은 옷이 블렌드를 따라갑니다.** **Blend Active Character**(그리고
+  Live Preview의 매 단계) 뒤에 입은 옷이 새 피부에 맞춰집니다. 옷은 스킨으로 본과
+  함께 움직이고, 새 몸이 옷을 뚫고 나온 곳은 Clothing Offset을 남기고 밖으로
+  밀려납니다(8절). **Build Blended Body**는 새 캐릭터를 만들고, 활성 캐릭터가 입은
+  옷은 옛 캐릭터에 남지 않고 새 캐릭터로 옮겨집니다 - 새 캐릭터의 본으로 옮겨서
+  바인딩하고 맞춥니다.
 
 ## 8. Wearables — 의상과 헤어
 
 <a href="assets/panel_wearables.png"><img src="assets/panel_wearables.png" width="330" alt="Wearables 패널"></a>
 
-- **Import Clothing (FBX)…** 로 의상을 가져옵니다(머리에 쓰는 것은
-  **Head Accessory…**).
+- **Import Clothing (FBX)…** 로 의상을 가져오면 **활성 캐릭터에 바로 붙습니다**
+  (머리에 쓰는 것은 **Head Accessory…**). 캐릭터 자신의 스켈레톤에 스킨되고
+  피부에 맞춰집니다(애드온과 같은 방식). 씬에 그냥 메시로만 있는 의상은 몸이
+  움직이거나 블렌드, 리셰이프를 해도 따라가지 않습니다 - 다른 방법으로 가져온
+  의상은 **Bind Garment To Character**로 붙이세요.
 - **Make Garment Rig** 다음 **Bind Garment To Character** — 바인딩은
   몸의 스킨 웨이트를 그 조각에 복사합니다. 그래서 그 아래 피부가 움직이는
-  방식대로 움직입니다.
+  방식대로 움직입니다. 모든 버텍스가 가까운 몸 버텍스의 웨이트를 받고(한쪽
+  다리의 버텍스는 같은 쪽만 보므로 헐렁한 바짓단이 반대쪽 다리 웨이트를 받지
+  않습니다), 이웃과 섞입니다. 일반 복사가 0으로 남기는 버텍스(UV를 나누기
+  전에 만든 코트는 거의 절반)도 채워집니다. 스킨을 먼저 만들고 나중에 편집한
+  의상(UV 이음선을 나중에 자른 코트 등)은 먼저 히스토리를 굽기 때문에 그
+  편집이 더한 버텍스에도 웨이트가 생기고, 자기 스켈레톤 사본을 가져온 의상(옷
+  FBX)은 아무도 구동하지 않는 스켈레톤에 남지 않고 캐릭터 자신의 본으로
+  옮겨집니다(버텍스마다 자기 웨이트로 옮겨서 이 캐릭터의 체형에 맞춰집니다).
+- **무엇이 입은 옷인가.** 캐릭터 자신의 조인트에 스킨된 메시는 기록되어 있지
+  않아도 입은 옷입니다. Refit, 피부에 맞추기, 블렌드가 그것을 찾아 목록에
+  올립니다(장면을 저장했다가 다시 열어도 옷이 사라지지 않습니다).
 - **피부에 맞춰 밀어내기(핏)**는 옷이 캐릭터의 몸 속으로 파고들지 않게 합니다.
   다른 체형 위에서 만든 옷은 이 몸과 다른 곳마다 피부 속으로 들어갑니다.
   핏은 버텍스마다 몸과 머리 피부의 가장 가까운 점을 찾아서, 피부 안쪽에 있거나
@@ -630,10 +776,20 @@ localhost 포트 둘, MetaBridge Live 자체의 것입니다. `9584`가 캐릭�
    `Animation Scripts > MetaBridge Live`를 실행합니다(다시 실행하면
    멈춥니다). **Cascadeur Status**가 듣고 있는지 답합니다.
 
-**Live: Mirror This Rig**는 애니메이션하는 동안 프레임을 보내고,
-**Stop Mirroring**이 멈춥니다. **Live Way**와 **Live Bones**가 미러
-프레임이 무엇을 담을지 정합니다. 캐릭터를 먼저 보내고 라이브로
-가세요.
+**Live: Mirror This Rig**는 라이브 링크 전체의 켜기/끄기 버튼 하나입니다.
+켜져 있는 동안 **활성 슬롯**(1절)의 캐릭터가 Cascadeur와 통신하고(그 캐릭터의
+Cascadeur 씬과), **Assembled Characters** 목록에서 다른 캐릭터를 고르면 버튼을
+다시 누르지 않아도 링크가 그 캐릭터로 넘어갑니다. 한 번에 한 캐릭터만 미러하므로
+캐릭터가 여럿 있어도 느려지지 않고, 고르는 순서대로 하나씩 조작합니다.
+Cascadeur에 보이는 그 캐릭터의 포즈가 Maya의 캐릭터를 움직이고, Maya에서 움직인
+것은 그 캐릭터의 씬을 움직입니다. 버튼을 다시 누르면 링크가 꺼지고,
+**Stop Mirroring**도 같습니다. **Live Way**와 **Live Bones**가 미러 프레임이
+무엇을 담을지 정합니다. 각 캐릭터를 먼저 보내고 라이브로 가세요.
+
+**캐릭터마다 한 씬.** Cascadeur는 한 씬에 캐릭터 하나이므로, 보내는 캐릭터마다
+자기 씬이 열립니다. 다른 캐릭터를 보내도 이전 캐릭터의 씬은 그대로 두고, 같은
+캐릭터를 다시 보내면 그 캐릭터의 씬만 교체합니다. 포즈, 읽어오기, 라이브 링크는
+캐릭터 이름으로 씬을 찾습니다.
 
 **의상도 캐릭터와 함께 나갑니다.** 캐릭터 조인트에 스킨된 모든 메시(Bind
 Garment가 기록한 의상과 리그에 묶인 것)가 같은 FBX에 담겨 Cascadeur에서 포즈를
@@ -642,6 +798,15 @@ Garment가 기록한 의상과 리그에 묶인 것)가 같은 FBX에 담겨 Cas
 머리 파트의 목·어깨 깃은 몸의 웨이트를 써서 목에서 머리가 이어집니다.
 캐릭터는 **레스트 포즈**로 보낸 뒤 포즈가 따라가게 하세요(포즈를 취한 채 보내면
 Cascadeur에서 의상이 찢어질 수 있습니다). 17만 버텍스 의상은 약 30초 걸립니다.
+
+**메모리.** Cascadeur는 보낸 씬을 모두 메모리에 들고 있고, 옷을 입은 캐릭터는
+무겁습니다. 17만 버텍스 코트가 대부분이고, 이것이 있는 씬은 6GB를 넘겼습니다
+(그러면 Cascadeur가 undo 기록을 지웁니다: "History was cleared because of:
+Memory usage"). Send to Cascadeur 패널의 **Clothes Detail**(*Send Options
+(Maya-only)*)이 옷을 얼마나 보낼지 정합니다. **Half**(기본값, 폴리곤 절반 정도 -
+실루엣은 남고 주름은 성글어집니다), **Full**, 애니메이션만 필요한 캐릭터는
+**None**입니다. 다 쓴 씬은 Cascadeur에서 닫고, 오래 라이브를 돌릴 때는 옷 없이
+캐릭터를 보내세요.
 
 캐릭터는 **하나의 스켈레톤**으로 나가고(헤드 파트의 메시가 바디 조인트에
 다시 묶입니다), 돌아온 애니메이션은 **두 파트 모두**에 들어갑니다. 헤드

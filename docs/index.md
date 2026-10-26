@@ -14,13 +14,112 @@ between the two guides the same panel is the same panel.
 
 <a href="assets/wide_en.png"><img src="assets/wide_en.png" alt="MayaMetaBridge - overview"></a>
 
-<a href="assets/viewport_face.png"><img src="assets/viewport_face.png" alt="The MetaHuman the plug-in assembled, inside Maya"></a>
+<a href="assets/shots/hero_face.png"><img src="assets/shots/hero_face.png" alt="The MetaHuman the plug-in assembled, inside Maya"></a>
 
 *The face above is the plug-in's own output: a MetaHuman assembled from
 `head.dna` and `body.dna` in a Maya 2027 viewport, wearing the maps from its own
 `Maps` folder. No stand-in render.*
 
+## See it in action
+
+Every picture and clip in this guide is a Maya 2027 session with the bundled
+reference character - the viewport drawn by Maya, the dials moved by the
+plug-in. Where a picture was touched after Maya drew it, its caption says so.
+
+<p align="center">
+<video src="assets/video/expressions.mp4" width="760" controls autoplay muted loop playsinline></video>
+</p>
+
+*The face board (§2) and expression presets (§3): four ARKit expressions
+blended in and out - the dials on the board move, and RigLogic moves the
+head's joints with them.*
+
+<p align="center">
+<video src="assets/video/turntable.mp4" width="300" controls autoplay muted loop playsinline></video>
+&nbsp;
+<video src="assets/video/proportions.mp4" width="300" controls autoplay muted loop playsinline></video>
+</p>
+
+*Left: the assembled character, textured, turning in the viewport. Right: the
+proportion sliders (§5) - the reset body, **Long Legs**, a taller build and a
+heavier one - eased into each other.*
+
+<a href="assets/shots/lookdev_styles.png"><img src="assets/shots/lookdev_styles.png" alt="Realistic and Stylized Blue look-dev renders"></a>
+
+*The Arnold Look-Dev (see **What's new**) on the same character, both
+rendered by Arnold from the button's own camera and light rig, each exposed by
+its own measured probe: **Realistic** on the left, **Stylized Blue** on the
+right. Only the light, the backdrop and how the materials take it differ - the
+character is the same.*
+
 ## What's new
+
+**v0.2.0 — characters, clothes and Cascadeur**
+
+*Added*
+
+- **Several characters at once** — every assembled character keeps its own
+  face board (a namespace per character), its own thumbnail in the
+  character gallery, and a row in the **Assembled Characters** list with a
+  Rig ON/OFF switch. The `Character` pick and the Active Slot decide which one
+  every command works on, and moving a character no longer resets it when you
+  turn a face dial.
+- **Clothes go to Cascadeur with the character** — whatever is bound to the rig
+  is sent as clean skinned copies (weights taken from the body and head), so the
+  clothes follow the legs and arms instead of tearing. **Clothes Detail**
+  (Full / Half / None) keeps Cascadeur's memory in check: a 170,000-vertex coat
+  is most of what Cascadeur holds for a character.
+- **One Cascadeur scene per character** — sending a second character opens a new
+  scene instead of overwriting the first. **Live: Mirror This Rig** is one global
+  switch, and the **Active Slot** picks which character talks to Cascadeur.
+- **Look Style for the Arnold Look-Dev** — *Realistic* (the beauty rig) or
+  *Stylized Blue*: cyan rim and blue fill light, a glowing blue backdrop, smooth
+  bright porcelain skin, a glossy outfit, stronger bloom and a light colour
+  grade. Only light, backdrop and how materials take it change - never the
+  character. Switching back restores the materials.
+- **Clothing that follows the body** — **Bind Garment** adopts the rig, flattens
+  history, transfers weights and fits the garment; imported clothing attaches
+  itself; worn garments are found again when a scene is reopened.
+
+*Fixed*
+
+- Clothes did not follow **Body Blend** and sank into the skin when the body
+  changed: garments are now carried with the blended body and pushed back out
+  of the skin (**Refit Clothing To Body**, **Fit Clothing to Skin**).
+- Garment weights were wrong (clothes tore when a leg moved, the head ring of a
+  top stayed behind); the head and body were disconnected after a send.
+- Pressing a second Assemble dropped the face rig; a new DNA folder or a fresh
+  Maya session did not list the new character; the Active Slot window flickered
+  and did not apply to the picked character.
+- Bind Garment raised `_smooth_over_mesh() missing 2 required positional
+  arguments`.
+- **Arnold Look-Dev**: the first press framed the camera for the scene's old
+  resolution (a long shot where a bust was asked for) - it now sets the render
+  size first; the exposure measurement needed Pillow, which Maya does not ship,
+  so on most machines the rig stayed at its blown-out design values - it now
+  reads the probe with Maya's own `MImage`; and each character's face board
+  (they live in a namespace per character now) was left in the render.
+- The character thumbnail was missing in the Assembly list.
+
+*Guide*
+
+- The guide now shows the character in a Maya viewport - stills, a Maya window
+  with the plug-in's panels, an Arnold look-dev comparison - and short clips:
+  the face board playing expressions, a turntable, and the proportion sliders.
+  See **See it in action**.
+
+*Faster*
+
+- Sending with clothes, refitting and the live Body Blend preview are faster
+  (lean nearest-point search, float matrices, changed-joints-only
+  face writes, deferred refit while dragging).
+
+*Upgrading from 0.1.0*
+
+- Press **Install Cascadeur Plug-in** once and restart Cascadeur: the plug-in
+  is now MetaBridge Live 1.1, the one with a scene per character. With the old
+  one a second character replaces the first one's scene - Maya says so when it
+  sends.
 
 **v0.1.0 — the Maya port**
 
@@ -66,6 +165,13 @@ between the two guides the same panel is the same panel.
   them at 0.61 / 0.78 with no clipped pixels, against the reference's 0.59 /
   0.79 and a 0.84 backdrop. The three rows are in the main panel's **Arnold
   Look-Dev (Maya-only)** frame.
+  **Look Style** (same frame): *Realistic* is the beauty rig above; *Stylized
+  Blue* gives the cool, glowing mood of a blue/white sci-fi key illustration -
+  cyan rim and blue fill light, a glowing blue backdrop, smooth bright porcelain
+  skin (less scattering, a soft clear-coat sheen), a glossy outfit, a stronger
+  bloom and a light colour grade. It changes only the light, the backdrop and how
+  the materials take it - never the character's mesh, maps or colours. Pick it,
+  press **Arnold Look-Dev** again, and switch back the same way.
 - **mGear, one click** — the port's own feature, not a port of anything: the
   Blender add-on rigs with Rigify, and Maya has mGear. The click places mGear's
   MetaHuman guide on the character's joints and builds the Shifter rig over it,
@@ -159,7 +265,7 @@ the port's own progress — `18 panels, 122 buttons, 90 settings —`
 and a saved Maya layout brings them back (each one restores through its own
 `uiScript`).*
 
-<a href="assets/panels_over_character.png"><img src="assets/panels_over_character.png" alt="Two panels docked beside the character"></a>
+<a href="assets/shots/workspace.png"><img src="assets/shots/workspace.png" alt="Two panels beside the character, in Maya's window"></a>
 
 *Two of them over the character: the assembler and the proportion sliders.
 This is the shape of a session — the character in the viewport, the panel you
@@ -203,14 +309,27 @@ board** (§2). Measured on the reference character this guide's pictures come
 from: **1212 joints** (870 in the head part and 342 in the body), and **17
 maps** wired through 20 materials.
 
-<a href="assets/viewport_full_body.png"><img src="assets/viewport_full_body.png" alt="The assembled character"></a>
+<a href="assets/shots/hero_full.png"><img src="assets/shots/hero_full.png" alt="The assembled character"></a>
 
-**Assembled Characters** is the list of what is in the scene. **Activate Slot**
-makes one active (most of the rest of the plug-in works on the active slot),
-**Toggle Face Rig** shows or hides that character's face board, **Delete Slot**
-takes it out of the list, and **Relink DNA** re-points a slot at its DNA file
-after the file moved. **Load Head DNA…** and **Load Body DNA…** bring a single
-part in on its own.
+Under the folder field, **Character** is the pick of the characters the folder
+holds; **Assemble** builds the one it shows. (A folder that is itself a
+character folder is that character.)
+
+**Assembled Characters** is the add-on's list, one row per character in the
+scene - its head and body parts are one row:
+
+- the round button on the left **activates** it (most of the plug-in works on
+  the active character, and the row says which slots it holds),
+- **Rig: ON / OFF** puts the character's own face board in the scene, or takes
+  it out - every character can have its own board at the same time, and
+  dialling one moves that character's face and no other,
+- **X** deletes the character's slots,
+- the mark after the name says whether its nodes are all still in the scene.
+
+The buttons under the list (**Activate Slot**, **Toggle Face Rig**,
+**Delete Slot**) do the same for the character they are given, and **Relink
+DNA** re-points a slot at its DNA file after the file moved. **Load Head DNA…**
+and **Load Body DNA…** bring a single part in on its own.
 
 Two more things in the panel worth knowing: **Re-Assemble** is the same command
 as **Assemble** (it is there because a slot that drifted halfway through the
@@ -218,6 +337,10 @@ work is the reason to press it), and the **mGear Rig** frame at the foot of the
 panel is §6.
 
 ## 2. The face board
+
+<a href="assets/shots/face_board.png"><img src="assets/shots/face_board.png" alt="The face board beside the character, mid-smile"></a>
+
+*The board and the face it drives: the dials a smile moves, and the head following them.*
 
 Assembling a MetaHuman leaves more in the scene than a rig: a **face board
 (picker)** beside the head, one control per facial expression. It is Epic's own
@@ -236,8 +359,13 @@ Dial values on the board are the interface everything else uses:
   move — there are no shape keys to edit.
 
 **Toggle Face Rig** (main panel, Face Rig frame) shows the board and hides it
-again. While the body is on a rig (§5 or §6) the head part follows it: a
-character whose head is not linked turns its face and not its head.
+again; **Rig: ON / OFF** on a character's row (§1) does it for that character.
+Each character has a board of its own: the board is built into a namespace
+named after the character (`mmbFace_<name>:`), so two characters' boards never
+share a node. The board moves the **face only** - a character you have moved or
+posed by hand stays where it is while you dial. While the body is on a rig (§5
+or §6) the head part follows it: a character whose head is not linked turns
+its face and not its head.
 
 **The RNA list** (main panel, *RNA* tab) lists the DNA's raw-control channels
 beside the control that drives each one. **View** switches between the DNA
@@ -251,6 +379,10 @@ back on their own controls. A body-only DNA has no face channels, and the list
 says so.
 
 ## 3. Expression presets
+
+<a href="assets/shots/expressions.png"><img src="assets/shots/expressions.png" alt="Four expressions, ARKit presets on the head"></a>
+
+*A smile, a surprise, a wink and a frown - each one ARKit preset blend, applied from the panel.*
 
 <a href="assets/panel_pose_presets.png"><img src="assets/panel_pose_presets.png" width="330" alt="The Expression Presets panel"></a>
 
@@ -319,6 +451,10 @@ reads as one.
 
 ## 5. Proportions
 
+<a href="assets/shots/proportions.png"><img src="assets/shots/proportions.png" alt="The proportion sliders: reset, Long Legs, a taller build, a heavier build"></a>
+
+*The same character through the sliders: reset, **Long Legs**, a taller build, a heavier one.*
+
 <a href="assets/panel_proportions.png"><img src="assets/panel_proportions.png" width="330" alt="The Proportions panel"></a>
 
 Eighteen sliders, all factors on the character as it was built, with `1.0` being
@@ -369,9 +505,9 @@ before reshaping and build it again afterwards.
 
 ## 6. The body rig — mGear, one click
 
-<a href="assets/viewport_rig.png"><img src="assets/viewport_rig.png" alt="The character's joints"></a>
+<a href="assets/shots/rig_joints.png"><img src="assets/shots/rig_joints.png" alt="The character's joints"></a>
 
-*The character's own skeleton — 1212 joints — which any body rig is built over.*
+*The character's own skeleton — 1212 joints — which any body rig is built over. The skin is hidden and the joint lines are repainted cyan: Maya draws joints in a dark violet that disappears on this backdrop.*
 
 <a href="assets/viewport_mgear_rig.png"><img src="assets/viewport_mgear_rig.png" alt="The character on the mGear rig"></a>
 
@@ -442,16 +578,40 @@ character's rig is built from.
   replacing.
 - **Live Preview** is off by default: it is the switch that makes a weight drag
   show its result while you drag.
+- **What the character wears follows the blend.** After **Blend Active
+  Character** (and every Live Preview step) the garments worn on it are fitted to
+  the new skin: they go with the bones through their skin, and wherever the new
+  body reaches through the cloth it is pushed back out, the Clothing Offset kept
+  (§8). **Build Blended Body** makes a new character, and what the active one
+  wears is moved onto it - carried to the new character's bones, bound there and
+  fitted - instead of staying behind on the old one.
 
 ## 8. Wearables — clothing and hair
 
 <a href="assets/panel_wearables.png"><img src="assets/panel_wearables.png" width="330" alt="The Wearables panel"></a>
 
 - **Import Clothing (FBX)…** brings a garment in (and **Head Accessory…** the
-  same for something that goes on the head).
+  same for something that goes on the head) **and attaches it to the active
+  character**: skinned to the character's own skeleton and fitted to its skin,
+  the way the add-on does it. A garment that is only a mesh in the scene does
+  not follow the body, a blend or a reshape - **Bind Garment To Character**
+  attaches one that was brought in some other way.
 - **Make Garment Rig**, then **Bind Garment To Character** — binding copies the
   body's skin weights onto the piece, so it moves the way the skin beneath it
-  moves.
+  moves. Every vertex gets weights from the nearest body vertices (a
+  vertex on one leg only looks at that side, so a baggy trouser leg does not
+  pick up the other leg), blended over its neighbours; vertices a plain copy
+  leaves at zero - nearly half of a coat modelled before its UV seams were
+  split - are filled in as well. A garment whose skin was made before later
+  edits (a coat with its UV seams cut afterwards) is baked first, so the
+  vertices those edits added are weighted too, and a garment that came with its
+  own copy of the skeleton (a clothing FBX) is carried onto the character's own
+  bones - each vertex by its own weights, so the cloth is retargeted to this
+  character's proportions - instead of staying behind on a skeleton nothing
+  drives.
+- **What counts as worn.** A mesh skinned to the character's own joints is worn
+  whether or not it was recorded: Refit, Fit to Skin and the blend find it and add
+  it to the list (a scene saved and opened again does not lose its clothes).
 - **Fit to the skin** keeps a garment out of the character's body. A garment
   modelled over another build sinks into this one wherever the two differ; the
   fit finds, for every vertex, the nearest point of the body and head skin,
@@ -653,9 +813,21 @@ bridge uses, so it can run beside one. Nothing leaves the machine.
    session (run it again to stop). **Cascadeur Status** answers whether it
    is listening.
 
-**Live: Mirror This Rig** sends frames while you animate, and **Stop Mirroring**
-stops; **Live Way** and **Live Bones** choose what a mirrored frame carries.
-Send the character first, then go live.
+**Live: Mirror This Rig** is the live link's one on/off switch - for the whole
+cast. While it is on, **the active slot** (§1) is the character that talks to
+Cascadeur, with its own scene over there; pick another character in the
+**Assembled Characters** list and the link hands over to it, with no second
+press. Only one character is mirrored at a time, so a scene with several does
+not slow down, and you drive each one in turn by choosing it. What Cascadeur
+shows of that character moves it in Maya, and what you move in Maya moves its
+scene. Press the button again to switch the link off; **Stop Mirroring** does
+the same. **Live Way** and **Live Bones** choose what a mirrored frame carries.
+Send each character first, then go live.
+
+**One scene a character.** Cascadeur holds one character a scene, so each
+character you send opens a scene of its own: sending a different character
+leaves the others' scenes open, and sending the same one again replaces its own.
+The pose, the read-back and the live link find a character's scene by its name.
 
 **Clothes go with the character.** Every mesh skinned to the character's joints
 (what Bind Garment recorded, and anything else bound to the rig) leaves in the
@@ -666,6 +838,16 @@ shoulder collar takes the body's weights, so the head stays joined at the neck.
 Send the character in its **rest pose** and let the pose follow (a character
 sent while posed can tear its clothes in Cascadeur). A coat with 170,000
 vertices takes about half a minute.
+
+**Memory.** Cascadeur holds every scene you send in memory, and a dressed
+character is heavy: a coat with 170,000 vertices is most of it, and a scene with
+it passed 6 GB (Cascadeur then clears its undo history, "History was cleared
+because of: Memory usage"). **Clothes Detail** (*Send Options (Maya-only)* in the
+Send to Cascadeur panel) sets how much of the clothes goes: **Half** (the
+default, about half the polygons - the silhouette stays, the folds thin out),
+**Full**, or **None** for a character that only needs animating. Close the scenes
+you are finished with in Cascadeur; for a long live session, send the characters
+without clothes.
 
 The character leaves as **one skeleton** - the head part's meshes are rebound to
 its body joints - and a take read back lands on **both** parts: the head's own

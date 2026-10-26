@@ -29,7 +29,7 @@ MetaHuman 어셈블러. 폴더를 가리키고 그 안의 캐릭터를 목록으
 | Load Head DNA... | `mmb_load_head_dna` |
 | Load Body DNA... | `mmb_load_body_dna` |
 | Activate Slot | `mmb_mh_activate_slot` |
-| Toggle Face Rig | `mmb_toggle_face_rig_slot` |
+| Toggle Face Rig | `mmb_toggle_face_rig_slot` (아직 미이식) |
 | Delete Slot | `mmb_mh_delete_slot` |
 | Relink DNA | `mmb_relink_dna` |
 
@@ -56,8 +56,8 @@ MetaHuman 어셈블러. 폴더를 가리키고 그 안의 캐릭터를 목록으
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Append GUIArmature | `mmb_append_gui_armature` |
-| Toggle Face Rig | `mmb_toggle_face_rig_slot` |
+| Append GUIArmature | `mmb_append_gui_armature` (아직 미이식) |
+| Toggle Face Rig | `mmb_toggle_face_rig_slot` (아직 미이식) |
 
 ### Rigify Body Control Rig
 
@@ -65,18 +65,18 @@ MetaHuman 어셈블러. 폴더를 가리키고 그 안의 캐릭터를 목록으
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| 1. Build Meta-Rig | `mmb_build_metarig_only` |
-| 2. Generate Control Rig | `mmb_generate_rig_only` |
-| Remove Retarget | `mmb_remove_retarget` |
-| 3. Apply Retarget | `mmb_apply_retarget` |
-| Unlink Head Rig | `mmb_unlink_head_rig` |
-| Link Head Rig | `mmb_link_head_rig` |
-| Toggle RBF Correctives (Body) | `mmb_toggle_body_correctives_rbf` |
-| Body Correctives: none in this DNA | `mmb_toggle_body_correctives_rbf` |
-| Show RBF Controls | `mmb_show_rbf_controllers` |
-| Hide | `mmb_hide_rbf_controllers` |
-| Import FBX Animation... | `mmb_import_fbx_animation` |
-| Remove Control Rig | `mmb_remove_cloud_rig` |
+| 1. Build Meta-Rig | `mmb_build_metarig_only` (아직 미이식) |
+| 2. Generate Control Rig | `mmb_generate_rig_only` (아직 미이식) |
+| Remove Retarget | `mmb_remove_retarget` (아직 미이식) |
+| 3. Apply Retarget | `mmb_apply_retarget` (아직 미이식) |
+| Unlink Head Rig | `mmb_unlink_head_rig` (아직 미이식) |
+| Link Head Rig | `mmb_link_head_rig` (아직 미이식) |
+| Toggle RBF Correctives (Body) | `mmb_toggle_body_correctives_rbf` (아직 미이식) |
+| Body Correctives: none in this DNA | `mmb_toggle_body_correctives_rbf` (아직 미이식) |
+| Show RBF Controls | `mmb_show_rbf_controllers` (아직 미이식) |
+| Hide | `mmb_hide_rbf_controllers` (아직 미이식) |
+| Import FBX Animation... | `mmb_import_fbx_animation` (아직 미이식) |
+| Remove Control Rig | `mmb_remove_cloud_rig` (아직 미이식) |
 
 **설정**
 
@@ -98,12 +98,12 @@ MetaHuman 어셈블러. 폴더를 가리키고 그 안의 캐릭터를 목록으
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Toggle IK Stretch | `mmb_toggle_limb_ik_stretch` |
-| Toggle Heel Pivot | `mmb_toggle_foot_spin_pivot` |
-| Toggle Finger IK | `mmb_toggle_finger_ik` |
-| IK to FK | `mmb_finger_ik_fk` |
-| FK to IK | `mmb_finger_ik_fk` |
-| Snap Fingertip Targets to Pose | `mmb_snap_finger_ik` |
+| Toggle IK Stretch | `mmb_toggle_limb_ik_stretch` (아직 미이식) |
+| Toggle Heel Pivot | `mmb_toggle_foot_spin_pivot` (아직 미이식) |
+| Toggle Finger IK | `mmb_toggle_finger_ik` (아직 미이식) |
+| IK to FK | `mmb_finger_ik_fk` (아직 미이식) |
+| FK to IK | `mmb_finger_ik_fk` (아직 미이식) |
+| Snap Fingertip Targets to Pose | `mmb_snap_finger_ik` (아직 미이식) |
 
 **설정**
 
@@ -124,9 +124,9 @@ MetaHuman 어셈블러. 폴더를 가리키고 그 안의 캐릭터를 목록으
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Re-Auto Link | `mmb_re_auto_link` |
-| Clear All | `mmb_clear_manual` |
-| Print Full Map (console) | `mmb_print_gui_map` |
+| Re-Auto Link | `mmb_re_auto_link` (아직 미이식) |
+| Clear All | `mmb_clear_manual` (아직 미이식) |
+| Print Full Map (console) | `mmb_print_gui_map` (아직 미이식) |
 
 **설정**
 
@@ -148,12 +148,12 @@ MetaHuman 어셈블러. 폴더를 가리키고 그 안의 캐릭터를 목록으
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| One-Click mGear Rig | `mmb_mgear_rig` - mGear's MetaHuman guide, snapped to the active character, and mGear's Shifter rig built over it |
-| Snap mGear Guide | `mmb_mgear_snap` - put the guide's locators back on the character's joints, for a guide that was placed or edited by hand |
-| Bind Head to mGear Rig | `mmb_mgear_bind_head` - constrain the character's head part to the body joints mGear drives, so the face and the expression sliders follow the rig (the one-click does this already) |
-| Unbind Head from mGear Rig | `mmb_mgear_unbind_head` - take the head constraints out again; the head keeps its own values where it stands |
-| Register Anim Picker | `mmb_mgear_anim_picker` - make mGear's Anim Picker for the MetaHuman rig - the node and the body and face pages - and open it |
-| Remove mGear Rig | `mmb_mgear_clear` - delete the guide and the rigs mGear built; the character stays as it is |
+| One-Click mGear Rig | `mmb_mgear_rig` - mGear's MetaHuman guide, snapped to the active character, and mGear's Shifter rig built over it (아직 미이식) |
+| Snap mGear Guide | `mmb_mgear_snap` - put the guide's locators back on the character's joints, for a guide that was placed or edited by hand (아직 미이식) |
+| Bind Head to mGear Rig | `mmb_mgear_bind_head` - constrain the character's head part to the body joints mGear drives, so the face and the expression sliders follow the rig (the one-click does this already) (아직 미이식) |
+| Unbind Head from mGear Rig | `mmb_mgear_unbind_head` - take the head constraints out again; the head keeps its own values where it stands (아직 미이식) |
+| Register Anim Picker | `mmb_mgear_anim_picker` - make mGear's Anim Picker for the MetaHuman rig - the node and the body and face pages - and open it (아직 미이식) |
+| Remove mGear Rig | `mmb_mgear_clear` - delete the guide and the rigs mGear built; the character stays as it is (아직 미이식) |
 
 ### Arnold Look-Dev (Maya-only)
 
@@ -161,9 +161,15 @@ MetaHuman 어셈블러. 폴더를 가리키고 그 안의 캐릭터를 목록으
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Arnold Look-Dev | `mmb_arnold_lookdev` - Arnold shaders for the character's materials (the hair included), a key/fill/rim light rig aimed at its face, two cameras framed on it, the render settings a beauty still is rendered at, and a measured exposure - a probe render of the face, solved until the skin lands where a reference still's does, on the GPU |
-| Open Arnold RenderView | `mmb_arnold_render_view` - MtoA's RenderView on the look-dev camera, with its interactive render running |
-| Remove Look-Dev | `mmb_arnold_lookdev_clear` - the character's own shaders back on their sets, the Arnold ones, the rig and both cameras deleted |
+| Arnold Look-Dev | `mmb_arnold_lookdev` - Arnold shaders for the character's materials (the hair included), a key/fill/rim light rig aimed at its face, two cameras framed on it, the render settings a beauty still is rendered at, and a measured exposure - a probe render of the face, solved until the skin lands where a reference still's does, on the GPU (아직 미이식) |
+| Open Arnold RenderView | `mmb_arnold_render_view` - MtoA's RenderView on the look-dev camera, with its interactive render running (아직 미이식) |
+| Remove Look-Dev | `mmb_arnold_lookdev_clear` - the character's own shaders back on their sets, the Arnold ones, the rig and both cameras deleted (아직 미이식) |
+
+**설정**
+
+| 컨트롤 | 종류 | 기본값 | 범위 | 저장 위치 |
+| --- | --- | --- | --- | --- |
+| Look Style | 메뉴 | `REALISTIC` | REALISTIC = Realistic (beauty), STYLIZED = Stylized Blue (cool glow) | `ml_lookdev_style` |
 
 ---
 
@@ -181,8 +187,8 @@ MetaHuman 어셈블러. 폴더를 가리키고 그 안의 캐릭터를 목록으
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Bake Face Animation | `mmb_bake_face_animation` |
-| Clear Baked Animation | `mmb_clear_baked_animation` |
+| Bake Face Animation | `mmb_bake_face_animation` (아직 미이식) |
+| Clear Baked Animation | `mmb_clear_baked_animation` (아직 미이식) |
 
 **패널이 그리는 안내 문구**
 
@@ -205,14 +211,14 @@ MetaHuman 어셈블러. 폴더를 가리키고 그 안의 캐릭터를 목록으
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Connect | `mmb_arkit_connect` |
-| Record | `mmb_arkit_toggle_recording` |
-| Load Live Link Face CSV... | `mmb_arkit_load_csv` |
-| Export Face CSV... | `mmb_export_face_csv` |
-| Export ARKit Blend Shapes (FBX)... | `mmb_export_arkit_blendshapes` |
-| Rebuild Name Mapping | `mmb_arkit_rebuild_mapping` |
-| Calibrate Neutral Face | `mmb_arkit_calibrate_neutral` |
-| Clear Neutral Calibration | `mmb_arkit_clear_calibration` |
+| Connect | `mmb_arkit_connect` (아직 미이식) |
+| Record | `mmb_arkit_toggle_recording` (아직 미이식) |
+| Load Live Link Face CSV... | `mmb_arkit_load_csv` (아직 미이식) |
+| Export Face CSV... | `mmb_export_face_csv` (아직 미이식) |
+| Export ARKit Blend Shapes (FBX)... | `mmb_export_arkit_blendshapes` (아직 미이식) |
+| Rebuild Name Mapping | `mmb_arkit_rebuild_mapping` (아직 미이식) |
+| Calibrate Neutral Face | `mmb_arkit_calibrate_neutral` (아직 미이식) |
+| Clear Neutral Calibration | `mmb_arkit_clear_calibration` (아직 미이식) |
 
 **설정**
 
@@ -273,8 +279,8 @@ MetaHuman 어셈블러. 폴더를 가리키고 그 안의 캐릭터를 목록으
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Assemble All Characters | `mmb_batch_assemble` |
-| Export All Slots | `mmb_batch_export` |
+| Assemble All Characters | `mmb_batch_assemble` (아직 미이식) |
+| Export All Slots | `mmb_batch_export` (아직 미이식) |
 
 ---
 
@@ -292,13 +298,13 @@ MetaHuman 어셈블러. 폴더를 가리키고 그 안의 캐릭터를 목록으
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Use Base DNA | `mmb_add_base_dna` |
-| Add Folder... | `mmb_add_body_folder` |
-| Add Body DNA | `mmb_add_body_source` |
-| Load Library... | `mmb_load_archetype_library` |
-| Export... | `mmb_export_archetype_library` |
-| Build Blended Body | `mmb_build_blended_body` |
-| Blend Active Character | `mmb_blend_active_character` |
+| Use Base DNA | `mmb_add_base_dna` (아직 미이식) |
+| Add Folder... | `mmb_add_body_folder` (아직 미이식) |
+| Add Body DNA | `mmb_add_body_source` (아직 미이식) |
+| Load Library... | `mmb_load_archetype_library` (아직 미이식) |
+| Export... | `mmb_export_archetype_library` (아직 미이식) |
+| Build Blended Body | `mmb_build_blended_body` (아직 미이식) |
+| Blend Active Character | `mmb_blend_active_character` (아직 미이식) |
 
 **설정**
 
@@ -325,12 +331,12 @@ MetaHuman 어셈블러. 폴더를 가리키고 그 안의 캐릭터를 목록으
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Send to Cascadeur | `mmb_cascadeur_send` |
-| Current Frame | `mmb_cascadeur_send` |
-| Live: Mirror This Rig | `mmb_cascadeur_live_pose` |
-| Stop Mirroring | `mmb_cascadeur_stop_live` |
-| Cascadeur Status | `mmb_cascadeur_status` |
-| Install Cascadeur Plug-in | `mmb_install_cascadeur_plugin` |
+| Send to Cascadeur | `mmb_cascadeur_send` (아직 미이식) |
+| Current Frame | `mmb_cascadeur_send` (아직 미이식) |
+| Live: Mirror This Rig | `mmb_cascadeur_live_pose` (아직 미이식) |
+| Stop Mirroring | `mmb_cascadeur_stop_live` (아직 미이식) |
+| Cascadeur Status | `mmb_cascadeur_status` (아직 미이식) |
+| Install Cascadeur Plug-in | `mmb_install_cascadeur_plugin` (아직 미이식) |
 
 **설정**
 
@@ -352,6 +358,14 @@ MetaHuman 어셈블러. 폴더를 가리키고 그 안의 캐릭터를 목록으
 * Overwrites from frame 0
 * Send the character first, then Live.
 * Run 'Animation Scripts > MetaBridge Live' in Cascadeur first
+
+### Send Options (Maya-only)
+
+**설정**
+
+| 컨트롤 | 종류 | 기본값 | 범위 | 저장 위치 |
+| --- | --- | --- | --- | --- |
+| Clothes Detail | 메뉴 | `HALF` | FULL = Full, HALF = Half, NONE = None (no clothes) | `ml_casc_clothes` |
 
 ---
 
@@ -388,10 +402,10 @@ DNA 파일 또는 활성 슬롯의 DNA를 읽고, 파이프라인의 나머지�
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Head | `mmb_export_head_dna` |
-| Body | `mmb_export_body_dna` |
-| Export FBX | `mmb_export_slot_fbx` |
-| Export glTF | `mmb_export_slot_gltf` |
+| Head | `mmb_export_head_dna` (아직 미이식) |
+| Body | `mmb_export_body_dna` (아직 미이식) |
+| Export FBX | `mmb_export_slot_fbx` (아직 미이식) |
+| Export glTF | `mmb_export_slot_gltf` (아직 미이식) |
 
 **패널이 그리는 안내 문구**
 
@@ -415,12 +429,12 @@ DNA 파일 또는 활성 슬롯의 DNA를 읽고, 파이프라인의 나머지�
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Live | `mmb_md_live` |
-| Get Garment Now | `mmb_md_request_garment` |
-| Open Shared Folder | `mmb_md_open_folder` |
-| Send Body to MD | `mmb_md_send_body` |
-| Import Garment from MD... | `mmb_md_import_garment` |
-| Open MD Plug-in Folder | `mmb_md_open_plugin_folder` |
+| Live | `mmb_md_live` (아직 미이식) |
+| Get Garment Now | `mmb_md_request_garment` (아직 미이식) |
+| Open Shared Folder | `mmb_md_open_folder` (아직 미이식) |
+| Send Body to MD | `mmb_md_send_body` (아직 미이식) |
+| Import Garment from MD... | `mmb_md_import_garment` (아직 미이식) |
+| Open MD Plug-in Folder | `mmb_md_open_plugin_folder` (아직 미이식) |
 
 **설정**
 
@@ -466,15 +480,15 @@ DNA 파일 또는 활성 슬롯의 DNA를 읽고, 파이프라인의 나머지�
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Save Current Expression | `mmb_save_pose_preset_overwrite` |
-| Save As Current Expression... | `mmb_save_pose_preset` |
-| Delete Expression Preset | `mmb_delete_pose_preset` |
-| Apply Preset | `mmb_apply_pose_preset` |
-| Add All From Active Folder | `mmb_add_folder_sliders` |
-| Clear All Sliders | `mmb_clear_preset_sliders` |
-| Import... | `mmb_import_pose_preset` |
-| Set Folder... | `mmb_select_preset_folder` |
-| Open Presets Folder | `mmb_open_preset_folder` |
+| Save Current Expression | `mmb_save_pose_preset_overwrite` (아직 미이식) |
+| Save As Current Expression... | `mmb_save_pose_preset` (아직 미이식) |
+| Delete Expression Preset | `mmb_delete_pose_preset` (아직 미이식) |
+| Apply Preset | `mmb_apply_pose_preset` (아직 미이식) |
+| Add All From Active Folder | `mmb_add_folder_sliders` (아직 미이식) |
+| Clear All Sliders | `mmb_clear_preset_sliders` (아직 미이식) |
+| Import... | `mmb_import_pose_preset` (아직 미이식) |
+| Set Folder... | `mmb_select_preset_folder` (아직 미이식) |
+| Open Presets Folder | `mmb_open_preset_folder` (아직 미이식) |
 
 **설정**
 
@@ -498,9 +512,9 @@ DNA 파일 또는 활성 슬롯의 DNA를 읽고, 파이프라인의 나머지�
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Convert & Import (Maya/Houdini)... | `mmb_convert_import_preset` |
-| Convert ARKit Payload... | `mmb_convert_arkit_payload` |
-| Edit Name Mapping | `mmb_edit_name_mapping` |
+| Convert & Import (Maya/Houdini)... | `mmb_convert_import_preset` (아직 미이식) |
+| Convert ARKit Payload... | `mmb_convert_arkit_payload` (아직 미이식) |
+| Edit Name Mapping | `mmb_edit_name_mapping` (아직 미이식) |
 
 **패널이 그리는 안내 문구**
 
@@ -522,8 +536,8 @@ DNA 파일 또는 활성 슬롯의 DNA를 읽고, 파이프라인의 나머지�
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Long Legs | `mmb_proportion_preset` |
-| Reset | `mmb_proportion_preset` |
+| Long Legs | `mmb_proportion_preset` (아직 미이식) |
+| Reset | `mmb_proportion_preset` (아직 미이식) |
 
 **설정**
 
@@ -571,8 +585,8 @@ DNA 파일 또는 활성 슬롯의 DNA를 읽고, 파이프라인의 나머지�
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Reset All Controls | `mmb_reset_face_pose` |
-| Reset Selected (Pose Mode) | `mmb_reset_selected_controls` |
+| Reset All Controls | `mmb_reset_face_pose` (아직 미이식) |
+| Reset Selected (Pose Mode) | `mmb_reset_selected_controls` (아직 미이식) |
 
 ---
 
@@ -590,7 +604,7 @@ DNA 파일 또는 활성 슬롯의 DNA를 읽고, 파이프라인의 나머지�
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Retarget Rigify Animation | `mmb_retarget_rigify_animation` |
+| Retarget Rigify Animation | `mmb_retarget_rigify_animation` (아직 미이식) |
 
 **설정**
 
@@ -628,19 +642,19 @@ DNA 파일 또는 활성 슬롯의 DNA를 읽고, 파이프라인의 나머지�
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Begin (Face) | `mmb_sculpt_corrective_begin` |
-| Begin (Body) | `mmb_sculpt_corrective_begin` |
-| Finish Sculpt | `mmb_sculpt_corrective_finish` |
-| Export Edited Shape Keys | `mmb_export_edited_shape_keys` |
-| Bake All to DNA | `mmb_bake_all_correctives_to_dna` |
-| Export... | `mmb_export_correctives` |
-| Import... | `mmb_import_correctives` |
-| Sync to Wearables | `mmb_sync_correctives_to_garments` |
-| Set Neutral | `mmb_sculpt_corrective_set_neutral` |
-| Toggle Manual Override | `mmb_sculpt_corrective_toggle_manual` |
-| Remove Corrective | `mmb_sculpt_corrective_remove` |
-| Edit Sculpt | `mmb_sculpt_corrective_edit` |
-| Bake Corrective to DNA | `mmb_bake_corrective_to_dna` |
+| Begin (Face) | `mmb_sculpt_corrective_begin` (아직 미이식) |
+| Begin (Body) | `mmb_sculpt_corrective_begin` (아직 미이식) |
+| Finish Sculpt | `mmb_sculpt_corrective_finish` (아직 미이식) |
+| Export Edited Shape Keys | `mmb_export_edited_shape_keys` (아직 미이식) |
+| Bake All to DNA | `mmb_bake_all_correctives_to_dna` (아직 미이식) |
+| Export... | `mmb_export_correctives` (아직 미이식) |
+| Import... | `mmb_import_correctives` (아직 미이식) |
+| Sync to Wearables | `mmb_sync_correctives_to_garments` (아직 미이식) |
+| Set Neutral | `mmb_sculpt_corrective_set_neutral` (아직 미이식) |
+| Toggle Manual Override | `mmb_sculpt_corrective_toggle_manual` (아직 미이식) |
+| Remove Corrective | `mmb_sculpt_corrective_remove` (아직 미이식) |
+| Edit Sculpt | `mmb_sculpt_corrective_edit` (아직 미이식) |
+| Bake Corrective to DNA | `mmb_bake_corrective_to_dna` (아직 미이식) |
 
 **설정**
 
@@ -678,9 +692,9 @@ DNA 파일 또는 활성 슬롯의 DNA를 읽고, 파이프라인의 나머지�
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Start Unreal Live | `mmb_unreal_live_start` |
-| Stop Unreal Live | `mmb_unreal_live_stop` |
-| Open Unreal Plug-in Folder | `mmb_open_unreal_plugin_folder` |
+| Start Unreal Live | `mmb_unreal_live_start` (아직 미이식) |
+| Stop Unreal Live | `mmb_unreal_live_stop` (아직 미이식) |
+| Open Unreal Plug-in Folder | `mmb_open_unreal_plugin_folder` (아직 미이식) |
 
 **설정**
 
@@ -711,8 +725,8 @@ DNA 파일 또는 활성 슬롯의 DNA를 읽고, 파이프라인의 나머지�
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Follow Unreal | `mmb_unreal_follow_start` |
-| Stop Following | `mmb_unreal_follow_stop` |
+| Follow Unreal | `mmb_unreal_follow_start` (아직 미이식) |
+| Stop Following | `mmb_unreal_follow_stop` (아직 미이식) |
 
 **설정**
 
@@ -745,16 +759,16 @@ DNA 파일 또는 활성 슬롯의 DNA를 읽고, 파이프라인의 나머지�
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Import Clothing (FBX)... | `mmb_import_clothing_fbx` |
-| Head Accessory... | `mmb_import_clothing_fbx` |
-| Refit Clothing To Body | `mmb_refit_wearables` |
-| Make Garment Rig | `mmb_make_garment_rig` |
-| Bind Garment To Character | `mmb_bind_garment` |
-| Import Hair... | `mmb_import_hair_abc` |
-| Apply Hair Offset / Scale | `mmb_apply_hair_offset` |
-| Bind Hair To Head | `mmb_bind_hair_to_head` |
-| Align Active Mesh to DNA Head | `mmb_align_mesh_to_dna_head` |
-| Retarget Hair to Selected Mesh | `mmb_retarget_hair` |
+| Import Clothing (FBX)... | `mmb_import_clothing_fbx` (아직 미이식) |
+| Head Accessory... | `mmb_import_clothing_fbx` (아직 미이식) |
+| Refit Clothing To Body | `mmb_refit_wearables` (아직 미이식) |
+| Make Garment Rig | `mmb_make_garment_rig` (아직 미이식) |
+| Bind Garment To Character | `mmb_bind_garment` (아직 미이식) |
+| Import Hair... | `mmb_import_hair_abc` (아직 미이식) |
+| Apply Hair Offset / Scale | `mmb_apply_hair_offset` (아직 미이식) |
+| Bind Hair To Head | `mmb_bind_hair_to_head` (아직 미이식) |
+| Align Active Mesh to DNA Head | `mmb_align_mesh_to_dna_head` (아직 미이식) |
+| Retarget Hair to Selected Mesh | `mmb_retarget_hair` (아직 미이식) |
 
 **설정**
 
@@ -781,7 +795,7 @@ DNA 파일 또는 활성 슬롯의 DNA를 읽고, 파이프라인의 나머지�
 
 | 버튼 | 실행되는 커맨드 |
 | --- | --- |
-| Fit Clothing to Skin | `mmb_fit_clothing_to_skin` - push the selected clothing (or what is worn) out of the character's skin: any vertex inside it, or closer than the Clothing Offset, is moved out along the skin's normal |
+| Fit Clothing to Skin | `mmb_fit_clothing_to_skin` - push the selected clothing (or what is worn) out of the character's skin: any vertex inside it, or closer than the Clothing Offset, is moved out along the skin's normal (아직 미이식) |
 
 ---
 
